@@ -10,7 +10,7 @@ function Header() {
   const classes = useStyles();
   return (
     <div className={classes.Header_Root}>
-      <AppBar position="fixed" className={classes.Header_Menubar}>
+      <AppBar position="absolute" className={classes.Header_Menubar}>
         <Toolbar>
           <Logo className={classes.Header_Logo} />
           <div className={classes.Header_Tittle} />

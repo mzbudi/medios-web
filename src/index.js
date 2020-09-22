@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { theme } from './MainStyle';
 import MainRouter from './MainRouter';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainRouter />
+    <ThemeProvider theme={theme}>
+      <MainRouter />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
