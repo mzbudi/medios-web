@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   },
   Header_Menubar: {
     backgroundColor: 'inherit',
+    boxShadow: 'none',
   },
   Header_ContactBtn: {
     background: 'linear-gradient(114deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box;',
@@ -21,6 +22,7 @@ const useStyles = makeStyles({
     padding: '0 30px',
     boxShadow: '5px 15px 30px #3939391A',
     opacity: 1,
+    font: 'bold 20px/24px Montserrat',
   },
   Header_MenuBtn: {
     background: 'inherit',
@@ -31,6 +33,7 @@ const useStyles = makeStyles({
       background: 'inherit',
     },
     marginRight: theme.spacing(2),
+    font: '20px/24px Montserrat',
   },
   Header_Logo: {
     height: '112px',
