@@ -11,8 +11,8 @@ import mobile from '../../Assets/Images SVG/undraw_mobile_devices_k1ok.svg';
 import drone from '../../Assets/Images SVG/undraw_drone_surveillance_kjjg.svg';
 import robot from '../../Assets/Images SVG/undraw_Artificial_intelligence_oyxx.svg';
 import ai from '../../Assets/Images SVG/undraw_detailed_analysis_xn7y.svg';
-import Header from '../Header';
-import Footer from '../Footer';
+// import Header from '../Header';
+// import Footer from '../Footer';
 import './service.css';
 
 const useStyles = makeStyles({
@@ -40,8 +40,7 @@ function Service() {
   return (
     <Grid container spacing={8}>
       <Grid item xs={12}>
-        <Header />
-        <img style={background} src={HeaderImage} alt="header_image" width="1440px" height="450px" />
+        <img style={background} src={HeaderImage} alt="header_image" width="1440px" height="350px" />
         <h1 style={textStyle}>Service</h1>
       </Grid>
       <Grid item xs={12}>
@@ -145,9 +144,6 @@ function Service() {
             </Button>
           </div>
         </Card>
-      </Grid>
-      <Grid item xs={12}>
-        <Footer />
       </Grid>
     </Grid>
   );
