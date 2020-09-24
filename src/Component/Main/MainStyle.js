@@ -25,6 +25,17 @@ const useStyles = makeStyles({
     font: 'normal normal bold 20px/24px Montserrat;',
     color: '#29AE6D',
   },
+
+  Main_WhyChooseUs: {
+    width: '100%',
+    height: 700,
+    position: 'absolute',
+  },
+
+  Main_PartnerImg: {
+    maxHeight: 200,
+    maxWidth: 200,
+  },
 });
 
 export default useStyles;

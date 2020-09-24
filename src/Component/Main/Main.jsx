@@ -1,7 +1,17 @@
 import React from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 // import { Link } from 'react-router-dom';
-import { Container, Grid } from '@material-ui/core';
+import {
+  Container,
+  Grid,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+  Button,
+  CardActions,
+} from '@material-ui/core';
 // import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
 import useStyles from './MainStyle';
 import Header from '../Header';
@@ -11,6 +21,12 @@ import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
 import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
 import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
 import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
+import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
+import Partner1 from '../../Assets/Images/Partner1.png';
+import Partner2 from '../../Assets/Images/Partner2.png';
+import Partner3 from '../../Assets/Images/Partner3.png';
+import Partner4 from '../../Assets/Images/Partner4.png';
+import Partner5 from '../../Assets/Images/Partner5.png';
 
 function Main() {
   const classes = useStyles();
@@ -103,12 +119,73 @@ function Main() {
     </>
   );
 
+  const OurProduct = () => (
+    <Card>
+      <CardActionArea>
+        <CardMedia image="../../Assets/Images SVG/Responsive.svg" title="Contemplative Reptile" />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents
+            except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Show more
+        </Button>
+      </CardActions>
+    </Card>
+  );
+
+  // const WhyChooseUs = () => (
+  //   <div style={{ backgroundImage: '../../Assets/Images/ChooseUs.jpg', width: '100%', height: 800 }} />
+  // );
+
+  const Partner = () => (
+    <div>
+      <Grid container spacing={3} style={{ marginBottom: 30 }}>
+        <Grid item lg={12} xs={12} md={12} xl={12} sm={12}>
+          <Typography align="center" variant="h5" style={{ fontWeight: 'bold' }}>
+            Our successful friend
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid container spacing={3} justify="center">
+        <Grid item lg={2}>
+          <img src={Partner1} alt="partner1" className={classes.Main_PartnerImg} />
+        </Grid>
+        <Grid item lg={2}>
+          <img src={Partner2} alt="partner2" className={classes.Main_PartnerImg} />
+        </Grid>
+        <Grid item lg={2}>
+          <img src={Partner3} alt="partner3" className={classes.Main_PartnerImg} />
+        </Grid>
+        <Grid item lg={2}>
+          <img src={Partner4} alt="partner4" className={classes.Main_PartnerImg} />
+        </Grid>
+        <Grid item lg={2}>
+          <img src={Partner5} alt="partner5" className={classes.Main_PartnerImg} />
+        </Grid>
+      </Grid>
+    </div>
+  );
+
   return (
     <>
       <Header />
       <Container>
         <OpeningText />
         <ImageSection />
+        <OurProduct />
+        {/* <WhyChooseUs /> */}
+        <Partner />
       </Container>
       <Footer />
     </>
