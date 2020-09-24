@@ -22,6 +22,7 @@ const useStyles = makeStyles({
   },
 
   Main_TextImageSection: {
+    font: 'normal normal bold 20px/24px Montserrat;',
     color: '#29AE6D',
   },
 });

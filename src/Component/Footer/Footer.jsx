@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider';
 import logo from '../../Assets/Icon/Logo Medios.svg';
 import linkedin from '../../Assets/Icon/linkedin.svg';
