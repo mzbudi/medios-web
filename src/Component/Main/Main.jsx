@@ -11,6 +11,11 @@ import {
   Typography,
   Button,
   CardActions,
+  TextField,
+  FormControl,
+  Input,
+  InputLabel,
+  FormHelperText,
 } from '@material-ui/core';
 // import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
 import useStyles from './MainStyle';
@@ -21,7 +26,7 @@ import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
 import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
 import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
 import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
-import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
+// import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 import Partner1 from '../../Assets/Images/Partner1.png';
 import Partner2 from '../../Assets/Images/Partner2.png';
 import Partner3 from '../../Assets/Images/Partner3.png';
@@ -177,6 +182,82 @@ function Main() {
     </div>
   );
 
+  const ReachUs = () => {
+    const handleSend = (event) => {
+      event.preventDefault();
+      console.log(event.target.elements.name.value);
+      console.log(event.target.elements.email.value);
+      console.log(event.target.elements.msg.value);
+    };
+
+    return (
+      <>
+        <form
+          autoComplete="off"
+          className={classes.Main_FormContact}
+          onSubmit={(e) => {
+            handleSend(e);
+          }}
+        >
+          <Grid container spacing={3} style={{ marginBottom: 30 }}>
+            <Grid item lg={12} xs={12} md={12} xl={12} sm={12}>
+              <Typography align="left" variant="h5" style={{ fontWeight: 'bold' }}>
+                Reach Us
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid container spacing={10} justify="center">
+            <Grid item lg={6}>
+              <FormControl fullWidth>
+                <InputLabel htmlFor="name">Your Name or Company</InputLabel>
+                <Input
+                  id="name"
+                  name="name"
+                  aria-describedby="my-helper-text"
+                  placeholder="Enter your name or company"
+                />
+              </FormControl>
+            </Grid>
+            <Grid item lg={6}>
+              <FormControl fullWidth>
+                <InputLabel htmlFor="email">Your Email</InputLabel>
+                <Input
+                  id="email"
+                  name="email"
+                  aria-describedby="my-helper-text"
+                  placeholder="Enter your email address"
+                  type="email"
+                />
+              </FormControl>
+            </Grid>
+          </Grid>
+          <Grid container spacing={10}>
+            <Grid item lg={12}>
+              <FormControl fullWidth>
+                <InputLabel htmlFor="msg">Message</InputLabel>
+                <Input
+                  multiline
+                  id="msg"
+                  name="msg"
+                  aria-describedby="my-helper-text"
+                  placeholder="Your message here ..."
+                  rows="4"
+                />
+              </FormControl>
+            </Grid>
+          </Grid>
+          <Grid container>
+            <div className={classes.Main_MarginFlyIt}>
+              <Button type="submit" className={classes.Main_Btn_Flyit}>
+                Fly it
+              </Button>
+            </div>
+          </Grid>
+        </form>
+      </>
+    );
+  };
+
   return (
     <>
       <Header />
@@ -186,6 +267,7 @@ function Main() {
         <OurProduct />
         {/* <WhyChooseUs /> */}
         <Partner />
+        <ReachUs />
       </Container>
       <Footer />
     </>
