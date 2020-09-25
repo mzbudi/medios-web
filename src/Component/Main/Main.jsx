@@ -11,11 +11,9 @@ import {
   Typography,
   Button,
   CardActions,
-  TextField,
   FormControl,
   Input,
   InputLabel,
-  FormHelperText,
 } from '@material-ui/core';
 // import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
 import useStyles from './MainStyle';
@@ -26,12 +24,14 @@ import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
 import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
 import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
 import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
+import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
 // import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 import Partner1 from '../../Assets/Images/Partner1.png';
 import Partner2 from '../../Assets/Images/Partner2.png';
 import Partner3 from '../../Assets/Images/Partner3.png';
 import Partner4 from '../../Assets/Images/Partner4.png';
 import Partner5 from '../../Assets/Images/Partner5.png';
+import Quote from '../../Assets/Images/quote.png';
 
 function Main() {
   const classes = useStyles();
@@ -153,6 +153,27 @@ function Main() {
   //   <div style={{ backgroundImage: '../../Assets/Images/ChooseUs.jpg', width: '100%', height: 800 }} />
   // );
 
+  const PersuasiveText = () => (
+    <div className={classes.Main_MarginQuote}>
+      <Grid container className={classes.Main_QuoteContainer}>
+        <Grid item container lg={7} direction="column">
+          <Grid item>
+            <Logo className={classes.Main_QuoteIcon} />
+          </Grid>
+          <Grid item>
+            <Typography align="left" variant="body1" className={classes.Main_TypoQuote}>
+              What are you waiting for, change your Business so it can survive well in this new era, let's adapt it to
+              IT with us and we see your comany will continue to shine
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid item lg={5} style={{ textAlign: '-webkit-right' }}>
+          <img src={Quote} alt="Logo" style={{ width: 400 }} />
+        </Grid>
+      </Grid>
+    </div>
+  );
+
   const Partner = () => (
     <div>
       <Grid container spacing={3} style={{ marginBottom: 30 }}>
@@ -264,9 +285,10 @@ function Main() {
       <Container>
         <OpeningText />
         <ImageSection />
-        <OurProduct />
+        {/* <OurProduct /> */}
         {/* <WhyChooseUs /> */}
         <Partner />
+        <PersuasiveText />
         <ReachUs />
       </Container>
       <Footer />

@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   Main_OpeningText: {
     textAlign: 'center',
     font: 'normal normal 600 40px/49px Montserrat',
@@ -51,9 +51,29 @@ const useStyles = makeStyles({
     color: '#FFFFFF',
   },
 
+  Main_MarginQuote: {
+    margin: '10% 10%',
+    backgroundColor: '#F9F9F9',
+  },
+
+  Main_QuoteIcon: {
+    height: 100,
+    width: 100,
+  },
+
+  Main_TypoQuote: {
+    fontWeight: 'bold',
+    opacity: 1,
+    color: '#29AE6D',
+  },
+
+  Main_QuoteContainer: {
+    paddingLeft: theme.spacing(3),
+  },
+
   Main_MarginFlyIt: {
     margin: '25px 0px',
   },
-});
+}));
 
 export default useStyles;
