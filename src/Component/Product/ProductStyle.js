@@ -8,26 +8,18 @@ const useStyles = makeStyles({
   },
   Title_CMS: {
     position: 'absolute',
-    fontSize: "60px",
-    font: 'Montserrat',
-    fontFamily: "Montserrat",
-    fontWeight: 'bold',
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    alignContent: 'center'
+    top: '50%',
+    left: '25%',
+    font:'normal normal bold 60px/73px Montserrat',
+    fontWeight: 'bold'
   },
   Title_CMS2: {
     position: 'absolute',
-    fontSize: "45px",
-    marginTop: '140px',
-    font: 'Montserrat',
-    fontFamily: "Montserrat",
-    fontWeight: 'semibold',
+    top: '65%',
+    left: '30%',
     textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    alignContent: 'center'
+    font:'normal normal 600 45px/55px Montserrat',
+    fontWeight: 'bold'
   },
   Title_CMS3: {
     // position: 'absolute',
@@ -73,7 +65,6 @@ const useStyles = makeStyles({
   Icon_Image: {
     width: "81px",
     height: "86px",
-    marginLeft:"190px"
   },
   Problem_Content: {
     color: "#707070",
@@ -116,8 +107,8 @@ const useStyles = makeStyles({
     height: "251px"
   },
   Icon_Image2: {
-    width: "50px",
-    height: "54px",
+    width: "75px",
+    height: "75px",
     alignItems:'center',
     alignContent:'center',
     textAlign:'center',
@@ -127,9 +118,9 @@ const useStyles = makeStyles({
     font: 'Montserrat',
     fontFamily:'Montserrat',
     color: '#707070',
-    fontSize: "30px",
-    textAlign: 'center'
-  }
+    fontSize: "25px",
+    textAlign: 'center',
+  },
 });
 
 export default useStyles;
