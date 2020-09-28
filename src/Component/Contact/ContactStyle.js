@@ -3,15 +3,27 @@ import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme();
 const useStyles = makeStyles({
-  Contact_Title: {
-    color: "#29AE6D",
-    font: 'Montserrat',
-    fontSize: '60px',
-    textAlign: 'center',
-    fontWeight: 'semibold',
-    // width: "288px"
+  Background_Image: {
+    backgroundSize: 'cover',
+    width: '1920px',
+    height: ' 601px',
   },
-  Grid_Image:{
+  Contact_Title: {
+    position: 'absolute',
+    top: '25%',
+    left: '43%',
+    color: '#29AE6D',
+    fontSize: '60px',
+    fontFamily: 'Montserrat',
+    fontWeight: 'semibold'
+  },
+  ReachUs_Title: {
+    font: 'normal normal 600 60px/73px Montserrat',
+    color: '#29ae6d',
+    textAlign: 'center',
+    
+  },
+  Grid_Image: {
     display: "flex",
     alignContent: "center",
     alignItems: "center"
@@ -19,7 +31,7 @@ const useStyles = makeStyles({
   Image_Contact: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems:'center',
+    alignItems: 'center',
     alignContent: "center"
   },
   Form_Contact: {
@@ -50,9 +62,9 @@ const useStyles = makeStyles({
     font: "Montserrat",
     fontSize: "24px"
   },
-  Footer_Contact:{
-    width:"1909px",
-    marginTop:"150px"
+  Footer_Contact: {
+    width: "1909px",
+    marginTop: "150px"
   },
 });
 
