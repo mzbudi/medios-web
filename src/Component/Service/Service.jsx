@@ -3,22 +3,23 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import CardMedia from '@material-ui/core/CardMedia';
 import HeaderImage from '../../Assets/Images/ImageService.png';
-// import responsive from '../../Assets/Images SVG/undraw_responsive_6c8s.svg';
-// import mobile from '../../Assets/Images SVG/undraw_mobile_devices_k1ok.svg';
-// import drone from '../../Assets/Images SVG/undraw_drone_surveillance_kjjg.svg';
-// import robot from '../../Assets/Images SVG/undraw_Artificial_intelligence_oyxx.svg';
-// import ai from '../../Assets/Images SVG/undraw_detailed_analysis_xn7y.svg';
+import { ReactComponent as Responsive } from '../../Assets/Images SVG/Responsive.svg';
+import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
+import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
+import { ReactComponent as Ai } from '../../Assets/Images SVG/AI.svg';
+import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
 import Header from '../Header';
 import Footer from '../Footer';
 import './service.css';
+import useStyles from './ServiceStyle';
 
 function Service() {
+  const classes = useStyles();
   const textStyle = {
     position: 'absolute',
     top: '25%',
-    left: '43%',
+    left: '45%',
     color: '#29AE6D',
     fontSize: '45px',
     fontFamily: 'Montserrat',
@@ -27,9 +28,18 @@ function Service() {
     <>
       <Grid container>
         <Grid item xs={12}>
-          <Header />
-          <img src={HeaderImage} alt="header_image" width="1440px" height="350px" />
-          <h1 style={textStyle}>Service</h1>
+          <div
+            style={{
+              backgroundImage: `url(${HeaderImage})`,
+              height: '350px',
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <Header />
+            <h1 style={textStyle}>Service</h1>
+          </div>
         </Grid>
         <Grid item xs={12}>
           <div id="title">Medios Service</div>
@@ -43,8 +53,10 @@ function Service() {
         </div>
         <Grid item xs={4}>
           <Card id="cardStyle">
-            <CardMedia />
             <CardContent>
+              <div className={classes.Cirlce} id="cirlce">
+                <Responsive className={classes.Main_ImageSection} />
+              </div>
               <p id="cardTittle">Web and Mobile Apps</p>
             </CardContent>
             <CardContent>
@@ -61,8 +73,10 @@ function Service() {
         </Grid>
         <Grid item xs={4}>
           <Card id="cardStyle">
-            <CardMedia />
             <CardContent>
+              <div className={classes.Cirlce} id="cirlce">
+                <Mobile className={classes.Main_ImageSection} />
+              </div>
               <p id="cardTittle">Desktop Software</p>
             </CardContent>
             <CardContent>
@@ -79,9 +93,10 @@ function Service() {
         </Grid>
         <Grid item xs={4}>
           <Card id="cardStyle">
-            <CardMedia />
             <CardContent>
-              {' '}
+              <div className={classes.Cirlce} id="cirlce">
+                <Drone className={classes.Main_ImageSection} />
+              </div>
               <p id="cardTittle"> Internet of Things </p>
             </CardContent>
             <CardContent>
@@ -97,9 +112,10 @@ function Service() {
         </Grid>
         <Grid item xs={6}>
           <Card id="cardStyle">
-            <CardMedia />
             <CardContent>
-              {' '}
+              <div className={classes.Cirlce} id="cirlce">
+                <Ai className={classes.Main_ImageSection} />
+              </div>
               <p id="cardTittle">Analysis, Processing, Classification Data </p>{' '}
             </CardContent>
             <CardContent>
@@ -116,9 +132,10 @@ function Service() {
         </Grid>
         <Grid item xs={6}>
           <Card id="cardStyle">
-            <CardMedia />
             <CardContent>
-              {' '}
+              <div className={classes.Cirlce} id="cirlce">
+                <Analyst className={classes.Main_ImageSection} />
+              </div>
               <p id="cardTittle">Artificial Intelligence & Machine Learning</p>
             </CardContent>
             <CardContent>
@@ -134,7 +151,9 @@ function Service() {
           </Card>
         </Grid>
       </Grid>
-      <Footer />
+      <div className={classes.Footer}>
+        <Footer />
+      </div>
     </>
   );
 }
