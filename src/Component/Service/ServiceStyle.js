@@ -32,6 +32,29 @@ const useStyles = makeStyles({
     fontSize: '45px',
     fontFamily: 'Montserrat',
   },
+  Card_Title: {
+    textAlign: 'center',
+    fontFamily: 'Montserrat',
+    color: '#29ae6d',
+    opacity: '1',
+    padding: '0px',
+    margin: '0px',
+    fontWeight: '600',
+    fontSize: 'large',
+  },
+  Card_Text: {
+    textAlign: 'center',
+    fontFamily: 'Montserrat',
+    color: '#707070',
+    opacity: '1',
+    margin: '0px',
+  },
+  Card_Style: {
+    boxShadow: '0 0 transparent;',
+  },
+  Button_Midle: {
+    textAlign: 'center',
+  },
 });
 
 export default useStyles;

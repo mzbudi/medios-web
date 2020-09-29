@@ -35,19 +35,19 @@ function Service() {
           </Grid>
         </div>
         <Grid item xs={4}>
-          <Card id="cardStyle">
+          <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
                 <Responsive className={classes.Main_ImageSection} />
               </div>
-              <p id="cardTittle">Web and Mobile Apps</p>
+              <p className={classes.Card_Title}>Web and Mobile Apps</p>
             </CardContent>
             <CardContent>
-              <p id="cardText">
+              <p className={classes.Card_Text}>
                 We develop responsive websites and Smartphone Applications along with good UI/UX designs.
               </p>
             </CardContent>
-            <div style={{ textAlign: 'center' }}>
+            <div className={classes.Button_Midle}>
               <Button size="small" variant="outlined">
                 Show More
               </Button>
@@ -55,19 +55,19 @@ function Service() {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card id="cardStyle">
+          <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
                 <Mobile className={classes.Main_ImageSection} />
               </div>
-              <p id="cardTittle">Desktop Software</p>
+              <p className={classes.Card_Title}>Desktop Software</p>
             </CardContent>
             <CardContent>
-              <p id="cardText">
+              <p className={classes.Card_Text}>
                 We develop software that have great UI/UX design that can run on a variety of your desktop OS.
               </p>
             </CardContent>
-            <div style={{ textAlign: 'center' }}>
+            <div className={classes.Button_Midle}>
               <Button size="small" variant="outlined">
                 Show More
               </Button>
@@ -75,18 +75,20 @@ function Service() {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card id="cardStyle">
+          <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
                 <Drone className={classes.Main_ImageSection} />
               </div>
-              <p id="cardTittle"> Internet of Things </p>
+              <p className={classes.Card_Title}> Internet of Things </p>
             </CardContent>
             <CardContent>
               {' '}
-              <p id="cardText">We create IoT solutions that can be used to support your business needs and demand.</p>
+              <p className={classes.Card_Text}>
+                We create IoT solutions that can be used to support your business needs and demand.
+              </p>
             </CardContent>
-            <div style={{ textAlign: 'center' }}>
+            <div className={classes.Button_Midle}>
               <Button size="small" variant="outlined">
                 Show More
               </Button>
@@ -94,19 +96,19 @@ function Service() {
           </Card>
         </Grid>
         <Grid item xs={6}>
-          <Card id="cardStyle">
+          <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
                 <Ai className={classes.Main_ImageSection} />
               </div>
-              <p id="cardTittle">Analysis, Processing, Classification Data </p>{' '}
+              <p className={classes.Card_Title}>Analysis, Processing, Classification Data </p>{' '}
             </CardContent>
             <CardContent>
-              <p id="cardText">
+              <p className={classes.Card_Text}>
                 We develop software that have great UI/UX design that can run on a variety of your desktop OS.
               </p>
             </CardContent>
-            <div style={{ textAlign: 'center' }}>
+            <div className={classes.Button_Midle}>
               <Button size="small" variant="outlined">
                 Show More
               </Button>
@@ -114,19 +116,19 @@ function Service() {
           </Card>
         </Grid>
         <Grid item xs={6}>
-          <Card id="cardStyle">
+          <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
                 <Analyst className={classes.Main_ImageSection} />
               </div>
-              <p id="cardTittle">Artificial Intelligence & Machine Learning</p>
+              <p className={classes.Card_Title}>Artificial Intelligence & Machine Learning</p>
             </CardContent>
             <CardContent>
-              <p id="cardText">
+              <p className={classes.Card_Text}>
                 We develop responsive websites and Smartphone Applications along with good UI/UX designs.
               </p>
             </CardContent>
-            <div style={{ textAlign: 'center' }}>
+            <div className={classes.Button_Midle}>
               <Button size="small" variant="outlined">
                 Show More
               </Button>

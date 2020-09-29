@@ -13,30 +13,6 @@
   text-align: -webkit-center;
 }
 
-#cardStyle {
-  box-shadow: 0 0 transparent;
-}
-
-#cardTittle {
-  text-align: center;
-  font-family: Montserrat;
-  letter-spacing: 0px;
-  color: #29ae6d;
-  opacity: 1;
-  padding: 0px;
-  margin: 0px;
-  font-weight: 600;
-  font-size: large;
-}
-
-#cardText {
-  text-align: center;
-  font-family: Montserrat;
-  letter-spacing: 0px;
-  color: #707070;
-  opacity: 1;
-  margin: 0px;
-}
 .MuiCardContent-root {
   padding: 16px;
   text-align: -webkit-center;
