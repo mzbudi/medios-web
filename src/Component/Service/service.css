@@ -13,24 +13,8 @@
   text-align: -webkit-center;
 }
 
-#box {
-  width: 150;
-  height: 150;
-  border-radius: 150 / 2;
-  border-width: 3;
-  border-color: 'red';
-}
-
-.Circle {
-  text-align: -webkit-center;
-  border-radius: '50%';
-  box-shadow: 5px 5px 15px #0000000d;
-  color: black;
-  border: solid;
-  background-color: black;
-}
 #cardStyle {
-  box-shadow: 0 0 white;
+  box-shadow: 0 0 transparent;
 }
 
 #cardTittle {
