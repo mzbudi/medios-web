@@ -7,7 +7,7 @@ import facebook from '../../Assets/Icon/facebook.svg';
 import instagram from '../../Assets/Icon/instagram (1).svg';
 import phone from '../../Assets/Icon/phone.svg';
 import mail from '../../Assets/Icon/mail.svg';
-import useStyles from './Footer.js';
+import useStyles from './FooterStyle.js';
 
 function Footer() {
   const classes = useStyles();
