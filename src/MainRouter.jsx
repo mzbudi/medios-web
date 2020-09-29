@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './Component/Main';
 import Contact from './Component/Contact';
 import Product from './Component/Product';
+import Project from './Component/Project';
 
 function MainRouter() {
   return (
@@ -16,6 +17,9 @@ function MainRouter() {
         </Route>
         <Route exact path="/product">
           <Product />
+        </Route>
+        <Route exact path="/project">
+          <Project />
         </Route>
       </Switch>
     </Router>
