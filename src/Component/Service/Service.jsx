@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import HeaderImage from '../../Assets/Images/ImageService.png';
 import { ReactComponent as Responsive } from '../../Assets/Images SVG/Responsive.svg';
 import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
 import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
@@ -16,29 +15,13 @@ import useStyles from './ServiceStyle';
 
 function Service() {
   const classes = useStyles();
-  const textStyle = {
-    position: 'absolute',
-    top: '25%',
-    left: '45%',
-    color: '#29AE6D',
-    fontSize: '45px',
-    fontFamily: 'Montserrat',
-  };
   return (
     <>
       <Grid container>
         <Grid item xs={12}>
-          <div
-            style={{
-              backgroundImage: `url(${HeaderImage})`,
-              height: '350px',
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
+          <div className={classes.HeaderImage}>
             <Header />
-            <h1 style={textStyle}>Service</h1>
+            <h1 className={classes.textStyle}>Service</h1>
           </div>
         </Grid>
         <Grid item xs={12}>
@@ -54,7 +37,7 @@ function Service() {
         <Grid item xs={4}>
           <Card id="cardStyle">
             <CardContent>
-              <div className={classes.Cirlce} id="cirlce">
+              <div className={classes.Cirlce}>
                 <Responsive className={classes.Main_ImageSection} />
               </div>
               <p id="cardTittle">Web and Mobile Apps</p>
@@ -74,7 +57,7 @@ function Service() {
         <Grid item xs={4}>
           <Card id="cardStyle">
             <CardContent>
-              <div className={classes.Cirlce} id="cirlce">
+              <div className={classes.Cirlce}>
                 <Mobile className={classes.Main_ImageSection} />
               </div>
               <p id="cardTittle">Desktop Software</p>
@@ -94,7 +77,7 @@ function Service() {
         <Grid item xs={4}>
           <Card id="cardStyle">
             <CardContent>
-              <div className={classes.Cirlce} id="cirlce">
+              <div className={classes.Cirlce}>
                 <Drone className={classes.Main_ImageSection} />
               </div>
               <p id="cardTittle"> Internet of Things </p>
@@ -113,7 +96,7 @@ function Service() {
         <Grid item xs={6}>
           <Card id="cardStyle">
             <CardContent>
-              <div className={classes.Cirlce} id="cirlce">
+              <div className={classes.Cirlce}>
                 <Ai className={classes.Main_ImageSection} />
               </div>
               <p id="cardTittle">Analysis, Processing, Classification Data </p>{' '}
@@ -133,7 +116,7 @@ function Service() {
         <Grid item xs={6}>
           <Card id="cardStyle">
             <CardContent>
-              <div className={classes.Cirlce} id="cirlce">
+              <div className={classes.Cirlce}>
                 <Analyst className={classes.Main_ImageSection} />
               </div>
               <p id="cardTittle">Artificial Intelligence & Machine Learning</p>
