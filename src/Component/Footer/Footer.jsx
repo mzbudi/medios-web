@@ -7,7 +7,7 @@ import facebook from '../../Assets/Icon/facebook.svg';
 import instagram from '../../Assets/Icon/instagram (1).svg';
 import phone from '../../Assets/Icon/phone.svg';
 import mail from '../../Assets/Icon/mail.svg';
-import useStyles from './Footer.js';
+import useStyles from './FooterStyle.js';
 
 function Footer() {
   const classes = useStyles();
@@ -16,10 +16,14 @@ function Footer() {
       <Grid container className={classes.Container}>
         <Grid item xs={4}>
           <img src={logo} alt="logo" className={classes.Logo_Medios} />
-          <p className={classes.Footer_Text}>
-            Specialized IT Solution in health service but not limited to them, for your instances & companies
+          <p className={classes.Footer_Text} style={{ marginBottom: '0px' }}>
+            Specialized IT Solution in health service
           </p>
-          <div>
+          <p className={classes.Footer_Text} style={{ marginTop: '0px' }}>
+            but not limited to them, for your instances & companies
+          </p>
+
+          <div style={{ marginBottom: '0px', marginTop: '30px' }}>
             <img src={instagram} alt="logo" className={classes.Social_Logo} />
             <img src={facebook} alt="logo" className={classes.Social_Logo} />
             <img src={linkedin} alt="logo" className={classes.Social_Logo} />
