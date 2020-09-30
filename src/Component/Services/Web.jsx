@@ -22,7 +22,7 @@ function Web() {
             </div>
           </div>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={4} className={classes.Grid_Margin}>
           <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
@@ -33,7 +33,7 @@ function Web() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6} className={classes.Grid_Margin}>
           <h1 className={classes.Title}>Feature</h1>
           <table>
             <tr>

@@ -44,7 +44,7 @@ const useStyles = makeStyles({
   },
 
   textStyle: {
-    width: '100%',
+    width: '99%',
     position: 'absolute',
     top: '15%',
     color: '#29AE6D',
@@ -83,6 +83,9 @@ const useStyles = makeStyles({
     marginRight: '50px',
     width: '24px',
     height: '24px',
+  },
+  Grid_Margin: {
+    marginTop: '100px',
   },
 });
 
