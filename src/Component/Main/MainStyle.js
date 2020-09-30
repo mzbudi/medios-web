@@ -2,6 +2,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    height: '100%',
+  },
   Main_OpeningText: {
     textAlign: 'center',
     font: 'normal normal 600 40px/49px Montserrat',
@@ -31,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   Main_WhyChooseUs: {
     padding: '100px',
     backgroundImage: `url(${ChooseUs})`,
-    margin: '120px 0px'
+    margin: '120px 0px',
   },
 
   Main_TextWhyChooseUsTitle: {
@@ -95,6 +101,50 @@ const useStyles = makeStyles((theme) => ({
 
   Main_MarginFlyIt: {
     margin: '25px 0px',
+  },
+
+  Main_CardImage: {
+    width: '100%',
+    height: 398,
+    maxHeight: 398,
+  },
+
+  Main_IconSize: {
+    height: 70,
+    width: 70,
+  },
+
+  Main_TextOurProduct: {
+    textAlign: 'center',
+    font: 'normal normal 600 40px/49px Montserrat',
+    letterSpacing: 0,
+    color: '#383838',
+    opacity: 1,
+  },
+
+  Main_MarginOurProduct: {
+    marginTop: 100,
+  },
+
+  Main_CardTitle: {
+    textAlign: 'left',
+    font: 'normal normal bold 25px/24px Montserrat',
+    letterSpacing: 0,
+    color: '#29AE6D',
+  },
+
+  Main_BtnShowMore: {
+    background: 'transparent linear-gradient(107deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
+    boxShadow: '5px 15px 30px #3939391A',
+    borderRadius: '10px',
+    opacity: 1,
+    fontWeight: 'bold',
+    letterSpacing: 0,
+    color: '#FFFFFF',
+  },
+
+  Main_FullHeightCards: {
+    height: '100%',
   },
 }));
 

@@ -14,8 +14,11 @@ import {
   FormControl,
   Input,
   InputLabel,
+  IconButton,
 } from '@material-ui/core';
 // import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import useStyles from './MainStyle';
 import Header from '../Header';
 import Footer from '../Footer';
@@ -28,12 +31,16 @@ import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
 import { ReactComponent as Affordable } from '../../Assets/Icon/Affordable.svg';
 import { ReactComponent as FastResponse } from '../../Assets/Icon/Fast.svg';
 import { ReactComponent as GoodQuality } from '../../Assets/Icon/GoodQuality.svg';
+// import { ReactComponent as LeftBtn } from '../../Assets/Icon/chevron-left.svg';
+// import { ReactComponent as RightBtn } from '../../Assets/Icon/chevron-right.svg';
 import { ReactComponent as Ontime } from '../../Assets/Icon/Ontime.svg';
 import Partner1 from '../../Assets/Images/Partner1.png';
 import Partner2 from '../../Assets/Images/Partner2.png';
 import Partner3 from '../../Assets/Images/Partner3.png';
 import Partner4 from '../../Assets/Images/Partner4.png';
 import Partner5 from '../../Assets/Images/Partner5.png';
+import CMS from '../../Assets/Images/CMS.png';
+import Blank from '../../Assets/Images/Blank.png';
 import Quote from '../../Assets/Images/quote.png';
 
 function Main() {
@@ -128,28 +135,72 @@ function Main() {
   );
 
   const OurProduct = () => (
-    <Card>
-      <CardActionArea>
-        <CardMedia image="../../Assets/Images SVG/Responsive.svg" title="Contemplative Reptile" />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents
-            except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Show more
-        </Button>
-      </CardActions>
-    </Card>
+    <Grid container spacing={4} className={classes.Main_MarginOurProduct}>
+      <Grid item lg={12}>
+        <Typography align="center" className={classes.Main_TextOurProduct}>
+          Our Product
+        </Typography>
+      </Grid>
+      <Grid item container spacing={6}>
+        <Grid item container lg={2} direction="column" alignItems="center" justify="center">
+          <IconButton aria-label="Left">
+            <ChevronLeftIcon className={classes.Main_IconSize} />
+          </IconButton>
+        </Grid>
+        <Grid item container direction="column" lg={4}>
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia image={CMS} title="Contemplative Reptile" className={classes.Main_CardImage} />
+              <CardContent>
+                <Typography gutterBottom className={classes.Main_CardTitle}>
+                  Medios CMS
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Web application to help doctors to work in many hospitals and clinics easily, and also connecting and
+                  controls patient remotely
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Grid container justify="flex-end" alignItems="flex-end">
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                  Show more
+                </Button>
+              </Grid>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item container direction="column" lg={4}>
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia image={Blank} title="Contemplative Reptile" className={classes.Main_CardImage} />
+              <CardContent>
+                <Typography gutterBottom className={classes.Main_CardTitle}>
+                  Medios DSS-CovidNet
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  We joined collaborative research between several hospitals in Indonesia and department of Physics,
+                  Universitas Indonesia to solve that problem by develop Deep Learning model and web apps to detect
+                  Covid-19 Based on Chest X-Ray Image.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Grid container justify="flex-end" alignItems="flex-end">
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                  Show more
+                </Button>
+              </Grid>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item container lg={2} direction="column" alignItems="center" justify="center">
+          <IconButton aria-label="Right">
+            <ChevronRightIcon className={classes.Main_IconSize} />
+          </IconButton>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 
   const WhyChooseUs = () => (
@@ -350,7 +401,7 @@ function Main() {
       <Container>
         <OpeningText />
         <ImageSection />
-        {/* <OurProduct /> */}
+        <OurProduct />
       </Container>
       <WhyChooseUs />
       <Container>
