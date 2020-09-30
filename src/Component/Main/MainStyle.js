@@ -17,8 +17,9 @@ const useStyles = makeStyles((theme) => ({
     opacity: 1,
   },
   Main_ImageSection: {
-    width: 350,
-    height: 308.39,
+    width: '100%',
+    height: '100%',
+    maxHeight: 249.38,
   },
 
   Main_TextImageSection: {
@@ -30,6 +31,11 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: 700,
     position: 'absolute',
+  },
+
+  Main_ImgChooseUs: {
+    width: '100%',
+    height: 400,
   },
 
   Main_PartnerImg: {

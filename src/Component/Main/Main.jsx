@@ -25,7 +25,7 @@ import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
 import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
 import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
 import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
-// import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
+import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 import Partner1 from '../../Assets/Images/Partner1.png';
 import Partner2 from '../../Assets/Images/Partner2.png';
 import Partner3 from '../../Assets/Images/Partner3.png';
@@ -149,9 +149,48 @@ function Main() {
     </Card>
   );
 
-  // const WhyChooseUs = () => (
-  //   <div style={{ backgroundImage: '../../Assets/Images/ChooseUs.jpg', width: '100%', height: 800 }} />
-  // );
+  const WhyChooseUs = () => (
+    <div>
+      <img src={ChooseUs} alt="ChooseUs" className={classes.Main_ImgChooseUs} />
+      <Grid container>
+        <Grid item>
+          <Typography align="center" variant="h5" style={{ fontWeight: 'bold' }}>
+            Why Choose Us?
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Typography align="center" variant="subtitle2">
+            We provide comprehensive & complete integrated IT solution to design, applicate, & maintenance an IT product
+            for your business purpose, but not limited to, micro and macro
+          </Typography>
+        </Grid>
+        <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }} spacing={2}>
+          <Grid container item direction="column" lg={2} />
+          <Grid container item direction="column" lg={2}>
+            <Grid item>
+              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+            </Grid>
+          </Grid>
+          <Grid container item direction="column" lg={2}>
+            <Grid item>
+              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+            </Grid>
+          </Grid>
+          <Grid container item direction="column" lg={2}>
+            <Grid item>
+              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+            </Grid>
+          </Grid>
+          <Grid container item direction="column" lg={2}>
+            <Grid item>
+              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+            </Grid>
+          </Grid>
+          <Grid container item direction="column" lg={2} />
+        </Grid>
+      </Grid>
+    </div>
+  );
 
   const PersuasiveText = () => (
     <div className={classes.Main_MarginQuote}>
@@ -286,7 +325,7 @@ function Main() {
         <OpeningText />
         <ImageSection />
         {/* <OurProduct /> */}
-        {/* <WhyChooseUs /> */}
+        <WhyChooseUs />
         <Partner />
         <PersuasiveText />
         <ReachUs />
