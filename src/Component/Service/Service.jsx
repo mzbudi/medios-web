@@ -21,7 +21,9 @@ function Service() {
         <Grid item xs={12}>
           <div className={classes.HeaderImage}>
             <Header />
-            <h1 className={classes.textStyle}>Service</h1>
+            <div className={classes.textStyle}>
+              <h1>Service</h1>
+            </div>
           </div>
         </Grid>
         <Grid item xs={12}>
@@ -48,9 +50,11 @@ function Service() {
               </p>
             </CardContent>
             <div className={classes.Button_Midle}>
-              <Button size="small" variant="outlined">
-                Show More
-              </Button>
+              <a className={classes.Button_Link} href="/service/web">
+                <Button className={classes.Button_Text} size="small" variant="outlined">
+                  Show More
+                </Button>
+              </a>
             </div>
           </Card>
         </Grid>
@@ -68,9 +72,11 @@ function Service() {
               </p>
             </CardContent>
             <div className={classes.Button_Midle}>
-              <Button size="small" variant="outlined">
-                Show More
-              </Button>
+              <a className={classes.Button_Link} href="/service/desktop">
+                <Button className={classes.Button_Text} size="small" variant="outlined">
+                  Show More
+                </Button>
+              </a>
             </div>
           </Card>
         </Grid>
@@ -83,15 +89,16 @@ function Service() {
               <p className={classes.Card_Title}> Internet of Things </p>
             </CardContent>
             <CardContent>
-              {' '}
               <p className={classes.Card_Text}>
                 We create IoT solutions that can be used to support your business needs and demand.
               </p>
             </CardContent>
             <div className={classes.Button_Midle}>
-              <Button size="small" variant="outlined">
-                Show More
-              </Button>
+              <a className={classes.Button_Link} href="/service/iot">
+                <Button className={classes.Button_Text} size="small" variant="outlined">
+                  Show More
+                </Button>
+              </a>
             </div>
           </Card>
         </Grid>
@@ -109,9 +116,11 @@ function Service() {
               </p>
             </CardContent>
             <div className={classes.Button_Midle}>
-              <Button size="small" variant="outlined">
-                Show More
-              </Button>
+              <a className={classes.Button_Link} href="/service/analysis">
+                <Button className={classes.Button_Text} size="small" variant="outlined">
+                  Show More
+                </Button>
+              </a>
             </div>
           </Card>
         </Grid>
@@ -129,9 +138,11 @@ function Service() {
               </p>
             </CardContent>
             <div className={classes.Button_Midle}>
-              <Button size="small" variant="outlined">
-                Show More
-              </Button>
+              <a className={classes.Button_Link} href="/service/ai">
+                <Button className={classes.Button_Text} size="small" variant="outlined">
+                  Show More
+                </Button>
+              </a>
             </div>
           </Card>
         </Grid>

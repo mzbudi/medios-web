@@ -25,26 +25,24 @@ const useStyles = makeStyles({
     backgroundRepeat: 'no-repeat',
   },
   textStyle: {
+    width: '100%',
     position: 'absolute',
-    top: '25%',
-    left: '45%',
+    top: '20%',
     color: '#29AE6D',
-    fontSize: '45px',
+    fontSize: '30px',
     fontFamily: 'Montserrat',
+    textAlign: 'center',
   },
   Card_Title: {
+    font: ' normal normal 600 30px/37px Montserrat',
     textAlign: 'center',
-    fontFamily: 'Montserrat',
     color: '#29ae6d',
     opacity: '1',
     padding: '0px',
     margin: '0px',
-    fontWeight: '600',
-    fontSize: 'large',
   },
   Card_Text: {
-    textAlign: 'center',
-    fontFamily: 'Montserrat',
+    font: 'normal normal normal 25px/30px Montserrat',
     color: '#707070',
     opacity: '1',
     margin: '0px',
@@ -54,6 +52,14 @@ const useStyles = makeStyles({
   },
   Button_Midle: {
     textAlign: 'center',
+  },
+  Button_Link: {
+    textDecoration: 'none',
+  },
+  Button_Text: {
+    borderColor: '#29AE6D',
+    font: 'normal normal bold 20px/24px Montserrat',
+    color: '#29AE6D',
   },
 });
 
