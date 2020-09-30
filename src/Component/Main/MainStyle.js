@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 
 const useStyles = makeStyles((theme) => ({
   Main_OpeningText: {
@@ -28,14 +29,29 @@ const useStyles = makeStyles((theme) => ({
   },
 
   Main_WhyChooseUs: {
-    width: '100%',
-    height: 700,
-    position: 'absolute',
+    padding: '100px',
+    backgroundImage: `url(${ChooseUs})`,
+    margin: '120px 0px'
   },
 
-  Main_ImgChooseUs: {
-    width: '100%',
-    height: 400,
+  Main_TextWhyChooseUsTitle: {
+    textAlign: 'center',
+    font: 'normal normal 600 50px/40px Montserrat;',
+    letterSpacing: 0,
+    color: '#FFFFFF',
+    opacity: 1,
+  },
+  Main_TextWhyChooseUsSubtitle: {
+    textAlign: 'left',
+    font: 'normal normal normal 30px/37px Montserrat',
+    letterSpacing: 0,
+    color: '#FFFFFF',
+    opacity: 1,
+  },
+
+  Main_TextWhyChooseUsBody: {
+    color: '#FFFFFF',
+    font: 'normal normal normal 20px/24px Montserrat',
   },
 
   Main_PartnerImg: {

@@ -25,7 +25,10 @@ import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
 import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
 import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
 import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
-import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
+import { ReactComponent as Affordable } from '../../Assets/Icon/Affordable.svg';
+import { ReactComponent as FastResponse } from '../../Assets/Icon/Fast.svg';
+import { ReactComponent as GoodQuality } from '../../Assets/Icon/GoodQuality.svg';
+import { ReactComponent as Ontime } from '../../Assets/Icon/Ontime.svg';
 import Partner1 from '../../Assets/Images/Partner1.png';
 import Partner2 from '../../Assets/Images/Partner2.png';
 import Partner3 from '../../Assets/Images/Partner3.png';
@@ -150,40 +153,63 @@ function Main() {
   );
 
   const WhyChooseUs = () => (
-    <div>
-      <img src={ChooseUs} alt="ChooseUs" className={classes.Main_ImgChooseUs} />
-      <Grid container>
-        <Grid item>
-          <Typography align="center" variant="h5" style={{ fontWeight: 'bold' }}>
+    <div className={classes.Main_WhyChooseUs}>
+      <Grid container spacing={8}>
+        <Grid item lg={12}>
+          <Typography align="center" className={classes.Main_TextWhyChooseUsTitle}>
             Why Choose Us?
           </Typography>
         </Grid>
-        <Grid item>
-          <Typography align="center" variant="subtitle2">
-            We provide comprehensive & complete integrated IT solution to design, applicate, & maintenance an IT product
-            for your business purpose, but not limited to, micro and macro
-          </Typography>
+        <Grid item container direction="row">
+          <Grid item lg={2} />
+          <Grid item lg={8}>
+            <Typography className={classes.Main_TextWhyChooseUsSubtitle} align="center">
+              We provide comprehensive & complete integrated IT solution to design, applicate, & maintenance an IT
+              product for your business purpose, but not limited to, micro and macro
+            </Typography>
+          </Grid>
+          <Grid item lg={2} />
         </Grid>
-        <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }} spacing={2}>
+        <Grid item container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }} spacing={2}>
           <Grid container item direction="column" lg={2} />
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+              <Affordable />
+            </Grid>
+            <Grid item>
+              <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
+                AFFORDABLE
+              </Typography>
             </Grid>
           </Grid>
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+              <FastResponse />
+            </Grid>
+            <Grid item>
+              <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
+                FAST RESPONSE
+              </Typography>
             </Grid>
           </Grid>
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+              <GoodQuality />
+            </Grid>
+            <Grid item>
+              <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
+                GOOD QUALITY
+              </Typography>
             </Grid>
           </Grid>
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+              <Ontime />
+            </Grid>
+            <Grid item>
+              <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
+                ON TIME
+              </Typography>
             </Grid>
           </Grid>
           <Grid container item direction="column" lg={2} />
@@ -325,7 +351,9 @@ function Main() {
         <OpeningText />
         <ImageSection />
         {/* <OurProduct /> */}
-        <WhyChooseUs />
+      </Container>
+      <WhyChooseUs />
+      <Container>
         <Partner />
         <PersuasiveText />
         <ReachUs />
