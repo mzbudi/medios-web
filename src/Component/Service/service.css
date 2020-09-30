@@ -1,13 +1,14 @@
 #title {
   margin-top: 50px;
-  font: normal normal 600 35px/40px Montserrat;
+  font: normal normal 600 50px/61px Montserrat;
   color: #29ae6d;
   text-align: -webkit-center;
+  margin-bottom: 50px;
 }
 
 #title-extra {
   margin-bottom: 50px;
-  font: normal normal 20px/24px Montserrat;
+  font: normal normal normal 20px/24px Montserrat;
   color: #29ae6d;
   text-align: center;
   text-align: -webkit-center;
