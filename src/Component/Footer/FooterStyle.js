@@ -7,8 +7,7 @@ const useStyles = makeStyles({
     backgroundColor: '#F2FFF9',
     margin: '0px',
     justifyContent: 'space-between',
-    paddingLeft: '30px',
-    paddingRight: '30px',
+    padding: '30px',
   },
   Container_Load: {
     margin: '10px',
@@ -20,7 +19,7 @@ const useStyles = makeStyles({
     marginBottom: '0px',
   },
   Footer_Title_Contact: {
-    textAlign: 'right',
+    paddingLeft: '90px',
     font: 'normal normal bold 35px/43px Montserrat',
     color: ' #707070',
     marginBottom: '0px',
@@ -48,19 +47,24 @@ const useStyles = makeStyles({
   },
   Footer_Text_Extra: {
     textAlign: 'left',
-    fontSize: '15px',
+    font: 'normal normal normal 18px/22px Montserrat',
     letterSpacing: '0px',
-    color: ' #707070',
+    color: '#8C8C8C',
     opacity: '1',
-    fontWeight: 'lighter',
   },
   Contact_Logo: {
     height: '20',
     width: '22',
   },
+  Footer_Text_Phone: {
+    textAlign: 'left',
+    font: 'normal normal normal 30px/37px Montserrat',
+    color: '#707070',
+    textDecoration: 'none',
+  },
   Social_Logo: {
-    height: '50',
-    width: '22',
+    height: '20px',
+    width: '20px',
   },
   Logo_Medios: {
     height: '72px',

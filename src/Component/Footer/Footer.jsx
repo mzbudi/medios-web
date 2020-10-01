@@ -68,11 +68,11 @@ function Footer() {
                 <img src={phone} alt="logo" className={classes.Contact_Logo} />
               </td>
               <td>
-                <p className={classes.Footer_Text}>+62 xxx-xxxx-xxxx</p>
+                <p className={classes.Footer_Text_Phone}>+62 xxx-xxxx-xxxx</p>
               </td>
             </tr>
             <tr>
-              <td>
+              <td className={classes.Contact_Logo_Padding}>
                 <img src={mail} alt="logo" className={classes.Contact_Logo} />
               </td>
               <td>
