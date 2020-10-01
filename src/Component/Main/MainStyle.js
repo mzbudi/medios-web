@@ -7,6 +7,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'space-between',
     height: '100%',
+    boxShadow: '5px 15px 30px #3939390D',
+    opacity: 1,
   },
   Main_OpeningText: {
     textAlign: 'center',
@@ -145,6 +147,22 @@ const useStyles = makeStyles((theme) => ({
 
   Main_FullHeightCards: {
     height: '100%',
+  },
+
+  Main_CardShadow: {
+    boxShadow: '5px 15px 30px #3939390D',
+    opacity: 1,
+  },
+
+  Main_QuoteImg: {
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
+  },
+
+  Main_CardBtnFlexer: {
+    marginBottom: '5%',
+    marginRight: '5%',
   },
 }));
 

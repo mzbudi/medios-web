@@ -1,6 +1,4 @@
 import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import { Link } from 'react-router-dom';
 import {
   Container,
   Grid,
@@ -16,7 +14,6 @@ import {
   InputLabel,
   IconButton,
 } from '@material-ui/core';
-// import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import useStyles from './MainStyle';
@@ -31,8 +28,6 @@ import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
 import { ReactComponent as Affordable } from '../../Assets/Icon/Affordable.svg';
 import { ReactComponent as FastResponse } from '../../Assets/Icon/Fast.svg';
 import { ReactComponent as GoodQuality } from '../../Assets/Icon/GoodQuality.svg';
-// import { ReactComponent as LeftBtn } from '../../Assets/Icon/chevron-left.svg';
-// import { ReactComponent as RightBtn } from '../../Assets/Icon/chevron-right.svg';
 import { ReactComponent as Ontime } from '../../Assets/Icon/Ontime.svg';
 import Partner1 from '../../Assets/Images/Partner1.png';
 import Partner2 from '../../Assets/Images/Partner2.png';
@@ -155,7 +150,7 @@ function Main() {
                 <Typography gutterBottom className={classes.Main_CardTitle}>
                   Medios CMS
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" color="textSecondary" component="p" align="left">
                   Web application to help doctors to work in many hospitals and clinics easily, and also connecting and
                   controls patient remotely
                 </Typography>
@@ -163,9 +158,11 @@ function Main() {
             </CardActionArea>
             <CardActions>
               <Grid container justify="flex-end" alignItems="flex-end">
-                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
-                  Show more
-                </Button>
+                <div className={classes.Main_CardBtnFlexer}>
+                  <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                    Show more
+                  </Button>
+                </div>
               </Grid>
             </CardActions>
           </Card>
@@ -178,7 +175,7 @@ function Main() {
                 <Typography gutterBottom className={classes.Main_CardTitle}>
                   Medios DSS-CovidNet
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" color="textSecondary" component="p" align="left">
                   We joined collaborative research between several hospitals in Indonesia and department of Physics,
                   Universitas Indonesia to solve that problem by develop Deep Learning model and web apps to detect
                   Covid-19 Based on Chest X-Ray Image.
@@ -187,9 +184,11 @@ function Main() {
             </CardActionArea>
             <CardActions>
               <Grid container justify="flex-end" alignItems="flex-end">
-                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
-                  Show more
-                </Button>
+                <div className={classes.Main_CardBtnFlexer}>
+                  <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                    Show more
+                  </Button>
+                </div>
               </Grid>
             </CardActions>
           </Card>
@@ -272,19 +271,19 @@ function Main() {
   const PersuasiveText = () => (
     <div className={classes.Main_MarginQuote}>
       <Grid container className={classes.Main_QuoteContainer}>
-        <Grid item container lg={7} direction="column">
+        <Grid item container xs={12} md={12} lg={7} xl={7} direction="column">
           <Grid item>
             <Logo className={classes.Main_QuoteIcon} />
           </Grid>
-          <Grid item>
+          <Grid>
             <Typography align="left" variant="body1" className={classes.Main_TypoQuote}>
               What are you waiting for, change your Business so it can survive well in this new era, let's adapt it to
               IT with us and we see your comany will continue to shine
             </Typography>
           </Grid>
         </Grid>
-        <Grid item lg={5} style={{ textAlign: '-webkit-right' }}>
-          <img src={Quote} alt="Logo" style={{ width: 400 }} />
+        <Grid item xs={0} md={0} style={{ textAlign: '-webkit-right' }}>
+          <img src={Quote} alt="Logo" style={{ width: 400 }} className={classes.Main_QuoteImg} />
         </Grid>
       </Grid>
     </div>
@@ -344,7 +343,7 @@ function Main() {
             </Grid>
           </Grid>
           <Grid container spacing={10} justify="center">
-            <Grid item lg={6}>
+            <Grid item lg={6} xs={12} sm={12} md={6} xl={6}>
               <FormControl fullWidth>
                 <InputLabel htmlFor="name">Your Name or Company</InputLabel>
                 <Input
@@ -355,7 +354,7 @@ function Main() {
                 />
               </FormControl>
             </Grid>
-            <Grid item lg={6}>
+            <Grid item lg={6} xs={12} sm={12} md={6} xl={6}>
               <FormControl fullWidth>
                 <InputLabel htmlFor="email">Your Email</InputLabel>
                 <Input
@@ -369,7 +368,7 @@ function Main() {
             </Grid>
           </Grid>
           <Grid container spacing={10}>
-            <Grid item lg={12}>
+            <Grid item lg={12} xs={12} sm={12} md={12} xl={12}>
               <FormControl fullWidth>
                 <InputLabel htmlFor="msg">Message</InputLabel>
                 <Input
