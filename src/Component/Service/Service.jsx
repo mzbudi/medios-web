@@ -86,9 +86,9 @@ function Service() {
               </CardContent>
               <CardContent>
                 <p className={classes.Card_Text}>
-                  We create IoT solutions that can be used to support your business needs.
+                  We create IoT solutions that can be used to support your business needs
                 </p>
-                <p className={classes.Card_Text}>and demand</p>
+                <p className={classes.Card_Text}>and demand.</p>
               </CardContent>
               <div className={classes.Button_Midle}>
                 <a className={classes.Button_Link} href="/service/iot">

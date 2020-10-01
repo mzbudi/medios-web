@@ -60,6 +60,9 @@ const useStyles = makeStyles({
     borderColor: '#29AE6D',
     font: 'normal normal bold 20px/24px Montserrat',
     color: '#29AE6D',
+    width: '183px',
+    height: '60px',
+    borderRadius: '10px',
   },
   Main_TextService: {
     font: 'normal normal 600 60px/73px Montserrat',
