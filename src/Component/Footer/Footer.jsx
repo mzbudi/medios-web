@@ -60,7 +60,7 @@ function Footer() {
           </table>
         </Grid>
         <Grid item xs={4}>
-          <p className={classes.Footer_Title}>Contact Us</p>
+          <p className={classes.Footer_Title_Contact}>Contact Us</p>
           <br />
           <table>
             <tr>
@@ -68,15 +68,16 @@ function Footer() {
                 <img src={phone} alt="logo" className={classes.Contact_Logo} />
               </td>
               <td>
-                <p className={classes.Footer_Text}>+62 xxx-xxxx-xxxx</p>
+                <p className={classes.Footer_Text_Phone}>+62 xxx-xxxx-xxxx</p>
               </td>
             </tr>
             <tr>
-              <td>
+              <td className={classes.Contact_Logo_Padding}>
                 <img src={mail} alt="logo" className={classes.Contact_Logo} />
               </td>
               <td>
-                <p className={classes.Footer_Text}>contactmedios.com 24 X 7 online support</p>
+                <p className={classes.Footer_Text}>contactmedios.com </p>
+                <p className={classes.Footer_Text_Contact}>24 X 7 online support</p>
               </td>
             </tr>
           </table>

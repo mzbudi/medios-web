@@ -1,7 +1,5 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import { Typography, Card, Grid, CardContent } from '@material-ui/core/';
 import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
 import ellipse from '../../Assets/Icon/Ellipse.svg';
 import Header from '../Header';
@@ -14,16 +12,18 @@ function Analysis() {
   return (
     <>
       <Grid container>
-        <Grid item xs={12}>
+        <Grid item xs={12} lg={12} md={12}>
           <div className={classes.HeaderImage}>
             <Header />
-            <div className={classes.textStyle}>
-              <h1>Analysis, Processing </h1>
-              <h1> Classification Data</h1>
-            </div>
+            <Typography align="center" className={classes.Main_Text}>
+              Analysis, Processing
+            </Typography>
+            <Typography align="center" className={classes.Main_Text}>
+              Classification Data
+            </Typography>
           </div>
         </Grid>
-        <Grid item xs={4} className={classes.Grid_Margin}>
+        <Grid item xs={12} lg={4} md={4} className={classes.Grid_Margin}>
           <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
@@ -36,7 +36,7 @@ function Analysis() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={6} className={classes.Grid_Margin}>
+        <Grid item xs={12} lg={6} md={6} className={classes.Grid_Margin}>
           <h1 className={classes.Title}>Feature</h1>
           <table>
             <tr>

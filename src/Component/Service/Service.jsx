@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Card, CardContent, Button, Container } from '@material-ui/core';
+import { Grid, Card, CardContent, Button, Container, Typography } from '@material-ui/core';
 import { ReactComponent as Responsive } from '../../Assets/Images SVG/Responsive.svg';
 import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
 import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
@@ -17,9 +17,9 @@ function Service() {
     <>
       <div className={classes.HeaderImage}>
         <Header />
-        <div className={classes.textStyle}>
-          <h1>Service</h1>
-        </div>
+        <Typography align="center" className={classes.Main_TextService}>
+          Service
+        </Typography>
       </div>
       <Container>
         <Grid container>
@@ -95,8 +95,9 @@ function Service() {
               </CardContent>
               <CardContent>
                 <p className={classes.Card_Text}>
-                  We create IoT solutions that can be used to support your business needs and demand.
+                  We create IoT solutions that can be used to support your business needs
                 </p>
+                <p className={classes.Card_Text}>and demand.</p>
               </CardContent>
               <div className={classes.Button_Midle}>
                 <Button

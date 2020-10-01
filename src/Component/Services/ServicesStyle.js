@@ -37,7 +37,7 @@ const useStyles = makeStyles({
   },
   HeaderImage: {
     backgroundImage: `url(${HeaderImage})`,
-    height: '350px',
+    padding: '100px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -86,6 +86,10 @@ const useStyles = makeStyles({
   },
   Grid_Margin: {
     marginTop: '100px',
+  },
+  Main_Text: {
+    font: 'normal normal 600 60px/73px Montserrat',
+    color: '#29AE6D',
   },
 });
 
