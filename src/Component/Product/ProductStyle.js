@@ -4,21 +4,23 @@ import { createMuiTheme } from '@material-ui/core';
 const theme = createMuiTheme();
 const useStyles = makeStyles({
   Image_Header: {
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    width: '100%',
+    height: '100%'
   },
   Title_CMS: {
     position: 'absolute',
     top: '50%',
-    left: '25%',
-    font:'normal normal bold 60px/73px Montserrat',
+    left: '17%',
+    font: 'normal normal bold 60px/73px Montserrat',
     fontWeight: 'bold'
   },
   Title_CMS2: {
     position: 'absolute',
     top: '65%',
-    left: '30%',
+    left: '24%',
     textAlign: 'center',
-    font:'normal normal 600 45px/55px Montserrat',
+    font: 'normal normal 600 45px/55px Montserrat',
     fontWeight: 'bold'
   },
   Title_CMS3: {
@@ -79,27 +81,27 @@ const useStyles = makeStyles({
   Solution_Content: {
     font: 'Montserrat',
     fontFamily: 'Montserrat',
-    fontSize:'40px',
-    textAlign:'center'
+    fontSize: '40px',
+    textAlign: 'center'
   },
-  Solution_Content2:{
+  Solution_Content2: {
     font: 'Montserrat',
     fontFamily: 'Montserrat',
-    fontSize:'28px',
-    textAlign:'left',
+    fontSize: '28px',
+    textAlign: 'left',
     margin: "100px"
   },
   Image_CMS: {
     width: "674px",
     height: "426px",
-    margin:"50px"
+    margin: "50px"
   },
-  Benefit:{
+  Benefit: {
     marginTop: "50px",
     marginLeft: "400px",
     textAlign: 'center',
-    alignContent:'center',
-    alignItems:'center',
+    alignContent: 'center',
+    alignItems: 'center',
   },
   Container_Benefit: {
     backgroundColor: "#F2FFF9",
@@ -109,17 +111,21 @@ const useStyles = makeStyles({
   Icon_Image2: {
     width: "75px",
     height: "75px",
-    alignItems:'center',
-    alignContent:'center',
-    textAlign:'center',
-    marginTop:'30px'
+    alignItems: 'center',
+    alignContent: 'center',
+    textAlign: 'center',
+    marginTop: '30px'
   },
-  Benefit_Content:{
+  Benefit_Content: {
     font: 'Montserrat',
-    fontFamily:'Montserrat',
+    fontFamily: 'Montserrat',
     color: '#707070',
     fontSize: "25px",
     textAlign: 'center',
+  },
+  Footer: {
+    width: '100%',
+    marginTop: '200px',
   },
 });
 

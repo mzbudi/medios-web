@@ -122,36 +122,11 @@ function Product() {
                 </Grid>
               </Grid>
               <Grid lg={1} item container/>
-              
             </Grid>
-            {/* <Grid container alignItems="center" alignContent="center" textAlign="center" justify="center">
-              <Grid xs={1} />
-              <Grid xs={2}>
-                <img src={User} className={classes.Icon_Image2} alt="User" />
-                <p className={classes.Benefit_Content}> USER FRIENDLY  </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Database} className={classes.Icon_Image2} alt="Easy" />
-                <p className={classes.Benefit_Content}> EASY MANAGE  </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Link} className={classes.Icon_Image2} alt="Integrated" />
-                <p className={classes.Benefit_Content}> INTEGRATED TO DOCTOR </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Clock} className={classes.Icon_Image2} alt="Time" />
-                <p className={classes.Benefit_Content}> SAVE TIME </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Lock} className={classes.Icon_Image2} alt="Secure" />
-                <p className={classes.Benefit_Content}> SECURE  </p>
-              </Grid>
-              <Grid xs={1} />
-            </Grid> */}
           </Paper>
         </div>
       </div>
-      <div style={{ marginTop: "300px" }}>
+      <div className={classes.Footer}>
         <Footer />
       </div>
     </>
