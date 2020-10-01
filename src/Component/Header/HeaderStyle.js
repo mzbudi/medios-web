@@ -64,6 +64,9 @@ const useStyles = makeStyles({
       display: 'none',
     },
   },
+  Header_BtnResponsive: {
+    '&:hover': { backgroundColor: 'transparent' },
+  },
 });
 
 export default useStyles;

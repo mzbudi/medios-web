@@ -40,16 +40,16 @@ function Header() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem component={Link} to="/about">
-        <Button color="inherit">About Medios</Button>
+        <Button className={classes.Header_BtnResponsive}>About Medios</Button>
       </MenuItem>
       <MenuItem component={Link} to="/product">
-        <Button>Product</Button>
+        <Button className={classes.Header_BtnResponsive}>Product</Button>
       </MenuItem>
       <MenuItem component={Link} to="/service">
-        <Button>Service</Button>
+        <Button className={classes.Header_BtnResponsive}>Service</Button>
       </MenuItem>
       <MenuItem component={Link} to="/project">
-        <Button color="inherit">Project</Button>
+        <Button className={classes.Header_BtnResponsive}>Project</Button>
       </MenuItem>
       <MenuItem component={Link} to="/contact">
         <Button className={classes.Header_ContactBtn}>Contact</Button>
