@@ -19,10 +19,10 @@ const useStyles = makeStyles({
   },
   HeaderImage: {
     backgroundImage: `url(${HeaderImage})`,
-    height: '350px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
+    padding: '100px',
   },
   textStyle: {
     width: '100%',
@@ -59,6 +59,10 @@ const useStyles = makeStyles({
   Button_Text: {
     borderColor: '#29AE6D',
     font: 'normal normal bold 20px/24px Montserrat',
+    color: '#29AE6D',
+  },
+  Main_TextService: {
+    font: 'normal normal 600 60px/73px Montserrat',
     color: '#29AE6D',
   },
 });

@@ -1,7 +1,5 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import { Typography, Card, Grid, CardContent } from '@material-ui/core/';
 import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
 import ellipse from '../../Assets/Icon/Ellipse.svg';
 import Header from '../Header';
@@ -17,9 +15,9 @@ function IOT() {
         <Grid item xs={12}>
           <div className={classes.HeaderImage}>
             <Header />
-            <div className={classes.textStyle}>
-              <h1>Internet of Things</h1>
-            </div>
+            <Typography align="center" className={classes.Main_Text}>
+              Internet of Things
+            </Typography>
           </div>
         </Grid>
         <Grid item xs={4} className={classes.Grid_Margin}>
