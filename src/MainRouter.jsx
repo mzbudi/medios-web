@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import Main from './Component/Main';
 import Contact from './Component/Contact';
 import Product from './Component/Product';
@@ -10,9 +10,20 @@ import IOT from './Component/Services/IOT';
 import AI from './Component/Services/AI';
 import Analysis from './Component/Services/Analysis';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function MainRouter() {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route exact path="/">
           <Main />
