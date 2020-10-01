@@ -37,7 +37,7 @@ const useStyles = makeStyles({
   },
   HeaderImage: {
     backgroundImage: `url(${HeaderImage})`,
-    padding: '100px',
+    padding: '200px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',

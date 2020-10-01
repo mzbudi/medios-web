@@ -112,7 +112,7 @@ function Service() {
               </div>
             </Card>
           </Grid>
-          <Grid item xs={12} lg={6} md={6}>
+          <Grid item xs={12} lg={6} md={6} className={classes.Margin_Card}>
             <Card className={classes.Card_Style}>
               <CardContent>
                 <div className={classes.Cirlce}>
@@ -138,7 +138,7 @@ function Service() {
               </div>
             </Card>
           </Grid>
-          <Grid item xs={12} lg={6} md={6}>
+          <Grid item xs={12} lg={6} md={6} className={classes.Margin_Card}>
             <Card className={classes.Card_Style}>
               <CardContent>
                 <div className={classes.Cirlce}>

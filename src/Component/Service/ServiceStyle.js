@@ -22,7 +22,10 @@ const useStyles = makeStyles({
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    padding: '100px',
+    paddingTop: '200px',
+    paddingBottom: '200px',
+    width: '100%',
+    height: '100%',
   },
   textStyle: {
     width: '100%',
@@ -67,6 +70,9 @@ const useStyles = makeStyles({
   Main_TextService: {
     font: 'normal normal 600 60px/73px Montserrat',
     color: '#29AE6D',
+  },
+  Margin_Card: {
+    marginTop: '100px',
   },
 });
 
