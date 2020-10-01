@@ -6,12 +6,16 @@ const useStyles = makeStyles({
   Header_Root: {
     flexGrow: 1,
   },
-  Header_Tittle: {
+  Header_Grow: {
     flexGrow: 1,
   },
   Header_Menubar: {
     backgroundColor: 'inherit',
     boxShadow: 'none',
+    [theme.breakpoints.up('lg')]: {
+      paddingLeft: '5%',
+      paddingRight: '5%',
+    },
   },
   Header_ContactBtn: {
     background: 'linear-gradient(114deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box;',
@@ -51,6 +55,14 @@ const useStyles = makeStyles({
     padding: '0px 0px',
     minWidth: '40px',
     marginRight: theme.spacing(2),
+  },
+  Header_DropdownBtn: {
+    [theme.breakpoints.up('md')]: { display: 'none' },
+  },
+  Header_Menulist: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
 });
 
