@@ -12,7 +12,7 @@ function Analysis() {
   return (
     <>
       <Grid container>
-        <Grid item xs={12}>
+        <Grid item xs={12} lg={12} md={12}>
           <div className={classes.HeaderImage}>
             <Header />
             <Typography align="center" className={classes.Main_Text}>
@@ -23,7 +23,7 @@ function Analysis() {
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={4} className={classes.Grid_Margin}>
+        <Grid item xs={12} lg={4} md={4} className={classes.Grid_Margin}>
           <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
@@ -36,7 +36,7 @@ function Analysis() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={6} className={classes.Grid_Margin}>
+        <Grid item xs={12} lg={6} md={6} className={classes.Grid_Margin}>
           <h1 className={classes.Title}>Feature</h1>
           <table>
             <tr>
