@@ -52,7 +52,9 @@ function Header() {
         <Button className={classes.Header_BtnResponsive}>Project</Button>
       </MenuItem>
       <MenuItem component={Link} to="/contact">
-        <Button className={classes.Header_ContactBtn}>Contact</Button>
+        <Button variant="contained" className={classes.Header_ContactBtn}>
+          Contact
+        </Button>
       </MenuItem>
     </Menu>
   );
@@ -83,7 +85,7 @@ function Header() {
             <Button className={classes.Header_FlagUK}>
               <UK className={classes.Header_Flag} />
             </Button>
-            <Button component={Link} to="/contact" className={classes.Header_ContactBtn}>
+            <Button variant="contained" component={Link} to="/contact" className={classes.Header_ContactBtn}>
               Contact
             </Button>
           </div>

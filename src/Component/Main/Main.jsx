@@ -66,7 +66,9 @@ function Main() {
             </p>
           </Grid>
           <Grid item>
-            <p>We develop responsive websites and Smartphone Applications along with good UI/UX designs.</p>
+            <Typography>
+              We develop responsive websites and Smartphone Applications along with good UI/UX designs.
+            </Typography>
           </Grid>
         </Grid>
         <Grid lg={4} item container direction="column">
@@ -79,7 +81,9 @@ function Main() {
             </p>
           </Grid>
           <Grid item>
-            <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+            <Typography>
+              We develop software that have great UI/UX design that can run on a variety of your desktop OS.
+            </Typography>
           </Grid>
         </Grid>
         <Grid lg={4} item container direction="column">
@@ -92,7 +96,7 @@ function Main() {
             </p>
           </Grid>
           <Grid item>
-            <p>We create IoT solutions that can be used to support your business needs and demand.</p>
+            <Typography>We create IoT solutions that can be used to support your business needs and demand.</Typography>
           </Grid>
         </Grid>
       </Grid>
@@ -108,7 +112,9 @@ function Main() {
             </p>
           </Grid>
           <Grid item>
-            <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+            <Typography>
+              We develop software that have great UI/UX design that can run on a variety of your desktop OS.
+            </Typography>
           </Grid>
         </Grid>
         <Grid container item direction="column" lg={4}>
@@ -121,7 +127,9 @@ function Main() {
             </p>
           </Grid>
           <Grid item>
-            <p>We develop software that have great UI/UX design that can run on a variety of your desktop OS.</p>
+            <Typography>
+              We develop software that have great UI/UX design that can run on a variety of your desktop OS.
+            </Typography>
           </Grid>
         </Grid>
         <Grid container item direction="column" lg={2} />
@@ -137,7 +145,7 @@ function Main() {
         </Typography>
       </Grid>
       <Grid item container spacing={6}>
-        <Grid item container lg={2} direction="column" alignItems="center" justify="center">
+        <Grid item container lg={2} xs={3} md={3} sm={3} direction="column" alignItems="center" justify="center">
           <IconButton aria-label="Left">
             <ChevronLeftIcon className={classes.Main_IconSize} />
           </IconButton>
@@ -384,7 +392,7 @@ function Main() {
           </Grid>
           <Grid container>
             <div className={classes.Main_MarginFlyIt}>
-              <Button type="submit" className={classes.Main_Btn_Flyit}>
+              <Button variant="contained" type="submit" className={classes.Main_Btn_Flyit}>
                 Fly it
               </Button>
             </div>

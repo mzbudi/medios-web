@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Main_OpeningText: {
     textAlign: 'center',
-    font: 'normal normal 600 40px/49px Montserrat',
+    font: 'normal normal 600 2.5rem/3.063rem Montserrat',
     letterSpacing: 0,
     color: '#383838',
     opacity: 1,
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Main_OpeningText2: {
     textAlign: 'center',
-    font: 'normal normal normal 25px/30px Montserrat',
+    font: 'normal normal normal 1.5625rem/1.875rem Montserrat',
     letterSpacing: 0,
     color: '#8C8C8C',
     opacity: 1,
@@ -48,6 +48,10 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 0,
     color: '#FFFFFF',
     opacity: 1,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 30,
+      fontWeight: 'bold',
+    },
   },
   Main_TextWhyChooseUsSubtitle: {
     textAlign: 'left',
@@ -55,6 +59,9 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 0,
     color: '#FFFFFF',
     opacity: 1,
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
+    },
   },
 
   Main_TextWhyChooseUsBody: {
@@ -76,9 +83,11 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '5px 15px 30px #3939391A',
     borderRadius: 20,
     opacity: 1,
-    font: 'normal bold 14px/19px Montserrat',
     letterSpacing: 0,
     color: '#FFFFFF',
+    fontWeight: 'bold',
+    paddingLeft: 40,
+    paddingRight: 40,
   },
 
   Main_MarginQuote: {
@@ -138,7 +147,6 @@ const useStyles = makeStyles((theme) => ({
   Main_BtnShowMore: {
     background: 'transparent linear-gradient(107deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
     boxShadow: '5px 15px 30px #3939391A',
-    borderRadius: '10px',
     opacity: 1,
     fontWeight: 'bold',
     letterSpacing: 0,
