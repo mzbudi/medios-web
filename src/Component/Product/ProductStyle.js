@@ -3,18 +3,20 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   Image_Header: {
     backgroundSize: 'cover',
+    width: '100%',
+    height: '100%',
   },
   Title_CMS: {
     position: 'absolute',
     top: '50%',
-    left: '25%',
+    left: '17%',
     font: 'normal normal bold 60px/73px Montserrat',
     fontWeight: 'bold',
   },
   Title_CMS2: {
     position: 'absolute',
     top: '65%',
-    left: '30%',
+    left: '24%',
     textAlign: 'center',
     font: 'normal normal 600 45px/55px Montserrat',
     fontWeight: 'bold',
@@ -49,8 +51,8 @@ const useStyles = makeStyles({
   },
   Container_Problem: {
     backgroundColor: '#F2FFF9',
-    width: '1920px',
-    height: '574px',
+    width: '100%',
+    maxHeight: '574px',
   },
   Title_Problem: {
     font: 'Montserrat',
@@ -88,21 +90,20 @@ const useStyles = makeStyles({
     margin: '100px',
   },
   Image_CMS: {
-    width: '674px',
-    height: '426px',
-    margin: '50px',
+    width: '100%',
+    height: '100%',
+    maxHeight: '426px',
   },
   Benefit: {
-    marginTop: '50px',
-    marginLeft: '400px',
     textAlign: 'center',
     alignContent: 'center',
     alignItems: 'center',
   },
   Container_Benefit: {
     backgroundColor: '#F2FFF9',
-    width: '1102px',
-    height: '251px',
+    width: '100%',
+    height: '100%',
+    maxHeight: '251px',
   },
   Icon_Image2: {
     width: '75px',
@@ -118,6 +119,10 @@ const useStyles = makeStyles({
     color: '#707070',
     fontSize: '25px',
     textAlign: 'center',
+  },
+  Footer: {
+    width: '100%',
+    marginTop: '200px',
   },
 });
 

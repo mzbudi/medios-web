@@ -19,7 +19,7 @@ function Product() {
   const classes = useStyles();
   return (
     <>
-      <Grid container spacing={8}>
+      <Grid container>
         <Grid item xs={12}>
           <Header />
           <img className={classes.Image_Header} src={HeaderImage} alt="CMS" width="1920px" height="1080px" />
@@ -90,10 +90,9 @@ function Product() {
         <div className="Solution">
           <p className={classes.Title_Problem}>Solution</p>
           <Grid container>
-            <Grid xs={6}>
+            <Grid item xs={12} lg={6}>
               <p className={classes.Solution_Content}>MEDICAL RECORD IN YOUR HAND</p>
               <p className={classes.Solution_Content2}>
-                {' '}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -101,85 +100,67 @@ function Product() {
                 deserunt mollit anim id est laborum.
               </p>
             </Grid>
-            <Grid xs={6}>
+            <Grid item xs={12} lg={6}>
               <img src={ImageCMS} className={classes.Image_CMS} alt="CMS" />
             </Grid>
           </Grid>
         </div>
-        <div className={classes.Benefit}>
-          <Paper className={classes.Container_Benefit}>
-            <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center', padding: '5px' }}>
-              <Grid lg={1} item />
-              <Grid lg={2} item container direction="column">
-                <Grid item>
-                  <img src={User} className={classes.Icon_Image2} alt="User" />
+
+        <Grid container>
+          <Grid item lg={1} md={1} xs={0} sm={0} />
+          <Grid item lg={10} md={10} xs={12} sm={12}>
+            <Paper className={classes.Container_Benefit}>
+              <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center', padding: '5px' }}>
+                <Grid lg={1} item />
+                <Grid lg={2} item container direction="column">
                   <Grid item>
-                    <p className={classes.Benefit_Content}> USER FRIENDLY </p>{' '}
+                    <img src={User} className={classes.Icon_Image2} alt="User" />
+                    <Grid item>
+                      <p className={classes.Benefit_Content}> USER FRIENDLY </p>{' '}
+                    </Grid>
                   </Grid>
                 </Grid>
-              </Grid>
-              <Grid lg={2} item container direction="column">
-                <Grid item>
-                  <img src={Database} className={classes.Icon_Image2} alt="Easy" />
+                <Grid lg={2} item container direction="column">
+                  <Grid item>
+                    <img src={Database} className={classes.Icon_Image2} alt="Easy" />
+                  </Grid>
+                  <Grid item>
+                    <p className={classes.Benefit_Content}> EASY TO MANAGE </p>
+                  </Grid>
                 </Grid>
-                <Grid item>
-                  <p className={classes.Benefit_Content}> EASY TO MANAGE </p>
+                <Grid lg={2} item container direction="column">
+                  <Grid item>
+                    <img src={Link} className={classes.Icon_Image2} alt="Integrated" />
+                  </Grid>
+                  <Grid item>
+                    <p className={classes.Benefit_Content}> INTEGRATED TO DOCTOR </p>
+                  </Grid>
                 </Grid>
-              </Grid>
-              <Grid lg={2} item container direction="column">
-                <Grid item>
-                  <img src={Link} className={classes.Icon_Image2} alt="Integrated" />
+                <Grid lg={2} item container direction="column">
+                  <Grid item>
+                    <img src={Clock} className={classes.Icon_Image2} alt="Time" />
+                  </Grid>
+                  <Grid item>
+                    <p className={classes.Benefit_Content}> SAVE TIME </p>
+                  </Grid>
                 </Grid>
-                <Grid item>
-                  <p className={classes.Benefit_Content}> INTEGRATED TO DOCTOR </p>
+                <Grid lg={2} item container direction="column">
+                  <Grid item>
+                    <img src={Lock} className={classes.Icon_Image2} alt="Secure" />
+                  </Grid>
+                  <Grid item>
+                    <p className={classes.Benefit_Content}> SECURE </p>
+                  </Grid>
                 </Grid>
+                <Grid lg={1} item container />
               </Grid>
-              <Grid lg={2} item container direction="column">
-                <Grid item>
-                  <img src={Clock} className={classes.Icon_Image2} alt="Time" />
-                </Grid>
-                <Grid item>
-                  <p className={classes.Benefit_Content}> SAVE TIME </p>
-                </Grid>
-              </Grid>
-              <Grid lg={2} item container direction="column">
-                <Grid item>
-                  <img src={Lock} className={classes.Icon_Image2} alt="Secure" />
-                </Grid>
-                <Grid item>
-                  <p className={classes.Benefit_Content}> SECURE </p>
-                </Grid>
-              </Grid>
-              <Grid lg={1} item container />
-            </Grid>
-            {/* <Grid container alignItems="center" alignContent="center" textAlign="center" justify="center">
-              <Grid xs={1} />
-              <Grid xs={2}>
-                <img src={User} className={classes.Icon_Image2} alt="User" />
-                <p className={classes.Benefit_Content}> USER FRIENDLY  </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Database} className={classes.Icon_Image2} alt="Easy" />
-                <p className={classes.Benefit_Content}> EASY MANAGE  </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Link} className={classes.Icon_Image2} alt="Integrated" />
-                <p className={classes.Benefit_Content}> INTEGRATED TO DOCTOR </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Clock} className={classes.Icon_Image2} alt="Time" />
-                <p className={classes.Benefit_Content}> SAVE TIME </p>
-              </Grid>
-              <Grid xs={2}>
-                <img src={Lock} className={classes.Icon_Image2} alt="Secure" />
-                <p className={classes.Benefit_Content}> SECURE  </p>
-              </Grid>
-              <Grid xs={1} />
-            </Grid> */}
-          </Paper>
-        </div>
+            </Paper>
+          </Grid>
+          <Grid item lg={1} md={1} xs={0} sm={0} />
+        </Grid>
       </div>
-      <div style={{ marginTop: '300px' }}>
+
+      <div className={classes.Footer}>
         <Footer />
       </div>
     </>
