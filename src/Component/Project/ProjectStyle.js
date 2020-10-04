@@ -41,7 +41,7 @@ const useStyles = makeStyles({
     position: 'absolute',
     width: '405px',
     height: '201px',
-    top: '45px',
+    top: '60px',
     left: '0px',
     backgroundColor: '#FFFFFF',
     color: 'white',
@@ -50,42 +50,24 @@ const useStyles = makeStyles({
     paddingRight: '20px',
     borderRadius: '20px',
   },
-  TextBlock_Content1: {
-    fontSize: '18px',
+  TextBlock_Title: {
     textAlign: 'left',
-    color :'#383838'
+    font: 'normal normal bold 18px/22px Montserrat'
+  },
+  TextBlock_Content1: {
+    textAlign: 'left',
+    color :'#383838',
+    font: 'normal normal 600 18px/22px Montserrat'
   },
   TextBlock_Content2: {
-    fontSize: '15px',
     textAlign: 'left',
-    color: '#707070'
+    color: '#707070',
+    font: 'normal normal normal 15px/19px Montserrat'
   },
   Footer: {
     marginTop: '300px',
     width: '100%'
   },
-  Box1: {
-    textAlign: 'left',
-    border: '10px',
-    borderRadius: '20px',
-    padding: '15px',
-    background: '#29AE6D4D',
-    backgroundClip: 'border-box',
-    font: 'normal normal bold 18px/22px Montserrat',
-    fontSize: '24px',
-    color: '#FFFFFF',
-    textTransform: 'uppercase'
-  },
-  Box2: {
-    textAlign: 'left',
-    border: '10px',
-    borderRadius: '20px',
-    padding: '15px',
-    backgroundClip: 'border-box',
-    font: 'normal normal bold 18px/22px Montserrat',
-    fontSize: '18px',
-    textTransform: 'uppercase'
-  }
 });
 
 export default useStyles;

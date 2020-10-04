@@ -34,7 +34,7 @@ function Project() {
                     className={classes.Image_Border}
                     src={image} />
                   <div class={classes.Text_Block1}>
-                    <h4>BIDANG SERVICE</h4>
+                    <h4 class={classes.TextBlock_Title}>BIDANG SERVICE</h4>
                     <div class={classes.Text_Block2}>
                       <h4 className={classes.TextBlock_Content1}>NAMA PROJECT</h4>
                       <p className={classes.TextBlock_Content2}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -50,7 +50,7 @@ function Project() {
                     className={classes.Image_Border}
                     src={image} />
                   <div class={classes.Text_Block1}>
-                    <h4>BIDANG SERVICE</h4>
+                    <h4 class={classes.TextBlock_Title}>BIDANG SERVICE</h4>
                     <div class={classes.Text_Block2}>
                       <h4 className={classes.TextBlock_Content1}>NAMA PROJECT</h4>
                       <p className={classes.TextBlock_Content2}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -66,7 +66,7 @@ function Project() {
                     className={classes.Image_Border}
                     src={image} />
                   <div class={classes.Text_Block1}>
-                    <h4>BIDANG SERVICE</h4>
+                    <h4 class={classes.TextBlock_Title}>BIDANG SERVICE</h4>
                     <div class={classes.Text_Block2}>
                       <h4 className={classes.TextBlock_Content1}>NAMA PROJECT</h4>
                       <p className={classes.TextBlock_Content2}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
