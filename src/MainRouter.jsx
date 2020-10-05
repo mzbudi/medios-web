@@ -9,6 +9,7 @@ import Desktop from './Component/Services/Desktop';
 import IOT from './Component/Services/IOT';
 import AI from './Component/Services/AI';
 import Analysis from './Component/Services/Analysis';
+import Project from './Component/Project';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -54,6 +55,9 @@ function MainRouter() {
         </Route>
         <Route exact path="/service/analysis">
           <Analysis />
+        </Route>
+        <Route exact path="/project">
+          <Project />
         </Route>
       </Switch>
     </Router>
