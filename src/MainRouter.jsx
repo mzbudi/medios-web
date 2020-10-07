@@ -29,34 +29,34 @@ function MainRouter() {
         <Route exact path="/">
           <Main />
         </Route>
-        <Route exact path="/contact">
+        <Route path="/contact">
           <Contact />
         </Route>
-        <Route exact path="/product">
+        <Route path="/product">
           <Product />
         </Route>
-        <Route exact path="/service">
+        <Route path="/service">
           <Service />
         </Route>
-        <Route exact path="/product">
+        <Route path="/product">
           <Product />
         </Route>
-        <Route exact path="/service/web">
+        <Route path="/service/web">
           <Web />
         </Route>
-        <Route exact path="/service/desktop">
+        <Route path="/service/desktop">
           <Desktop />
         </Route>
-        <Route exact path="/service/iot">
+        <Route path="/service/iot">
           <IOT />
         </Route>
-        <Route exact path="/service/ai">
+        <Route path="/service/ai">
           <AI />
         </Route>
-        <Route exact path="/service/analysis">
+        <Route path="/service/analysis">
           <Analysis />
         </Route>
-        <Route exact path="/project">
+        <Route path="/project">
           <Project />
         </Route>
       </Switch>

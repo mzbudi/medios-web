@@ -50,11 +50,13 @@ const useStyles = makeStyles({
   Header_FlagID: {
     padding: '0px 0px',
     minWidth: '40px',
+    display: 'none',
   },
   Header_FlagUK: {
     padding: '0px 0px',
     minWidth: '40px',
     marginRight: theme.spacing(2),
+    display: 'none',
   },
   Header_DropdownBtn: {
     [theme.breakpoints.up('md')]: { display: 'none' },

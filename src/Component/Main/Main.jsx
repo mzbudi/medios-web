@@ -391,11 +391,17 @@ function Main() {
             </Grid>
           </Grid>
           <Grid container>
-            <div className={classes.Main_MarginFlyIt}>
+            <Grid item lg={12} xs={12} className={classes.Main_MarginFlyIt}>
               <Button variant="contained" type="submit" className={classes.Main_Btn_Flyit}>
                 Fly it
               </Button>
-            </div>
+            </Grid>
+            <Grid item lg={12} xs={12} className={classes.Main_MarginContact}>
+              <Typography variant="body1" className={classes.Main_ContactSection}>
+                For any question contact our 24/7 call center :{' '}
+                <span className={classes.Main_PhoneTextColor}>+62 xxxx xxxx</span>
+              </Typography>
+            </Grid>
           </Grid>
         </form>
       </>

@@ -172,6 +172,20 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '5%',
     marginRight: '5%',
   },
+
+  Main_ContactSection: {
+    textAlign: 'left',
+    letterSpacing: 0,
+    opacity: 1,
+    font: 'normal normal normal 24px/30px Montserrat',
+  },
+  Main_PhoneTextColor: {
+    color: '#29AE6D',
+  },
+
+  Main_MarginContact: {
+    marginBottom: '5%',
+  },
 }));
 
 export default useStyles;
