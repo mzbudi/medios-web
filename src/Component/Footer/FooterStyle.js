@@ -5,7 +5,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#F2FFF9',
     margin: '0px',
     justifyContent: 'space-between',
-    padding: '30px',
   },
   Container_Load: {
     margin: '10px',
@@ -60,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: '0px',
     color: '#8C8C8C',
     opacity: '1',
+    padding: 10,
   },
   Contact_Logo: {
     height: '20',
@@ -84,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Footer_Divider: {
     marginTop: 20,
+    marginBottom: 0,
   },
 }));
 
