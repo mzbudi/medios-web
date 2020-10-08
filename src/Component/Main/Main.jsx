@@ -19,24 +19,14 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import useStyles from './MainStyle';
 import Header from '../Header';
 import Footer from '../Footer';
-import { ReactComponent as App } from '../../Assets/Images SVG/Responsive.svg';
-import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
-import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
-import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
-import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
-import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
-import { ReactComponent as Affordable } from '../../Assets/Icon/Affordable.svg';
-import { ReactComponent as FastResponse } from '../../Assets/Icon/Fast.svg';
-import { ReactComponent as GoodQuality } from '../../Assets/Icon/GoodQuality.svg';
-import { ReactComponent as Ontime } from '../../Assets/Icon/Ontime.svg';
-import Partner1 from '../../Assets/Images/Partner1.png';
-import Partner2 from '../../Assets/Images/Partner2.png';
-import Partner3 from '../../Assets/Images/Partner3.png';
-import Partner4 from '../../Assets/Images/Partner4.png';
-import Partner5 from '../../Assets/Images/Partner5.png';
-import CMS from '../../Assets/Images/CMS.png';
-import Blank from '../../Assets/Images/Blank.png';
-import Quote from '../../Assets/Images/quote.png';
+// import { ReactComponent as App } from '../../Assets/Images SVG/Responsive.svg';
+// import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
+// import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
+// import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
+// import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
+import { ai, analist, drone, mobile, responsive } from '../../Assets/Images SVG';
+import { logoMedios, affordable, fast, goodQuality, ontime } from '../../Assets/Icon';
+import { partner1, partner2, partner3, partner4, partner5, cms, blank, quote } from '../../Assets/Images';
 
 function Main() {
   const classes = useStyles();
@@ -58,7 +48,7 @@ function Main() {
       <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }} spacing={3}>
         <Grid lg={4} item container direction="column">
           <Grid item>
-            <App className={classes.Main_ImageSection} />
+            <img src={responsive} alt="App" className={classes.Main_ImageSection} />
           </Grid>
           <Grid item>
             <p className={classes.Main_TextImageSection}>
@@ -73,7 +63,7 @@ function Main() {
         </Grid>
         <Grid lg={4} item container direction="column">
           <Grid item>
-            <Mobile className={classes.Main_ImageSection} />
+            <img src={mobile} alt="mobile" className={classes.Main_ImageSection} />
           </Grid>
           <Grid item>
             <p className={classes.Main_TextImageSection}>
@@ -88,7 +78,7 @@ function Main() {
         </Grid>
         <Grid lg={4} item container direction="column">
           <Grid item>
-            <Drone className={classes.Main_ImageSection} />
+            <img src={drone} alt="drone" className={classes.Main_ImageSection} />
           </Grid>
           <Grid item>
             <p className={classes.Main_TextImageSection}>
@@ -104,7 +94,7 @@ function Main() {
         <Grid container item direction="column" lg={2} />
         <Grid container item direction="column" lg={4}>
           <Grid item>
-            <AI className={classes.Main_ImageSection} />
+            <img src={ai} alt="AI" className={classes.Main_ImageSection} />
           </Grid>
           <Grid item>
             <p className={classes.Main_TextImageSection}>
@@ -119,7 +109,7 @@ function Main() {
         </Grid>
         <Grid container item direction="column" lg={4}>
           <Grid item>
-            <Analyst className={classes.Main_ImageSection} />
+            <img src={analist} alt="analist" className={classes.Main_ImageSection} />
           </Grid>
           <Grid item>
             <p className={classes.Main_TextImageSection}>
@@ -153,7 +143,7 @@ function Main() {
         <Grid item container direction="column" lg={4}>
           <Card className={classes.root}>
             <CardActionArea>
-              <CardMedia image={CMS} title="Contemplative Reptile" className={classes.Main_CardImage} />
+              <CardMedia image={cms} title="Contemplative Reptile" className={classes.Main_CardImage} />
               <CardContent>
                 <Typography gutterBottom className={classes.Main_CardTitle}>
                   Medios CMS
@@ -178,7 +168,7 @@ function Main() {
         <Grid item container direction="column" lg={4}>
           <Card className={classes.root}>
             <CardActionArea>
-              <CardMedia image={Blank} title="Contemplative Reptile" className={classes.Main_CardImage} />
+              <CardMedia image={blank} title="Contemplative Reptile" className={classes.Main_CardImage} />
               <CardContent>
                 <Typography gutterBottom className={classes.Main_CardTitle}>
                   Medios DSS-CovidNet
@@ -232,7 +222,7 @@ function Main() {
           <Grid container item direction="column" lg={2} />
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <Affordable />
+              <img src={affordable} alt="affordable" />
             </Grid>
             <Grid item>
               <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
@@ -242,7 +232,7 @@ function Main() {
           </Grid>
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <FastResponse />
+              <img src={fast} alt="fast" />
             </Grid>
             <Grid item>
               <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
@@ -252,7 +242,7 @@ function Main() {
           </Grid>
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <GoodQuality />
+              <img src={goodQuality} alt="Good Quality" />
             </Grid>
             <Grid item>
               <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
@@ -262,7 +252,7 @@ function Main() {
           </Grid>
           <Grid container item direction="column" lg={2}>
             <Grid item>
-              <Ontime />
+              <img src={ontime} alt="On Time" />
             </Grid>
             <Grid item>
               <Typography className={classes.Main_TextWhyChooseUsBody} variant="h6">
@@ -281,7 +271,7 @@ function Main() {
       <Grid container className={classes.Main_QuoteContainer}>
         <Grid item container xs={12} md={12} lg={7} xl={7} direction="column">
           <Grid item>
-            <Logo className={classes.Main_QuoteIcon} />
+            <img src={logoMedios} alt="Logo Medios" className={classes.Main_QuoteIcon} />
           </Grid>
           <Grid>
             <Typography align="left" variant="body1" className={classes.Main_TypoQuote}>
@@ -291,7 +281,7 @@ function Main() {
           </Grid>
         </Grid>
         <Grid item xs={0} md={0} style={{ textAlign: '-webkit-right' }}>
-          <img src={Quote} alt="Logo" style={{ width: 400 }} className={classes.Main_QuoteImg} />
+          <img src={quote} alt="quote" style={{ width: 400 }} className={classes.Main_QuoteImg} />
         </Grid>
       </Grid>
     </div>
@@ -308,19 +298,19 @@ function Main() {
       </Grid>
       <Grid container spacing={3} justify="center">
         <Grid item lg={2}>
-          <img src={Partner1} alt="partner1" className={classes.Main_PartnerImg} />
+          <img src={partner1} alt="partner1" className={classes.Main_PartnerImg} />
         </Grid>
         <Grid item lg={2}>
-          <img src={Partner2} alt="partner2" className={classes.Main_PartnerImg} />
+          <img src={partner2} alt="partner2" className={classes.Main_PartnerImg} />
         </Grid>
         <Grid item lg={2}>
-          <img src={Partner3} alt="partner3" className={classes.Main_PartnerImg} />
+          <img src={partner3} alt="partner3" className={classes.Main_PartnerImg} />
         </Grid>
         <Grid item lg={2}>
-          <img src={Partner4} alt="partner4" className={classes.Main_PartnerImg} />
+          <img src={partner4} alt="partner4" className={classes.Main_PartnerImg} />
         </Grid>
         <Grid item lg={2}>
-          <img src={Partner5} alt="partner5" className={classes.Main_PartnerImg} />
+          <img src={partner5} alt="partner5" className={classes.Main_PartnerImg} />
         </Grid>
       </Grid>
     </div>

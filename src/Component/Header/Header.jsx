@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Link as MLink, Button, AppBar, Toolbar, IconButton, Menu, MenuItem } from '@material-ui/core';
 import DehazeIcon from '@material-ui/icons/Dehaze';
-import { ReactComponent as Logo } from '../../Assets/Icon/Logo Medios.svg';
-import { ReactComponent as ID } from '../../Assets/Icon/FLAG ID.svg';
-import { ReactComponent as UK } from '../../Assets/Icon/FLAG UK.svg';
+import { logoMedios, flagId, flagUk } from '../../Assets/Icon';
 import useStyles from './HeaderStyle.js';
 
 function Header() {
@@ -63,7 +61,7 @@ function Header() {
       <AppBar position="absolute" className={classes.Header_Menubar}>
         <Toolbar>
           <MLink component={Link} to="/">
-            <Logo className={classes.Header_Logo} />
+            <img src={logoMedios} alt="Medios Logo" className={classes.Header_Logo} />
           </MLink>
           <div className={classes.Header_Grow} />
           <div className={classes.Header_Menulist}>
@@ -80,10 +78,10 @@ function Header() {
               Project
             </Button>
             <Button className={classes.Header_FlagID}>
-              <ID className={classes.Header_Flag} />
+              <img src={flagId} alt="Flag Id" className={classes.Header_Flag} />
             </Button>
             <Button className={classes.Header_FlagUK}>
-              <UK className={classes.Header_Flag} />
+              <img src={flagUk} alt="Flag Uk" className={classes.Header_Flag} />
             </Button>
             <Button variant="contained" component={Link} to="/contact" className={classes.Header_ContactBtn}>
               Contact

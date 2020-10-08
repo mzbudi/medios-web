@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Divider, Container, Typography, Link as MLink } from '@material-ui/core';
-import logo from '../../Assets/Icon/Logo Medios.svg';
-import linkedin from '../../Assets/Icon/linkedin.svg';
-import facebook from '../../Assets/Icon/facebook.svg';
-import instagram from '../../Assets/Icon/instagram (1).svg';
-import phone from '../../Assets/Icon/phone.svg';
-import mail from '../../Assets/Icon/mail.svg';
+import { logoMedios, linkedin, facebook, instagram, phone, mail } from '../../Assets/Icon';
 import useStyles from './FooterStyle.js';
 
 function Footer() {
@@ -19,7 +14,7 @@ function Footer() {
             <Grid item container direction="column" xs={12} md={4} sm={12} lg={5} xl={4} spacing={3}>
               <Grid item>
                 <MLink className={classes.Footer_Text} component={Link} to="/">
-                  <img src={logo} alt="logo" className={classes.Logo_Medios} />
+                  <img src={logoMedios} alt="logo" className={classes.Logo_Medios} />
                 </MLink>
               </Grid>
               <Grid item>
