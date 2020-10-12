@@ -19,11 +19,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import useStyles from './MainStyle';
 import Header from '../Header';
 import Footer from '../Footer';
-// import { ReactComponent as App } from '../../Assets/Images SVG/Responsive.svg';
-// import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
-// import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
-// import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
-// import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
 import { ai, analist, drone, mobile, responsive } from '../../Assets/Images SVG';
 import { logoMedios, affordable, fast, goodQuality, ontime } from '../../Assets/Icon';
 import { partner1, partner2, partner3, partner4, partner5, cms, blank, quote } from '../../Assets/Images';
@@ -143,8 +138,8 @@ function Main() {
         <Grid item container direction="column" lg={4}>
           <Card className={classes.root}>
             <CardActionArea>
-              <CardMedia image={cms} title="Contemplative Reptile" className={classes.Main_CardImage} />
-              <CardContent>
+              <CardMedia image={cms} title="Cms" component="img" />
+              <CardContent style={{ padding: '10%' }}>
                 <Typography gutterBottom className={classes.Main_CardTitle}>
                   Medios CMS
                 </Typography>
@@ -168,8 +163,8 @@ function Main() {
         <Grid item container direction="column" lg={4}>
           <Card className={classes.root}>
             <CardActionArea>
-              <CardMedia image={blank} title="Contemplative Reptile" className={classes.Main_CardImage} />
-              <CardContent>
+              <CardMedia image={blank} title="Blank" component="img" />
+              <CardContent style={{ padding: '10%' }}>
                 <Typography gutterBottom className={classes.Main_CardTitle}>
                   Medios DSS-CovidNet
                 </Typography>
@@ -383,7 +378,7 @@ function Main() {
           <Grid container>
             <Grid item lg={12} xs={12} className={classes.Main_MarginFlyIt}>
               <Button variant="contained" type="submit" className={classes.Main_Btn_Flyit}>
-                Fly it
+                <Typography className={classes.Main_TextFlyIt}>Fly it</Typography>
               </Button>
             </Grid>
             <Grid item lg={12} xs={12} className={classes.Main_MarginContact}>

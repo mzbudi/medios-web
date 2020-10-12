@@ -86,8 +86,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 0,
     color: '#FFFFFF',
     fontWeight: 'bold',
-    paddingLeft: 40,
-    paddingRight: 40,
+    padding: '10px 40px',
   },
 
   Main_MarginQuote: {
@@ -185,6 +184,13 @@ const useStyles = makeStyles((theme) => ({
 
   Main_MarginContact: {
     marginBottom: '5%',
+  },
+
+  Main_TextFlyIt: {
+    font: 'normal normal bold 20px/24px Montserrat',
+    letterSpacing: 0,
+    color: '#FFFFFF',
+    opacity: 1,
   },
 }));
 
