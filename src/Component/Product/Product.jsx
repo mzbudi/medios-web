@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Paper, Grid } from '@material-ui/core/';
+import { Container, Paper, Grid, Typography } from '@material-ui/core/';
 import Header from '../Header';
 import Footer from '../Footer';
-import HeaderImage from '../../Assets/Images/ImageCMSPAGE.png';
 import Logo from '../../Assets/Images/Logo.png';
 import Paperclip from '../../Assets/Icon/paperclip.svg';
 import Monitor from '../../Assets/Icon/monitor.svg';
@@ -19,14 +18,23 @@ function Product() {
   const classes = useStyles();
   return (
     <>
-      <Grid container>
+      <div className={classes.Image_Header}>
+        <Header />
+        <Typography align="center" className={classes.Main_TextService1}>
+        Cloud Medical System (CMS)
+        </Typography>
+        <Typography align="center" className={classes.Main_TextService2}>
+        MEDICAL RECORD IN YOUR HAND
+        </Typography>
+      </div>
+      {/* <Grid container>
         <Grid item xs={12}>
           <Header />
           <img className={classes.Image_Header} src={HeaderImage} alt="CMS" width="1920px" height="1080px" />
           <p className={classes.Title_CMS}> CLOUD MEDICAL SYSTEM (CMS) </p>
           <p className={classes.Title_CMS2}> MEDICAL RECORD IN YOUR HAND </p>
         </Grid>
-      </Grid>
+      </Grid> */}
       <div className="Content">
         <Container style={{ textAlign: 'center' }}>
           <img src={Logo} className={classes.Logo} alt="CMS" />

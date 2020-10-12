@@ -1,30 +1,35 @@
 import { makeStyles } from '@material-ui/core/styles';
+import HeaderImage from '../../Assets/Images/ImageCMSPAGE.png';
 
 const useStyles = makeStyles({
   Image_Header: {
+    backgroundImage: `url(${HeaderImage})`,
+    backgroundPosition: 'center',
     backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    paddingTop: '200px',
+    paddingBottom: '200px',
     width: '100%',
     height: '100%',
   },
-  Title_CMS: {
-    position: 'absolute',
-    top: '50%',
-    left: '17%',
-    font: 'normal normal bold 60px/73px Montserrat',
-    fontWeight: 'bold',
+  Main_TextService1: {
+    textAlign: 'center',
+    font: 'normal normal bold 60px / 73px Montserrat',
+    color: '#383838',
+    textTransform: 'uppercase',
+    opacity: '1',
+    marginTop: '250px'
   },
-  Title_CMS2: {
-    position: 'absolute',
-    top: '65%',
-    left: '24%',
+  Main_TextService2: {
     textAlign: 'center',
     font: 'normal normal 600 45px/55px Montserrat',
-    fontWeight: 'bold',
+    color: '#383838',
+    textTransform: 'uppercase',
+    marginTop:'30px',
+    marginBottom: '250px'
   },
   Title_CMS3: {
-    // position: 'absolute',
     fontSize: '50px',
-    // marginTop: '140px',
     font: 'Montserrat',
     fontFamily: 'Montserrat',
     fontWeight: 'semibold',

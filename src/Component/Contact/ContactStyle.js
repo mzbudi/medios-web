@@ -51,7 +51,7 @@ const useStyles = makeStyles({
     opacity: 1,
   },
   Button_Contact: {
-    margin: '40px',
+    marginTop: '40px',
     width: '181px',
     height: '65px',
     background: 'transparent linear-gradient(112deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
