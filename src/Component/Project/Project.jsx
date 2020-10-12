@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid } from '@material-ui/core';
+import { Container, Grid, Typography } from '@material-ui/core';
 import Header from '../Header';
 import Footer from '../Footer';
 import image from '../../Assets/Images/Blank.png';
@@ -9,15 +9,15 @@ function Project() {
   const classes = useStyles();
   return (
     <>
-      <Header />
-      <div className={classes.Content}>
-        <div className="Title">
-          <Container style={{ textAlign: 'center' }}>
-            <p className={classes.Project_Title}> Project </p>
-          </Container>
-        </div>
-        <div className={classes.Ongoing_Project}>Our Ongoing Project</div>
+      <div className={classes.Image_Header}>
+        <Header />
+        <Typography align="center" className={classes.Main_TextService}>
+          Project
+        </Typography>
+      </div>
 
+      <div className={classes.Content}>
+        <div className={classes.Ongoing_Project}>Our Ongoing Project</div>
         <div>
           <Container>
             <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }}>
