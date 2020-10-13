@@ -1,14 +1,20 @@
 import { makeStyles } from '@material-ui/core/styles';
+import HeaderImage from '../../Assets/Images/ImageProject.png';
 
 const useStyles = makeStyles({
-  Content: {
-    marginTop: '200px',
+  Image_Header: {
+    backgroundImage: `url(${HeaderImage})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    paddingTop: '200px',
+    paddingBottom: '200px',
+    width: '100%',
+    height: '100%'
   },
-  Project_Title: {
-    font: 'normal normal 600 60px/ 73px Montserrat',
+  Main_TextService: {
+    font: 'normal normal 600 60px/73px Montserrat',
     color: '#29AE6D',
-    fontWeight: 'semibold',
-    marginBottom: '30%',
   },
   Image_Border: {
     borderRadius: '20px',
@@ -19,6 +25,7 @@ const useStyles = makeStyles({
     textAlign: 'center',
     font: 'normal normal 600 50px/61px Montserrat',
     color: '#29AE6D',
+    marginTop: '60px',
     marginBottom: '100px',
   },
   Container_Content: {
