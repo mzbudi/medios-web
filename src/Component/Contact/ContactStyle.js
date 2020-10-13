@@ -46,20 +46,20 @@ const useStyles = makeStyles({
   Text_Field: {
     width: '80%',
     height: '80%',
-    // border: "3px solid #707070",
     borderRadius: '10px',
     opacity: 1,
   },
-  Button_Contact: {
-    margin: '40px',
-    width: '181px',
-    height: '65px',
+  Btn_Flyit: {
     background: 'transparent linear-gradient(112deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
     boxShadow: '5px 15px 30px #3939391A',
+    marginTop: '30px',
     borderRadius: '50px',
     opacity: 1,
-    font: 'Montserrat',
-    fontSize: '24px',
+    letterSpacing: 0,
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+    paddingLeft: 40,
+    paddingRight: 40,
   },
   Footer_Contact: {
     width: '100%',

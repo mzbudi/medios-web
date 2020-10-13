@@ -22,9 +22,7 @@ const useStyles = makeStyles({
     fontWeight: 'bold',
   },
   Title_CMS3: {
-    // position: 'absolute',
     fontSize: '50px',
-    // marginTop: '140px',
     font: 'Montserrat',
     fontFamily: 'Montserrat',
     fontWeight: 'semibold',
@@ -34,7 +32,6 @@ const useStyles = makeStyles({
     alignContent: 'center',
   },
   Title_CMS4: {
-    // position: 'absolute',
     fontSize: '30px',
     font: 'Montserrat',
     fontFamily: 'Montserrat',
@@ -76,23 +73,37 @@ const useStyles = makeStyles({
     marginLeft: '100px',
     marginRight: '100px',
   },
-  Solution_Content: {
+  Solution_Problem: {
     font: 'Montserrat',
     fontFamily: 'Montserrat',
-    fontSize: '40px',
+    fontSize: '50px',
     textAlign: 'center',
+    paddingTop: '50px',
+    color: 'Black',
+    marginBottom: '100px'
+  },
+  Solution_Content: {
+    font: 'normal normal 600 35px/43px Montserrat',
+    textAlign: 'left',
+    color:'#383838',
+    marginLeft: '100px',
+    marginTop: '0px'
   },
   Solution_Content2: {
-    font: 'Montserrat',
-    fontFamily: 'Montserrat',
-    fontSize: '28px',
+    font: 'normal normal normal 25px/30px Montserrat',
     textAlign: 'left',
-    margin: '100px',
+    marginTop: '50px',
+    marginLeft: '100px',
+    marginRight: '100px',
+    color: '#707070'
   },
   Image_CMS: {
     width: '100%',
     height: '100%',
     maxHeight: '426px',
+    maxWidth: '674px',
+    marginLeft: '100px',
+    marginBottom: '100px'
   },
   Benefit: {
     textAlign: 'center',

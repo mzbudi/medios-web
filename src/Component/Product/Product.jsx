@@ -88,7 +88,7 @@ function Product() {
         </div>
 
         <div className="Solution">
-          <p className={classes.Title_Problem}>Solution</p>
+          <p className={classes.Solution_Problem}>Solution</p>
           <Grid container>
             <Grid item xs={12} lg={6}>
               <p className={classes.Solution_Content}>MEDICAL RECORD IN YOUR HAND</p>

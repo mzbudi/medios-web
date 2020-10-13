@@ -47,8 +47,9 @@ function Contact() {
                 variant="outlined"
                 className={classes.Text_Field}
               />
-              <Button variant="contained" color="primary" className={classes.Button_Contact}>
-                Fly It
+              <br />
+              <Button variant="contained" type="submit" className={classes.Btn_Flyit}>
+                Fly it
               </Button>
             </div>
           </Grid>
