@@ -28,9 +28,11 @@ function Service() {
           </Grid>
           <div id="title-extra">
             <Grid item xs={6}>
+              <p className={classes.Opening_Service}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. .
+              </p>
             </Grid>
           </div>
           <Grid item xs={12} lg={4} md={4}>
