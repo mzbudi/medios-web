@@ -1,15 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Link as MLink, Button, AppBar, Toolbar, IconButton, Menu, MenuItem } from '@material-ui/core';
+import {
+  Link as MLink,
+  Button,
+  AppBar,
+  Toolbar,
+  IconButton,
+  Menu,
+  MenuItem,
+  Popper,
+  Grow,
+  Paper,
+  ClickAwayListener,
+  MenuList,
+} from '@material-ui/core';
 import DehazeIcon from '@material-ui/icons/Dehaze';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { logoMedios, flagId, flagUk } from '../../Assets/Icon';
 import useStyles from './HeaderStyle.js';
 
 function Header() {
   const classes = useStyles();
-
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
+  const [open, setOpen] = React.useState(false);
+  const anchorRef = React.useRef(null);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleMobileMenuClose = () => {
@@ -56,6 +70,26 @@ function Header() {
       </MenuItem>
     </Menu>
   );
+
+  const handleToggle = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
+  const handleClose = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  function handleListKeyDown(event) {
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      setOpen(false);
+    }
+  }
+
   return (
     <div className={classes.Header_Root}>
       <AppBar position="absolute" className={classes.Header_Menubar}>
@@ -65,16 +99,46 @@ function Header() {
           </MLink>
           <div className={classes.Header_Grow} />
           <div className={classes.Header_Menulist}>
-            <Button component={Link} to="/about" className={classes.Header_MenuBtn}>
+            <Button component={Link} to="/about" className={classes.Header_MenuBtn} disableRipple>
               About Medios
             </Button>
-            <Button component={Link} to="/product" className={classes.Header_MenuBtn}>
+            <Button
+              component={Link}
+              to="/product"
+              className={classes.Header_MenuBtn}
+              onMouseEnter={handleToggle}
+              ref={anchorRef}
+              disableRipple
+              // onMouseLeave={handleToggle}
+            >
               Product
+              <ExpandMoreIcon />
             </Button>
-            <Button component={Link} to="/service" className={classes.Header_MenuBtn}>
+            <Popper open={open} anchorEl={anchorRef.current} transition disablePortal>
+              {({ TransitionProps, placement }) => (
+                <Grow
+                  {...TransitionProps}
+                  style={{
+                    transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom',
+                  }}
+                >
+                  <Paper className={classes.Header_ProductPoP}>
+                    <ClickAwayListener onClickAway={handleClose}>
+                      <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                        <MenuItem onClick={handleClose}>Cloud Medical System</MenuItem>
+                        <MenuItem onClick={handleClose}>DSS-CoividNet</MenuItem>
+                        <MenuItem onClick={handleClose}>EHR-HIS</MenuItem>
+                      </MenuList>
+                    </ClickAwayListener>
+                  </Paper>
+                </Grow>
+              )}
+            </Popper>
+
+            <Button component={Link} to="/service" className={classes.Header_MenuBtn} disableRipple>
               Service
             </Button>
-            <Button component={Link} to="/project" className={classes.Header_MenuBtn}>
+            <Button component={Link} to="/project" className={classes.Header_MenuBtn} disableRipple>
               Project
             </Button>
             <Button className={classes.Header_FlagID}>

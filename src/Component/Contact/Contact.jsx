@@ -30,7 +30,13 @@ function Contact() {
           <Grid item xs={6} lg={6}>
             <div className={classes.Form_Contact}>
               <FormHelperText className={classes.Form_Label}> Your name or company (required) </FormHelperText>
-              <TextField id="outlined-basic" label="Name/Company" variant="outlined" className={classes.Text_Field} />
+              <TextField
+                id="outlined-basic"
+                label="Name/Company"
+                variant="outlined"
+                className={classes.Text_Field}
+                color="secondary"
+              />
               <FormHelperText className={classes.Form_Label}> Your email (required) </FormHelperText>
               <TextField
                 id="outlined-textarea"
@@ -38,6 +44,7 @@ function Contact() {
                 multiline
                 variant="outlined"
                 className={classes.Text_Field}
+                color="secondary"
               />
               <FormHelperText className={classes.Form_Label}> Your message </FormHelperText>
               <TextField
@@ -46,6 +53,7 @@ function Contact() {
                 multiline
                 variant="outlined"
                 className={classes.Text_Field}
+                color="secondary"
               />
               <br />
               <Button variant="contained" type="submit" className={classes.Btn_Flyit}>

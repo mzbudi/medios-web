@@ -38,6 +38,11 @@ const useStyles = makeStyles((theme) => ({
     color: '#707070',
     textDecoration: 'none',
     marginBottom: '0px',
+    '&:hover': {
+      color: 'green',
+      backgroundColor: 'transparent',
+      textDecoration: 'none',
+    },
   },
   Footer_Text_Contact: {
     textAlign: 'left',

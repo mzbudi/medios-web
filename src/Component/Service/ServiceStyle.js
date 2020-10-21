@@ -66,6 +66,10 @@ const useStyles = makeStyles({
     width: '183px',
     height: '60px',
     borderRadius: '10px',
+    '&:hover': {
+      background: 'linear-gradient(114deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
+      color: 'white',
+    },
   },
   Main_TextService: {
     font: 'normal normal 600 60px/73px Montserrat',
