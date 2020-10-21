@@ -10,6 +10,7 @@ import IOT from './Component/Services/IOT';
 import AI from './Component/Services/AI';
 import Analysis from './Component/Services/Analysis';
 import Project from './Component/Project';
+import About from './Component/About';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,6 +47,9 @@ function MainRouter() {
         </Route>
         <Route path="/project">
           <Project />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
       </Switch>
     </Router>
