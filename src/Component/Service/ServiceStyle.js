@@ -1,7 +1,26 @@
 import { makeStyles } from '@material-ui/core/styles';
 import HeaderImage from '../../Assets/Images/ImageService.png';
+import { green, red, blue, yellow, purple } from '@material-ui/core/colors';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
+  root: {
+    padding: theme.spacing(1),
+    [theme.breakpoints.down('xs')]: {
+      backgroundColor: theme.palette.secondary.main,
+    },
+    [theme.breakpoints.between('xs', 'sm')]: {
+      backgroundColor: theme.palette.primary.main,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      backgroundColor: yellow[500],
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      backgroundColor: purple[500],
+    },
+    [theme.breakpoints.up('lg')]: {
+      backgroundColor: green[500],
+    },
+  },
   Main_ImageSection: {
     width: 204,
     height: 304.39,
@@ -16,6 +35,23 @@ const useStyles = makeStyles({
   },
   Footer: {
     marginTop: '300px',
+  },
+  Opening_Service: {
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 10px/14px Montserrat',
+      color: '#707070',
+    },
+    [theme.breakpoints.between('md','lg')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 15px/19px Montserrat',
+      color: '#707070',
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 18px/22px Montserrat',
+      color: '#707070',
+    }
   },
   HeaderImage: {
     backgroundImage: `url(${HeaderImage})`,
@@ -78,6 +114,6 @@ const useStyles = makeStyles({
   Margin_Card: {
     marginTop: '100px',
   },
-});
+}));
 
 export default useStyles;

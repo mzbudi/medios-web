@@ -27,14 +27,6 @@ function Product() {
         MEDICAL RECORD IN YOUR HAND
         </Typography>
       </div>
-      {/* <Grid container>
-        <Grid item xs={12}>
-          <Header />
-          <img className={classes.Image_Header} src={HeaderImage} alt="CMS" width="1920px" height="1080px" />
-          <p className={classes.Title_CMS}> CLOUD MEDICAL SYSTEM (CMS) </p>
-          <p className={classes.Title_CMS2}> MEDICAL RECORD IN YOUR HAND </p>
-        </Grid>
-      </Grid> */}
       <div className="Content">
         <Container style={{ textAlign: 'center' }}>
           <img src={Logo} className={classes.Logo} alt="CMS" />
@@ -53,7 +45,7 @@ function Product() {
             <Grid
               container
               direction="row"
-              style={{ verticalAlign: 'center', textAlign: 'center', paddingTop: '50px' }}
+              style={{ verticalAlign: 'center', textAlign: 'center' }}
             >
               <Grid lg={4} item container direction="column">
                 <Grid item>
@@ -96,7 +88,7 @@ function Product() {
         </div>
 
         <div className="Solution">
-          <p className={classes.Solution_Problem}>Solution</p>
+          <p className={classes.Title_Problem}>Solution</p>
           <Grid container>
             <Grid item xs={12} lg={6}>
               <p className={classes.Solution_Content}>MEDICAL RECORD IN YOUR HAND</p>
