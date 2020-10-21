@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import HeaderImage from '../../Assets/Images/ImageCMSPAGE.png';
-import { green, red, blue, yellow, purple } from '@material-ui/core/colors';
+import { green, yellow, purple } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -137,15 +137,19 @@ const useStyles = makeStyles((theme) => ({
   Title_CMS4: {
     [theme.breakpoints.down('md')]: {
       textAlign: 'center',
-      font: 'normal normal normal 25px/30px Montserrat',
+      font: 'normal normal normal 10px/15px Montserrat',
       color: '#383838',
-      textTransform: 'capitalize'
+      textTransform: 'capitalize',
+      marginLeft: '5%',
+      marginRight: '5%'
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',
       font: 'normal normal normal 15px/20px Montserrat',
       color: '#383838',
-      textTransform: 'capitalize'
+      textTransform: 'capitalize',
+      marginLeft: '10%',
+      marginRight: '10%'
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
@@ -392,7 +396,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('lg')]: {
       backgroundColor: '#F2FFF9',
-      marginLeft: '3%',
+      marginLeft: '1%',
       width: '100%',
       height: '100%',
       maxHeight: '251px',

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Grid, Card, CardContent, Button, Container, Typography } from '@material-ui/core';
+import { Grid, Container, Typography } from '@material-ui/core';
 import Header from '../Header';
 import Footer from '../Footer';
 import image from '../../Assets/Images/Blank.png';
@@ -18,13 +17,13 @@ function Service() {
       </div>
 
 
-      <div className={classes.root}>
+      {/* <div className={classes.root}>
         <Typography>{'xs down: red'}</Typography>
         <Typography>{'xs to sm: blue'}</Typography>
         <Typography>{'sm to md: yellow'}</Typography>
         <Typography>{'md to lg: purple'}</Typography>
         <Typography>{'lg up: green'}</Typography>
-      </div>
+      </div> */}
 
       <Container>
         <Grid container>

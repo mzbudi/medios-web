@@ -31,6 +31,13 @@ function Main() {
       <p className={classes.Main_OpeningText}>
         Specialized IT Solution in health service but not limited to them, for your instances & companies
       </p>
+      {/* <div className={classes.rood}>
+        <Typography>{'xs down: red'}</Typography>
+        <Typography>{'xs to sm: blue'}</Typography>
+        <Typography>{'sm to md: yellow'}</Typography>
+        <Typography>{'md to lg: purple'}</Typography>
+        <Typography>{'lg up: green'}</Typography>
+      </div> */}
       <p className={classes.Main_OpeningText2}>
         We already apply standard procedure that guarantee safety & optimality for your needs to give you a
         comprehensive IT solutions
