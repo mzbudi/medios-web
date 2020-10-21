@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import HeaderImage from '../../Assets/Images/ImageCMSPAGE.png';
 import { green, yellow, purple } from '@material-ui/core/colors';
+import HeaderImage from '../../Assets/Images/ImageCMSPAGE.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '10px'
+      marginTop: '10px',
     },
     [theme.breakpoints.between('xs', 'sm')]: {
       textAlign: 'center',
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '25px'
+      marginTop: '25px',
     },
     [theme.breakpoints.between('sm', 'md')]: {
       textAlign: 'center',
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '50px'
+      marginTop: '50px',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '100px'
+      marginTop: '100px',
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '250px'
+      marginTop: '250px',
     },
   },
   Main_TextService2: {
@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '10px'
+      marginTop: '10px',
     },
     [theme.breakpoints.between('xs', 'sm')]: {
       textAlign: 'center',
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '10px'
+      marginTop: '10px',
     },
     [theme.breakpoints.between('sm', 'md')]: {
       textAlign: 'center',
@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '20px'
+      marginTop: '20px',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',
@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       opacity: '1',
-      marginTop: '50px'
+      marginTop: '50px',
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'uppercase',
       marginTop: '30px',
-      marginBottom: '250px'
+      marginBottom: '250px',
     },
   },
   Title_CMS3: {
@@ -119,19 +119,19 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       font: 'normal normal 600 10px/17px Montserrat',
       color: '#383838',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',
       font: 'normal normal 600 20px/27px Montserrat',
       color: '#383838',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
       font: 'normal normal 600 30px/37px Montserrat',
       color: '#383838',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
     },
   },
   Title_CMS4: {
@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'capitalize',
       marginLeft: '5%',
-      marginRight: '5%'
+      marginRight: '5%',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',
@@ -149,13 +149,13 @@ const useStyles = makeStyles((theme) => ({
       color: '#383838',
       textTransform: 'capitalize',
       marginLeft: '10%',
-      marginRight: '10%'
+      marginRight: '10%',
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
       font: 'normal normal normal 25px/30px Montserrat',
       color: '#383838',
-      textTransform: 'capitalize'
+      textTransform: 'capitalize',
     },
   },
   Logo: {
@@ -188,7 +188,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#F2FFF9',
     padding: '0px',
     width: '100%',
-    height: '100%'
+    height: '100%',
     // maxHeight: '574px',
   },
   Title_Problem: {
@@ -295,21 +295,21 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: '#383838',
       marginLeft: '25px',
-      marginTop: '10px'
+      marginTop: '10px',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       font: 'normal normal 600 25px/32px Montserrat',
       textAlign: 'center',
       color: '#383838',
       marginLeft: '50px',
-      marginTop: '10px'
+      marginTop: '10px',
     },
     [theme.breakpoints.up('lg')]: {
       font: 'normal normal 600 35px/43px Montserrat',
       textAlign: 'left',
       color: '#383838',
       marginLeft: '100px',
-      marginTop: '0px'
+      marginTop: '0px',
     },
   },
   Solution_Content2: {
@@ -319,7 +319,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '15px',
       marginLeft: '50px',
       marginRight: '50px',
-      color: '#707070'
+      color: '#707070',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       font: 'normal normal normal 20px/25px Montserrat',
@@ -327,7 +327,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '50px',
       marginLeft: '100px',
       marginRight: '100px',
-      color: '#707070'
+      color: '#707070',
     },
     [theme.breakpoints.up('lg')]: {
       font: 'normal normal normal 25px/30px Montserrat',
@@ -335,7 +335,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '50px',
       marginLeft: '100px',
       marginRight: '100px',
-      color: '#707070'
+      color: '#707070',
     },
   },
   Image_CMS: {
@@ -364,7 +364,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '674px',
       marginTop: '40px',
       marginLeft: '50px',
-      marginBottom: '100px'
+      marginBottom: '100px',
     },
     [theme.breakpoints.up('xl')]: {
       width: '100%',
@@ -373,7 +373,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '674px',
       marginTop: '40px',
       marginLeft: '%',
-      marginBottom: '100px'
+      marginBottom: '100px',
     },
   },
   Benefit: {
@@ -420,8 +420,8 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '30px',
     },
     [theme.breakpoints.up('lg')]: {
-      width: '75px',
-      height: '75px',
+      width: '70px',
+      height: '57px',
       alignItems: 'center',
       alignContent: 'center',
       textAlign: 'center',
@@ -437,7 +437,6 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
     },
     [theme.breakpoints.between('md', 'lg')]: {
-
       font: 'Montserrat',
       fontFamily: 'Montserrat',
       color: '#707070',
@@ -456,6 +455,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     marginTop: '200px',
   },
-}))
+}));
 
 export default useStyles;

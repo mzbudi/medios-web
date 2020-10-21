@@ -21,10 +21,10 @@ function Product() {
       <div className={classes.Image_Header}>
         <Header />
         <Typography align="center" className={classes.Main_TextService1}>
-        Cloud Medical System (CMS)
+          Cloud Medical System (CMS)
         </Typography>
         <Typography align="center" className={classes.Main_TextService2}>
-        MEDICAL RECORD IN YOUR HAND
+          MEDICAL RECORD IN YOUR HAND
         </Typography>
       </div>
       <div className="Content">
@@ -42,11 +42,7 @@ function Product() {
         <div className="Problem">
           <Paper className={classes.Container_Problem}>
             <p className={classes.Title_Problem}>Problem</p>
-            <Grid
-              container
-              direction="row"
-              style={{ verticalAlign: 'center', textAlign: 'center' }}
-            >
+            <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }}>
               <Grid lg={4} item container direction="column">
                 <Grid item>
                   <img src={Paperclip} className={classes.Icon_Image} alt="Paper" />

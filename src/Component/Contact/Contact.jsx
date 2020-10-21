@@ -39,7 +39,8 @@ function Contact() {
           <Grid item xs={6} lg={6}>
             <div className={classes.Form_Contact}>
               <FormHelperText className={classes.Form_Label}> Your name or company (required) </FormHelperText>
-              <TextField id="outlined-textarea"
+              <TextField
+                id="outlined-textarea"
                 variant="outlined"
                 InputProps={{
                   classes: {
@@ -47,7 +48,7 @@ function Contact() {
                   },
                 }}
                 className={classes.Text_Field}
-s              />
+              />
               <FormHelperText className={classes.Form_Label}> Your email (required) </FormHelperText>
               <TextField
                 id="outlined-textarea"

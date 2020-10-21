@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import HeaderImage from '../../Assets/Images/ImageService.png';
+
 const useStyles = makeStyles({
   Main_ImageSection: {
     width: 204,

@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import HeaderImage from '../../Assets/Images/ImageContactHeader.png';
 import { green, yellow, purple } from '@material-ui/core/colors';
-
+import HeaderImage from '../../Assets/Images/ImageContactHeader.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   Main_TextService: {
     textAlign: 'center',
     font: 'normal normal 600 60px/73px Montserrat',
-    color: '#29AE6D'
+    color: '#29AE6D',
   },
   ReachUs_Title: {
     [theme.breakpoints.down('sm')]: {
@@ -43,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '5%',
       textAlign: 'center',
       font: 'normal normal 600 36px Montserrat',
-      color: '#29AE6D'
+      color: '#29AE6D',
     },
     [theme.breakpoints.between('sm', 'md')]: {
       marginTop: '5%',
@@ -85,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       font: 'Montserrat',
       fontSize: '12px',
-      color: '#707070'
+      color: '#707070',
     },
     [theme.breakpoints.between('sm', 'md')]: {
       font: 'Montserrat',
@@ -115,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
       height: '10%',
       borderRadius: '10px',
       opacity: 1,
-      marginBottom: '10px'
+      marginBottom: '10px',
     },
     [theme.breakpoints.between('xs', 'sm')]: {
       width: '90%',
@@ -138,13 +137,13 @@ const useStyles = makeStyles((theme) => ({
   // },
   resize: {
     [theme.breakpoints.down('xs')]: {
-      fontSize: 10
+      fontSize: 10,
     },
     [theme.breakpoints.between('xs', 'sm')]: {
-      fontSize: 12
+      fontSize: 12,
     },
     [theme.breakpoints.up('sm')]: {
-      fontSize: 48
+      fontSize: 48,
     },
   },
   Btn_Flyit: {
@@ -169,15 +168,18 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: 'bold',
       paddingLeft: 40,
       paddingRight: 40,
-    }
+    },
   },
   Contact_Image: {
     width: '75%',
     height: '75%',
   },
   Footer: {
+    [theme.breakpoints.up('xs')]: {
+      marginTop: '300px',
+    },
     width: '100%',
-    marginTop: '200px'
+    marginTop: '100px',
   },
 }));
 

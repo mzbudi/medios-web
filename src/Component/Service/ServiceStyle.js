@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import HeaderImage from '../../Assets/Images/ImageService.png';
 import { green, yellow, purple } from '@material-ui/core/colors';
+import HeaderImage from '../../Assets/Images/ImageService.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       font: 'normal normal normal 18px/22px Montserrat',
       color: '#707070',
-    }
+    },
   },
   HeaderImage: {
     backgroundImage: `url(${HeaderImage})`,
@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
       opacity: '1',
       padding: '0px',
       margin: '0px',
-    }
+    },
   },
   Card_Text: {
     [theme.breakpoints.down('sm')]: {
@@ -127,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#707070',
       opacity: '1',
       margin: '0px',
-    }
+    },
   },
   Card_Style: {
     boxShadow: '0 0 transparent;',
@@ -174,15 +174,15 @@ const useStyles = makeStyles((theme) => ({
         background: 'linear-gradient(114deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
         color: 'white',
       },
-    }
     },
-    Main_TextService: {
-      font: 'normal normal 600 60px/73px Montserrat',
-      color: '#29AE6D',
-    },
-    Margin_Card: {
-      marginTop: '100px',
-    },
-  }));
+  },
+  Main_TextService: {
+    font: 'normal normal 600 60px/73px Montserrat',
+    color: '#29AE6D',
+  },
+  Margin_Card: {
+    marginTop: '100px',
+  },
+}));
 
 export default useStyles;
