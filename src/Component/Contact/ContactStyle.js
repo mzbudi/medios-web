@@ -1,16 +1,22 @@
 import { makeStyles } from '@material-ui/core/styles';
 import HeaderImage from '../../Assets/Images/ImageContactHeader.png';
-import { green } from '@material-ui/core/colors';
+import { green, red, blue, yellow, purple } from '@material-ui/core/colors';
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(1),
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       backgroundColor: theme.palette.secondary.main,
     },
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.between('xs', 'sm')]: {
       backgroundColor: theme.palette.primary.main,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      backgroundColor: yellow[500],
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      backgroundColor: purple[500],
     },
     [theme.breakpoints.up('lg')]: {
       backgroundColor: green[500],
@@ -27,33 +33,16 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
   },
   Main_TextService: {
-    [theme.breakpoints.down('sm')]: {
-      textAlign: 'center',
-      font: 'normal normal 600 24px Montserrat',
-      color: '#29AE6D'
-    },
-    [theme.breakpoints.between('sm', 'md')]: {
-      textAlign: 'center',
-      font: 'normal normal 600 48px Montserrat',
-      color: '#29AE6D'
-    },
-    [theme.breakpoints.up('lg')]: {
-      textAlign: 'center',
-      font: 'normal normal 600 60px/73px Montserrat',
-      color: '#29AE6D'
-    },
+    textAlign: 'center',
+    font: 'normal normal 600 60px/73px Montserrat',
+    color: '#29AE6D'
   },
-  // Main_TextService: {
-  //   textAlign: 'center',
-  //   font: 'normal normal 600 60px/73px Montserrat',
-  //   color: '#29AE6D'
-  // },
   ReachUs_Title: {
     [theme.breakpoints.down('sm')]: {
       marginTop: '5%',
       marginBottom: '5%',
       textAlign: 'center',
-      font: 'normal normal 600 24px Montserrat',
+      font: 'normal normal 600 36px Montserrat',
       color: '#29AE6D'
     },
     [theme.breakpoints.between('sm', 'md')]: {
@@ -122,13 +111,14 @@ const useStyles = makeStyles((theme) => ({
   // },
   Text_Field: {
     [theme.breakpoints.down('xs')]: {
-      width: '10%',
+      width: '50%',
       height: '10%',
       borderRadius: '10px',
       opacity: 1,
+      marginBottom: '10px'
     },
     [theme.breakpoints.between('xs', 'sm')]: {
-      width: '40%',
+      width: '90%',
       height: '40%',
       borderRadius: '10px',
       opacity: 1,

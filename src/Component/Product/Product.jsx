@@ -18,8 +18,7 @@ function Product() {
   const classes = useStyles();
   return (
     <>
-    <p className={classes.Coba1}> hahaha </p>
-      {/* <div className={classes.Image_Header}>
+      <div className={classes.Image_Header}>
         <Header />
         <Typography align="center" className={classes.Main_TextService1}>
         Cloud Medical System (CMS)
@@ -46,7 +45,7 @@ function Product() {
             <Grid
               container
               direction="row"
-              style={{ verticalAlign: 'center', textAlign: 'center', paddingTop: '50px' }}
+              style={{ verticalAlign: 'center', textAlign: 'center' }}
             >
               <Grid lg={4} item container direction="column">
                 <Grid item>
@@ -89,7 +88,7 @@ function Product() {
         </div>
 
         <div className="Solution">
-          <p className={classes.Solution_Problem}>Solution</p>
+          <p className={classes.Title_Problem}>Solution</p>
           <Grid container>
             <Grid item xs={12} lg={6}>
               <p className={classes.Solution_Content}>MEDICAL RECORD IN YOUR HAND</p>
@@ -163,7 +162,7 @@ function Product() {
 
       <div className={classes.Footer}>
         <Footer />
-      </div> */}
+      </div>
     </>
   );
 }
