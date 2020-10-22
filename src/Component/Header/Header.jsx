@@ -64,8 +64,8 @@ function Header() {
       <ListItem component={Link} to="/about">
         <Button className={classes.Header_BtnResponsive}>About Medios</Button>
       </ListItem>
-      <ListItem component={Link} to="/product">
-        <Button className={classes.Header_BtnResponsive} onClick={handleClick}>
+      <ListItem onClick={handleClick}>
+        <Button component={Link} to="/product" className={classes.Header_BtnResponsive}>
           Product
         </Button>
         {openMobile ? <ExpandLess /> : <ExpandMore />}
