@@ -41,8 +41,14 @@ const useStyles = makeStyles({
     font: '20px/24px Montserrat',
   },
   Header_Logo: {
-    height: '112px',
-    width: '134px',
+    [theme.breakpoints.down('sm')]: {
+      height: '70px',
+      width: '92px',
+    },
+    [theme.breakpoints.up('sm')]: {
+      height: '112px',
+      width: '134px',
+    },
   },
   Header_Flag: {
     height: '25px',

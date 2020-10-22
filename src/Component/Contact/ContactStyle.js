@@ -59,13 +59,6 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
     },
   },
-  // ReachUs_Title: {
-  //   marginTop: '5%',
-  //   marginBottom: '5%',
-  //   font: 'normal normal 600 60px/73px Montserrat',
-  //   color: '#29AE6D',
-  //   textAlign: 'center',
-  // },
   Grid_Image: {
     display: 'flex',
     alignContent: 'center',
@@ -101,13 +94,6 @@ const useStyles = makeStyles((theme) => ({
       margin: '20px',
     },
   },
-  // Form_Label: {
-  //   font: 'Montserrat',
-  //   fontSize: '30px',
-  //   color: '#707070',
-  //   opacity: 1,
-  //   margin: '20px',
-  // },
   Text_Field: {
     [theme.breakpoints.down('xs')]: {
       width: '50%',
@@ -129,12 +115,6 @@ const useStyles = makeStyles((theme) => ({
       opacity: 1,
     },
   },
-  // Text_Field: {
-  //   width: '80%',
-  //   height: '80%',
-  //   borderRadius: '10px',
-  //   opacity: 1,
-  // },
   resize: {
     [theme.breakpoints.down('xs')]: {
       fontSize: 10,

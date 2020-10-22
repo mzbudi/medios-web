@@ -1,28 +1,91 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { green, yellow, purple } from '@material-ui/core/colors';
 import HeaderImage from '../../Assets/Images/ImageService.png';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
+  root: {
+    padding: theme.spacing(1),
+    [theme.breakpoints.down('xs')]: {
+      backgroundColor: theme.palette.secondary.main,
+    },
+    [theme.breakpoints.between('xs', 'sm')]: {
+      backgroundColor: theme.palette.primary.main,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      backgroundColor: yellow[500],
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      backgroundColor: purple[500],
+    },
+    [theme.breakpoints.up('lg')]: {
+      backgroundColor: green[500],
+    },
+  },
   Main_ImageSection: {
     width: 204,
     height: 304.39,
   },
   Title: {
-    font: 'normal normal 600 50px/61px Montserrat',
-    color: '#29ae6d',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 25px/36px Montserrat',
+      color: '#29ae6d',
+      marginTop: '50px',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      font: 'normal normal 600 35px/41px Montserrat',
+      color: '#29ae6d',
+    },
+    [theme.breakpoints.up('lg')]: {
+      font: 'normal normal 600 50px/61px Montserrat',
+      color: '#29ae6d',
+    },
   },
   Title_Card: {
-    font: 'normal normal 600 50px/61px Montserrat',
-    color: '#29ae6d',
-    marginBottom: '0px',
-    paddingBottom: '0px',
+    [theme.breakpoints.down('sm')]: {
+      font: 'normal normal 600 25px/36px Montserrat',
+      color: '#29ae6d',
+      marginBottom: '0px',
+      paddingBottom: '0px',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      font: 'normal normal 600 35px/41px Montserrat',
+      color: '#29ae6d',
+      marginBottom: '0px',
+      paddingBottom: '0px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      font: 'normal normal 600 50px/61px Montserrat',
+      color: '#29ae6d',
+      marginBottom: '0px',
+      paddingBottom: '0px',
+    },
   },
   Title_Extra: {
-    font: 'normal normal 600 50px/61px Montserrat',
-    color: '#29ae6d',
-    marginTop: '0px',
-    paddingTop: '0px',
-    marginBottom: '0px',
-    paddingBottom: '0px',
+    [theme.breakpoints.down('sm')]: {
+      font: 'normal normal 600 25px/36px Montserrat',
+      color: '#29ae6d',
+      marginTop: '0px',
+      paddingTop: '0px',
+      marginBottom: '0px',
+      paddingBottom: '0px',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      font: 'normal normal 600 35px/51px Montserrat',
+      color: '#29ae6d',
+      marginTop: '0px',
+      paddingTop: '0px',
+      marginBottom: '0px',
+      paddingBottom: '0px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      font: 'normal normal 600 50px/61px Montserrat',
+      color: '#29ae6d',
+      marginTop: '0px',
+      paddingTop: '0px',
+      marginBottom: '0px',
+      paddingBottom: '0px',
+    },
   },
   Cirlce: {
     borderRadius: '50%',
@@ -36,13 +99,38 @@ const useStyles = makeStyles({
     marginTop: '300px',
   },
   HeaderImage: {
-    backgroundImage: `url(${HeaderImage})`,
-    padding: '200px',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
+    [theme.breakpoints.down('sm')]: {
+      backgroundImage: `url(${HeaderImage})`,
+      paddingTop: '200px',
+      paddingBottom: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      backgroundImage: `url(${HeaderImage})`,
+      paddingTop: '200px',
+      paddingBottom: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      backgroundImage: `url(${HeaderImage})`,
+      paddingTop: '200px',
+      paddingBottom: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    },
+    [theme.breakpoints.up('lg')]: {
+      backgroundImage: `url(${HeaderImage})`,
+      padding: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    },
   },
-
   textStyle: {
     width: '99%',
     position: 'absolute',
@@ -51,14 +139,61 @@ const useStyles = makeStyles({
     font: 'normal normal 600 30px/35px Montserrat;',
     textAlign: 'center',
   },
-
   Card_Title: {
-    fontFamily: 'Montserrat',
-    color: '#29ae6d',
-    opacity: '1',
-    padding: '0px',
-    margin: '0px',
-    font: 'normal normal normal 30px/37px Montserrat;',
+    [theme.breakpoints.down('sm')]: {
+      fontFamily: 'Montserrat',
+      color: '#29ae6d',
+      opacity: '1',
+      padding: '0px',
+      margin: '0px',
+      font: 'normal normal normal 15px/22px Montserrat;',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      fontFamily: 'Montserrat',
+      color: '#29ae6d',
+      opacity: '1',
+      padding: '0px',
+      margin: '0px',
+      font: 'normal normal normal 25px/32px Montserrat;',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontFamily: 'Montserrat',
+      color: '#29ae6d',
+      opacity: '1',
+      padding: '0px',
+      margin: '0px',
+      font: 'normal normal normal 30px/37px Montserrat;',
+    },
+  },
+  Card_Title_Description: {
+    [theme.breakpoints.down('sm')]: {
+      fontFamily: 'Montserrat',
+      color: '#29ae6d',
+      opacity: '1',
+      padding: '0px',
+      marginLeft: '40px',
+      marginRight: '40px',
+      textAlign: 'center',
+      font: 'normal normal normal 15px/22px Montserrat;',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      fontFamily: 'Montserrat',
+      color: '#29ae6d',
+      opacity: '1',
+      padding: '0px',
+      margin: '0px',
+      font: 'normal normal normal 25px/32px Montserrat;',
+      marginLeft: '40px',
+      marginRight: '40px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontFamily: 'Montserrat',
+      color: '#29ae6d',
+      opacity: '1',
+      padding: '0px',
+      margin: '0px',
+      font: 'normal normal normal 30px/37px Montserrat;',
+    },
   },
   Card_Text: {
     textAlign: 'center',
@@ -69,28 +204,65 @@ const useStyles = makeStyles({
   },
   Card_Style: {
     boxShadow: '0 0 transparent;',
+    margin: '0px',
+    padding: '0px',
   },
   Button_Midle: {
     textAlign: 'center',
   },
   Dot_Left: {
-    marginRight: '50px',
-    width: '24px',
-    height: '24px',
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: '25px',
+      marginRight: '25px',
+      width: '12px',
+      height: '12px',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      marginRight: '50px',
+      width: '24px',
+      height: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginRight: '50px',
+      width: '24px',
+      height: '24px',
+    },
   },
   Dot: {
-    marginLeft: '100px',
-    marginRight: '50px',
-    width: '24px',
-    height: '24px',
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: '75px',
+      marginRight: '25px',
+      width: '12px',
+      height: '12px',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      marginLeft: '100px',
+      marginRight: '50px',
+      width: '24px',
+      height: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginLeft: '100px',
+      marginRight: '50px',
+      width: '24px',
+      height: '24px',
+    },
   },
   Grid_Margin: {
-    marginTop: '100px',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '50px',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      marginTop: '100px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '100px',
+    },
   },
   Main_Text: {
     font: 'normal normal 600 60px/73px Montserrat',
     color: '#29AE6D',
   },
-});
+}));
 
 export default useStyles;

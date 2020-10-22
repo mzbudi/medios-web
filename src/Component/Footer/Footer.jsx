@@ -13,7 +13,7 @@ function Footer() {
           <Grid container spacing={4}>
             <Grid item container direction="column" xs={12} md={4} sm={12} lg={5} xl={4} spacing={3}>
               <Grid item>
-                <MLink className={classes.Footer_Text} component={Link} to="/">
+                <MLink component={Link} to="/">
                   <img src={logoMedios} alt="logo" className={classes.Logo_Medios} />
                 </MLink>
               </Grid>
@@ -23,7 +23,7 @@ function Footer() {
                 </Typography>
               </Grid>
               <Grid item>
-                <div style={{ marginBottom: '0px', marginTop: '30px' }}>
+                <div className={classes.Container_Logo}>
                   <img src={instagram} alt="logo" className={classes.Social_Logo} />
                   <img src={facebook} alt="logo" className={classes.Social_Logo} />
                   <img src={linkedin} alt="logo" className={classes.Social_Logo} />
@@ -34,25 +34,25 @@ function Footer() {
               <Grid item>
                 <Typography className={classes.Footer_Title_Menu}>Menu</Typography>
               </Grid>
-              <Grid item container direction="row">
-                <Grid item lg={6}>
+              <Grid item container direction="row" className={classes.Footer_Menu}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/about">
                     About Medios
                   </MLink>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/service">
                     Service
                   </MLink>
                 </Grid>
               </Grid>
               <Grid item container direction="row">
-                <Grid item lg={6}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/product">
                     Product
                   </MLink>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/project">
                     Project
                   </MLink>

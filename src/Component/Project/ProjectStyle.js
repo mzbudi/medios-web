@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import HeaderImage from '../../Assets/Images/ImageProject.png';
 import { green, yellow, purple } from '@material-ui/core/colors';
+import HeaderImage from '../../Assets/Images/ImageProject.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,10 +38,6 @@ const useStyles = makeStyles((theme) => ({
       width: '90%',
       height: '100%',
     },
-    // Image_Border: {
-    //   borderRadius: '20px',
-    //   width: '90%',
-    //   height: '100%',
   },
   Text_Block1: {
     [theme.breakpoints.down('md')]: {
@@ -50,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
       width: '90%',
       height: '100%',
       color: 'white',
-      marginTop: '0px'
+      marginTop: '0px',
     },
     [theme.breakpoints.up('md')]: {
       backgroundColor: '#29AE6D4D',
@@ -58,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       width: '90%',
       height: '100%',
       color: 'white',
-      marginTop: '0px'
+      marginTop: '0px',
     },
     [theme.breakpoints.up('lg')]: {
       backgroundColor: '#29AE6D4D',
@@ -97,20 +93,10 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: '20px',
       borderRadius: '20px',
     },
-    // Text_Block2: {
-    //   width: '80%',
-    //   height: '30%',
-    //   backgroundColor: '#FFFFFF',
-    //   color: 'white',
-    //   boxShadow: '15px 15px 15px 10px #0000000D',
-    //   paddingLeft: '20px',
-    //   paddingRight: '20px',
-    //   borderRadius: '20px',
   },
   TextBlock_Title: {
     padding: theme.spacing(1),
     [theme.breakpoints.down('md')]: {
-      // marginTop: '9px',
       textAlign: 'center',
       font: 'normal normal bold 18px/22px Montserrat',
     },
@@ -119,9 +105,6 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'left',
       font: 'normal normal bold 18px/22px Montserrat',
     },
-    // marginTop: '9px',
-    // textAlign: 'left',
-    // font: 'normal normal bold 18px/22px Montserrat',
   },
   TextBlock_Content1: {
     textAlign: 'left',
@@ -132,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'left',
     color: '#707070',
     font: 'normal normal normal 15px/19px Montserrat',
-    paddingBottom: '20px'
+    paddingBottom: '20px',
   },
   Footer: {
     marginTop: '300px',

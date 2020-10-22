@@ -32,7 +32,7 @@ function IOT() {
           </Card>
         </Grid>
         <Grid item xs={12} lg={6} md={6} className={classes.Grid_Margin}>
-          <h1 className={classes.Title}>Feature</h1>
+          <h1 className={classes.Title}>Features</h1>
           <table>
             <tr>
               <td>
@@ -64,7 +64,7 @@ function IOT() {
             </tr>
           </table>
           <h1 className={classes.Title}>Description</h1>
-          <p className={classes.Card_Title}>
+          <p className={classes.Card_Title_Description}>
             Pada fitur Internet of Things (IoT), konektivitas hardware ataupun sensor untuk memberikan data yang akurat.
             Anda tidak perlu melakukan input karena semua terkoneksi dengan sensor ke sistem ERP Anda.
           </p>

@@ -37,7 +37,7 @@ function Service() {
           </div>
           <Grid item xs={12} lg={4} md={4}>
             <Card className={classes.Card_Style}>
-              <CardContent>
+              <CardContent className={classes.Card_Content}>
                 <div className={classes.Cirlce}>
                   <Responsive className={classes.Main_ImageSection} />
                 </div>
@@ -63,7 +63,7 @@ function Service() {
           </Grid>
           <Grid item xs={12} lg={4} md={4}>
             <Card className={classes.Card_Style}>
-              <CardContent>
+              <CardContent className={classes.Card_Content}>
                 <div className={classes.Cirlce}>
                   <Mobile className={classes.Main_ImageSection} />
                 </div>
@@ -89,7 +89,7 @@ function Service() {
           </Grid>
           <Grid item xs={12} lg={4} md={4}>
             <Card className={classes.Card_Style}>
-              <CardContent>
+              <CardContent className={classes.Card_Content}>
                 <div className={classes.Cirlce}>
                   <Drone className={classes.Main_ImageSection} />
                 </div>
@@ -116,7 +116,7 @@ function Service() {
           </Grid>
           <Grid item xs={12} lg={6} md={6} className={classes.Margin_Card}>
             <Card className={classes.Card_Style}>
-              <CardContent>
+              <CardContent className={classes.Card_Content}>
                 <div className={classes.Cirlce}>
                   <Ai className={classes.Main_ImageSection} />
                 </div>
@@ -142,7 +142,7 @@ function Service() {
           </Grid>
           <Grid item xs={12} lg={6} md={6} className={classes.Margin_Card}>
             <Card className={classes.Card_Style}>
-              <CardContent>
+              <CardContent className={classes.Card_Content}>
                 <div className={classes.Cirlce}>
                   <Analyst className={classes.Main_ImageSection} />
                 </div>

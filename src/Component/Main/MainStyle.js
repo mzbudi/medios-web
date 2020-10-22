@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 import { green, yellow, purple } from '@material-ui/core/colors';
+import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 
 const useStyles = makeStyles((theme) => ({
   rood: {
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
       opacity: 1,
       marginTop: 150,
       marginLeft: 100,
-      marginRight: 100
+      marginRight: 100,
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#8C8C8C',
       opacity: 1,
       marginLeft: 25,
-      marginRight: 25
+      marginRight: 25,
     },
     [theme.breakpoints.between('sm', 'md')]: {
       textAlign: 'center',
@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#8C8C8C',
       opacity: 1,
       marginLeft: 25,
-      marginRight: 25
+      marginRight: 25,
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',

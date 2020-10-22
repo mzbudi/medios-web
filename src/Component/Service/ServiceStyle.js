@@ -22,16 +22,43 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   Main_ImageSection: {
-    width: 204,
-    height: 304.39,
+    [theme.breakpoints.down('md')]: {
+      width: 104,
+      height: 204.39,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      width: 154,
+      height: 254.39,
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: 204,
+      height: 304.39,
+    },
   },
   Cirlce: {
-    borderRadius: '50%',
-    width: '304px',
-    height: '304px',
-    textAlign: 'center',
-    boxShadow: '5px 5px 15px #0000000d',
-    marginBottom: '30px',
+    [theme.breakpoints.down('md')]: {
+      borderRadius: '50%',
+      width: '200px',
+      height: '200px',
+      textAlign: 'center',
+      marginTop: '0px',
+      boxShadow: '5px 5px 15px #0000000d',
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      borderRadius: '50%',
+      width: '200px',
+      height: '200px',
+      textAlign: 'center',
+      boxShadow: '5px 5px 15px #0000000d',
+    },
+    [theme.breakpoints.up('lg')]: {
+      borderRadius: '50%',
+      width: '304px',
+      height: '304px',
+      textAlign: 'center',
+      boxShadow: '5px 5px 15px #0000000d',
+      marginBottom: '30px',
+    },
   },
   Footer: {
     marginTop: '300px',
@@ -72,7 +99,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Montserrat',
     textAlign: 'center',
   },
-
   Card_Title: {
     [theme.breakpoints.down('md')]: {
       font: ' normal normal 600 15px/22px Montserrat',
@@ -80,7 +106,8 @@ const useStyles = makeStyles((theme) => ({
       color: '#29ae6d',
       opacity: '1',
       padding: '0px',
-      margin: '0px',
+      marginTop: '20px',
+      marginBottom: '0px',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       font: ' normal normal 600 25px/32px Montserrat',
@@ -105,8 +132,8 @@ const useStyles = makeStyles((theme) => ({
       color: '#707070',
       opacity: '1',
       marginTop: '0px',
-      marginLeft: '30%',
-      marginRight: '30%',
+      marginLeft: '20%',
+      marginRight: '20%',
     },
     [theme.breakpoints.between('sm', 'md')]: {
       font: 'normal normal normal 15px/20px Montserrat',
@@ -137,6 +164,12 @@ const useStyles = makeStyles((theme) => ({
   },
   Button_Link: {
     textDecoration: 'none',
+  },
+  Card_Content: {
+    [theme.breakpoints.down('sm')]: {
+      margin: '0px',
+      padding: '0px',
+    },
   },
   Button_Text: {
     [theme.breakpoints.down('md')]: {
