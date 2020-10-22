@@ -108,10 +108,20 @@ const useStyles = makeStyles((theme) => ({
       backgroundRepeat: 'no-repeat',
     },
     [theme.breakpoints.between('sm', 'md')]: {
-      // backgroundColor: yellow[500],
+      backgroundImage: `url(${HeaderImage})`,
+      paddingTop: '200px',
+      paddingBottom: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
     },
     [theme.breakpoints.between('md', 'lg')]: {
-      // backgroundColor: purple[500],
+      backgroundImage: `url(${HeaderImage})`,
+      paddingTop: '200px',
+      paddingBottom: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
     },
     [theme.breakpoints.up('lg')]: {
       backgroundImage: `url(${HeaderImage})`,
@@ -121,7 +131,6 @@ const useStyles = makeStyles((theme) => ({
       backgroundRepeat: 'no-repeat',
     },
   },
-
   textStyle: {
     width: '99%',
     position: 'absolute',
@@ -195,6 +204,8 @@ const useStyles = makeStyles((theme) => ({
   },
   Card_Style: {
     boxShadow: '0 0 transparent;',
+    margin: '0px',
+    padding: '0px',
   },
   Button_Midle: {
     textAlign: 'center',
@@ -219,7 +230,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Dot: {
     [theme.breakpoints.down('sm')]: {
-      marginLeft: '25px',
+      marginLeft: '75px',
       marginRight: '25px',
       width: '12px',
       height: '12px',

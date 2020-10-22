@@ -38,8 +38,8 @@ const useStyles = makeStyles((theme) => ({
   Cirlce: {
     [theme.breakpoints.down('md')]: {
       borderRadius: '50%',
-      width: '50%',
-      height: '50%',
+      width: '200px',
+      height: '200px',
       textAlign: 'center',
       marginTop: '0px',
       boxShadow: '5px 5px 15px #0000000d',
@@ -106,7 +106,8 @@ const useStyles = makeStyles((theme) => ({
       color: '#29ae6d',
       opacity: '1',
       padding: '0px',
-      margin: '0px',
+      marginTop: '20px',
+      marginBottom: '0px',
     },
     [theme.breakpoints.between('md', 'lg')]: {
       font: ' normal normal 600 25px/32px Montserrat',
@@ -163,6 +164,12 @@ const useStyles = makeStyles((theme) => ({
   },
   Button_Link: {
     textDecoration: 'none',
+  },
+  Card_Content: {
+    [theme.breakpoints.down('sm')]: {
+      margin: '0px',
+      padding: '0px',
+    },
   },
   Button_Text: {
     [theme.breakpoints.down('md')]: {

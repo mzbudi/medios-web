@@ -34,7 +34,7 @@ function Footer() {
               <Grid item>
                 <Typography className={classes.Footer_Title_Menu}>Menu</Typography>
               </Grid>
-              <Grid item container direction="row">
+              <Grid item container direction="row" className={classes.Footer_Menu}>
                 <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/about">
                     About Medios

@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
       color: '#707070',
       textDecoration: 'none',
       marginLeft: '70px',
-      marginRight: '70px',
+      marginRight: '0px',
       '&:hover': {
         color: 'green',
         backgroundColor: 'transparent',
