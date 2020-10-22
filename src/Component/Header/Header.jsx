@@ -13,16 +13,22 @@ import {
   Paper,
   ClickAwayListener,
   MenuList,
+  Collapse,
+  List,
+  ListItem,
 } from '@material-ui/core';
+import { ExpandLess, ExpandMore } from '@material-ui/icons';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { logoMedios, flagId, flagUk } from '../../Assets/Icon';
+
 import useStyles from './HeaderStyle.js';
 
 function Header() {
   const classes = useStyles();
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const [open, setOpen] = React.useState(false);
+  const [openMobile, setOpenMobile] = React.useState(false);
   const anchorRef = React.useRef(null);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -32,6 +38,10 @@ function Header() {
 
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const handleClick = () => {
+    setOpenMobile(!openMobile);
   };
 
   const mobileMenuId = 'menu-mobile-trigger';
@@ -51,23 +61,39 @@ function Header() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem component={Link} to="/about">
+      <ListItem component={Link} to="/about">
         <Button className={classes.Header_BtnResponsive}>About Medios</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/product">
-        <Button className={classes.Header_BtnResponsive}>Product</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/service">
+      </ListItem>
+      <ListItem component={Link} to="/product">
+        <Button className={classes.Header_BtnResponsive} onClick={handleClick}>
+          Product
+        </Button>
+        {openMobile ? <ExpandLess /> : <ExpandMore />}
+      </ListItem>
+      <Collapse in={openMobile} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItem button className={classes.Header_Nested}>
+            CMS
+          </ListItem>
+          <ListItem button className={classes.Header_Nested}>
+            DSS-CoividNet
+          </ListItem>
+          <ListItem button className={classes.Header_Nested}>
+            EHR-HIS
+          </ListItem>
+        </List>
+      </Collapse>
+      <ListItem component={Link} to="/service">
         <Button className={classes.Header_BtnResponsive}>Service</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/project">
+      </ListItem>
+      <ListItem component={Link} to="/project">
         <Button className={classes.Header_BtnResponsive}>Project</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/contact">
+      </ListItem>
+      <ListItem component={Link} to="/contact">
         <Button variant="contained" className={classes.Header_ContactBtn}>
           Contact
         </Button>
-      </MenuItem>
+      </ListItem>
     </Menu>
   );
 
