@@ -68,7 +68,7 @@ function AI() {
             </tr>
           </table>
           <h1 className={classes.Title}>Description</h1>
-          <p className={classes.Card_Title}>
+          <p className={classes.Card_Title_Description}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat. .

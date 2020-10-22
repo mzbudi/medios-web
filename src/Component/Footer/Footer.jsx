@@ -13,7 +13,7 @@ function Footer() {
           <Grid container spacing={4}>
             <Grid item container direction="column" xs={12} md={4} sm={12} lg={5} xl={4} spacing={3}>
               <Grid item>
-                <MLink className={classes.Footer_Text} component={Link} to="/">
+                <MLink component={Link} to="/">
                   <img src={logoMedios} alt="logo" className={classes.Logo_Medios} />
                 </MLink>
               </Grid>
@@ -23,7 +23,7 @@ function Footer() {
                 </Typography>
               </Grid>
               <Grid item>
-                <div style={{ marginBottom: '0px', marginTop: '30px' }}>
+                <div className={classes.Container_Logo}>
                   <img src={instagram} alt="logo" className={classes.Social_Logo} />
                   <img src={facebook} alt="logo" className={classes.Social_Logo} />
                   <img src={linkedin} alt="logo" className={classes.Social_Logo} />

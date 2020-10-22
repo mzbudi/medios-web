@@ -64,7 +64,7 @@ function IOT() {
             </tr>
           </table>
           <h1 className={classes.Title}>Description</h1>
-          <p className={classes.Card_Title}>
+          <p className={classes.Card_Title_Description}>
             Pada fitur Internet of Things (IoT), konektivitas hardware ataupun sensor untuk memberikan data yang akurat.
             Anda tidak perlu melakukan input karena semua terkoneksi dengan sensor ke sistem ERP Anda.
           </p>
