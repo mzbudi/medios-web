@@ -35,24 +35,24 @@ function Footer() {
                 <Typography className={classes.Footer_Title_Menu}>Menu</Typography>
               </Grid>
               <Grid item container direction="row">
-                <Grid item lg={6}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/about">
                     About Medios
                   </MLink>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/service">
                     Service
                   </MLink>
                 </Grid>
               </Grid>
               <Grid item container direction="row">
-                <Grid item lg={6}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/product">
                     Product
                   </MLink>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={6} lg={6}>
                   <MLink className={classes.Footer_Text} component={Link} to="/project">
                     Project
                   </MLink>

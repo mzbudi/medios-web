@@ -32,7 +32,7 @@ function Desktop() {
           </Card>
         </Grid>
         <Grid item xs={12} lg={6} md={6} className={classes.Grid_Margin}>
-          <h1 className={classes.Title}>Feature</h1>
+          <h1 className={classes.Title}>Features</h1>
           <table>
             <tr>
               <td>

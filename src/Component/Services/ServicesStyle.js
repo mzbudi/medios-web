@@ -99,11 +99,27 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '300px',
   },
   HeaderImage: {
-    backgroundImage: `url(${HeaderImage})`,
-    padding: '200px',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
+    [theme.breakpoints.down('sm')]: {
+      backgroundImage: `url(${HeaderImage})`,
+      paddingTop: '200px',
+      paddingBottom: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      // backgroundColor: yellow[500],
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      // backgroundColor: purple[500],
+    },
+    [theme.breakpoints.up('lg')]: {
+      backgroundImage: `url(${HeaderImage})`,
+      padding: '200px',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    },
   },
 
   textStyle: {
@@ -185,7 +201,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Dot_Left: {
     [theme.breakpoints.down('sm')]: {
-      marginLeft: '50px',
+      marginLeft: '25px',
       marginRight: '25px',
       width: '12px',
       height: '12px',
@@ -203,7 +219,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Dot: {
     [theme.breakpoints.down('sm')]: {
-      marginLeft: '75px',
+      marginLeft: '25px',
       marginRight: '25px',
       width: '12px',
       height: '12px',
