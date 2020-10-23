@@ -1,7 +1,25 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { green, yellow, purple } from '@material-ui/core/colors';
 import ChooseUs from '../../Assets/Images/ChooseUs.jpg';
 
 const useStyles = makeStyles((theme) => ({
+  rood: {
+    [theme.breakpoints.down('xs')]: {
+      backgroundColor: theme.palette.secondary.main,
+    },
+    [theme.breakpoints.between('xs', 'sm')]: {
+      backgroundColor: theme.palette.primary.main,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      backgroundColor: yellow[500],
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      backgroundColor: purple[500],
+    },
+    [theme.breakpoints.up('lg')]: {
+      backgroundColor: green[500],
+    },
+  },
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -11,31 +29,102 @@ const useStyles = makeStyles((theme) => ({
     opacity: 1,
   },
   Main_OpeningText: {
-    textAlign: 'center',
-    font: 'normal normal 600 2.5rem/3.063rem Montserrat',
-    letterSpacing: 0,
-    color: '#383838',
-    opacity: 1,
-    marginTop: 200,
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 1.25rem/2.25rem Montserrat',
+      letterSpacing: 0,
+      color: '#383838',
+      opacity: 1,
+      marginTop: 150,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 1.75rem/2.75rem Montserrat',
+      letterSpacing: 0,
+      color: '#383838',
+      opacity: 1,
+      marginTop: 150,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 2rem/3rem Montserrat',
+      letterSpacing: 0,
+      color: '#383838',
+      opacity: 1,
+      marginTop: 150,
+      marginLeft: 100,
+      marginRight: 100,
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 2.5rem/3.063rem Montserrat',
+      letterSpacing: 0,
+      color: '#383838',
+      opacity: 1,
+      marginTop: 200,
+    },
   },
   Main_OpeningText2: {
-    textAlign: 'center',
-    font: 'normal normal normal 1.5625rem/1.875rem Montserrat',
-    letterSpacing: 0,
-    color: '#8C8C8C',
-    opacity: 1,
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 0.75rem/1.03rem Montserrat',
+      letterSpacing: 0,
+      color: '#8C8C8C',
+      opacity: 1,
+      marginLeft: 25,
+      marginRight: 25,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 1/1.30rem Montserrat',
+      letterSpacing: 0,
+      color: '#8C8C8C',
+      opacity: 1,
+      marginLeft: 25,
+      marginRight: 25,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 1.25rem/1.55rem Montserrat',
+      letterSpacing: 0,
+      color: '#8C8C8C',
+      opacity: 1,
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 1.5625rem/1.875rem Montserrat',
+      letterSpacing: 0,
+      color: '#8C8C8C',
+      opacity: 1,
+    },
   },
   Main_ImageSection: {
-    width: '100%',
-    height: '100%',
-    maxHeight: 249.38,
+    [theme.breakpoints.down('md')]: {
+      width: '75%',
+      height: '75%',
+      maxHeight: 249.38,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      width: '90%',
+      height: '90%',
+      maxHeight: 249.38,
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: '100%',
+      height: '100%',
+      maxHeight: 249.38,
+    },
   },
-
   Main_TextImageSection: {
-    font: 'normal normal bold 20px/24px Montserrat;',
-    color: '#29AE6D',
+    [theme.breakpoints.down('lg')]: {
+      font: 'normal normal bold 15px/19px Montserrat;',
+      color: '#29AE6D',
+    },
+    [theme.breakpoints.up('lg')]: {
+      font: 'normal normal bold 20px/24px Montserrat;',
+      color: '#29AE6D',
+    },
   },
-
   Main_WhyChooseUs: {
     padding: '100px',
     backgroundImage: `url(${ChooseUs})`,
@@ -43,24 +132,50 @@ const useStyles = makeStyles((theme) => ({
   },
 
   Main_TextWhyChooseUsTitle: {
-    textAlign: 'center',
-    font: 'normal normal 600 50px/40px Montserrat;',
-    letterSpacing: 0,
-    color: '#FFFFFF',
-    opacity: 1,
-    [theme.breakpoints.down('md')]: {
-      fontSize: 30,
-      fontWeight: 'bold',
-    },
-  },
-  Main_TextWhyChooseUsSubtitle: {
-    textAlign: 'left',
-    font: 'normal normal normal 30px/37px Montserrat',
-    letterSpacing: 0,
-    color: '#FFFFFF',
-    opacity: 1,
     [theme.breakpoints.down('md')]: {
       textAlign: 'center',
+      font: 'normal normal 600 30px/35px Montserrat;',
+      letterSpacing: 0,
+      color: '#FFFFFF',
+      opacity: 1,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 40px/45px Montserrat;',
+      letterSpacing: 0,
+      color: '#FFFFFF',
+      opacity: 1,
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 50px/60px Montserrat;',
+      letterSpacing: 0,
+      color: '#FFFFFF',
+      opacity: 1,
+    },
+  },
+
+  Main_TextWhyChooseUsSubtitle: {
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 15px/22px Montserrat',
+      letterSpacing: 0,
+      color: '#FFFFFF',
+      opacity: 1,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 20px/27px Montserrat',
+      letterSpacing: 0,
+      color: '#FFFFFF',
+      opacity: 1,
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'left',
+      font: 'normal normal normal 30px/37px Montserrat',
+      letterSpacing: 0,
+      color: '#FFFFFF',
+      opacity: 1,
     },
   },
 
@@ -120,16 +235,42 @@ const useStyles = makeStyles((theme) => ({
   },
 
   Main_IconSize: {
-    height: 70,
-    width: 70,
+    [theme.breakpoints.down('md')]: {
+      height: 50,
+      width: 50,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      height: 60,
+      width: 60,
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: 70,
+      width: 70,
+    },
   },
 
   Main_TextOurProduct: {
-    textAlign: 'center',
-    font: 'normal normal 600 40px/49px Montserrat',
-    letterSpacing: 0,
-    color: '#383838',
-    opacity: 1,
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 20px/29px Montserrat',
+      letterSpacing: 0,
+      color: '#383838',
+      opacity: 1,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 30px/39px Montserrat',
+      letterSpacing: 0,
+      color: '#383838',
+      opacity: 1,
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'center',
+      font: 'normal normal 600 40px/49px Montserrat',
+      letterSpacing: 0,
+      color: '#383838',
+      opacity: 1,
+    },
   },
 
   Main_MarginOurProduct: {
@@ -137,10 +278,24 @@ const useStyles = makeStyles((theme) => ({
   },
 
   Main_CardTitle: {
-    textAlign: 'left',
-    font: 'normal normal bold 25px/24px Montserrat',
-    letterSpacing: 0,
-    color: '#29AE6D',
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'left',
+      font: 'normal normal bold 15px/14px Montserrat',
+      letterSpacing: 0,
+      color: '#29AE6D',
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      textAlign: 'left',
+      font: 'normal normal bold 20px/19px Montserrat',
+      letterSpacing: 0,
+      color: '#29AE6D',
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'left',
+      font: 'normal normal bold 25px/24px Montserrat',
+      letterSpacing: 0,
+      color: '#29AE6D',
+    },
   },
 
   Main_BtnShowMore: {

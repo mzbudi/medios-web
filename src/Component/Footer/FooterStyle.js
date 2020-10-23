@@ -16,28 +16,88 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '0px',
   },
   Footer_Title_Menu: {
-    textAlign: 'left',
-    font: 'normal normal bold 25px/30px Montserrat',
-    color: ' #707070',
-    paddingTop: '20px',
-    paddingBottom: '20px',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+      font: 'normal normal bold 15px/20px Montserrat',
+      color: ' #707070',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      textAlign: 'center',
+      font: 'normal normal bold 20px/25px Montserrat',
+      color: ' #707070',
+      paddingTop: '20px',
+      paddingBottom: '20px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'left',
+      font: 'normal normal bold 25px/30px Montserrat',
+      color: ' #707070',
+      paddingTop: '20px',
+      paddingBottom: '20px',
+    },
   },
   Footer_Title_Contact: {
-    font: 'normal normal bold 25px/30px Montserrat',
-    color: ' #707070',
-    textAlign: 'center',
-    paddingTop: '20px',
-    paddingBottom: '20px',
-    [theme.breakpoints.down('md')]: {
-      textAlign: 'left',
+    [theme.breakpoints.down('sm')]: {
+      font: 'normal normal bold 15px/20px Montserrat',
+      color: ' #707070',
+      textAlign: 'center',
+      paddingTop: '20px',
+      paddingBottom: '20px',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      font: 'normal normal bold 20px/25px Montserrat',
+      color: ' #707070',
+      textAlign: 'center',
+      paddingTop: '20px',
+      paddingBottom: '20px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      font: 'normal normal bold 25px/30px Montserrat',
+      color: ' #707070',
+      textAlign: 'center',
+      paddingTop: '20px',
+      paddingBottom: '20px',
     },
   },
   Footer_Text: {
-    textAlign: 'left',
-    font: 'normal normal normal 20px/24px Montserrat',
-    color: '#707070',
-    textDecoration: 'none',
-    marginBottom: '0px',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 10px/14px Montserrat',
+      color: '#707070',
+      textDecoration: 'none',
+      marginLeft: '70px',
+      marginRight: '0px',
+      '&:hover': {
+        color: 'green',
+        backgroundColor: 'transparent',
+        textDecoration: 'none',
+      },
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      textAlign: 'center',
+      font: 'normal normal normal 15px/19px Montserrat',
+      color: '#707070',
+      textDecoration: 'none',
+      marginLeft: '70px',
+      marginRight: '70px',
+      '&:hover': {
+        color: 'green',
+        backgroundColor: 'transparent',
+        textDecoration: 'none',
+      },
+    },
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'left',
+      font: 'normal normal normal 20px/24px Montserrat',
+      color: '#707070',
+      textDecoration: 'none',
+      marginBottom: '0px',
+      '&:hover': {
+        color: 'green',
+        backgroundColor: 'transparent',
+        textDecoration: 'none',
+      },
+    },
   },
   Footer_Text_Contact: {
     textAlign: 'left',
@@ -54,16 +114,50 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: '40px',
   },
   Footer_Text_Extra: {
-    textAlign: 'left',
-    font: 'normal normal normal 17px/20px Montserrat;',
-    letterSpacing: '0px',
-    color: '#8C8C8C',
-    opacity: '1',
-    padding: 10,
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'left',
+      font: 'normal normal normal 10px/13px Montserrat;',
+      letterSpacing: '0px',
+      color: '#8C8C8C',
+      opacity: '1',
+      padding: 10,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      textAlign: 'left',
+      font: 'normal normal normal 13px/17px Montserrat;',
+      letterSpacing: '0px',
+      color: '#8C8C8C',
+      opacity: '1',
+      padding: 10,
+    },
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'left',
+      font: 'normal normal normal 17px/20px Montserrat;',
+      letterSpacing: '0px',
+      color: '#8C8C8C',
+      opacity: '1',
+      padding: 10,
+    },
   },
   Contact_Logo: {
-    height: '20',
-    width: '22',
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: '200%',
+      height: '20',
+      width: '22',
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      marginLeft: '200%',
+      height: '20',
+      width: '22',
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      height: '20',
+      width: '22',
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '20',
+      width: '22',
+    },
   },
   Footer_Text_Phone: {
     textAlign: 'left',
@@ -71,13 +165,36 @@ const useStyles = makeStyles((theme) => ({
     color: '#707070',
     textDecoration: 'none',
   },
+  Container_Logo: {
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      textAlign: 'center',
+    },
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'left',
+    },
+  },
   Social_Logo: {
     height: '20px',
     width: '20px',
+    marginRight: '10px',
   },
   Logo_Medios: {
-    height: '72px',
-    width: '186px',
+    [theme.breakpoints.down('sm')]: {
+      height: '32px',
+      width: '146px',
+      marginLeft: '30%',
+    },
+    [theme.breakpoints.between('sm', 'lg')]: {
+      height: '52px',
+      width: '166px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '72px',
+      width: '186px',
+    },
   },
   Footer_GridContact: {
     textAlign: 'center',

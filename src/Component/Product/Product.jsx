@@ -21,20 +21,12 @@ function Product() {
       <div className={classes.Image_Header}>
         <Header />
         <Typography align="center" className={classes.Main_TextService1}>
-        Cloud Medical System (CMS)
+          Cloud Medical System (CMS)
         </Typography>
         <Typography align="center" className={classes.Main_TextService2}>
-        MEDICAL RECORD IN YOUR HAND
+          MEDICAL RECORD IN YOUR HAND
         </Typography>
       </div>
-      {/* <Grid container>
-        <Grid item xs={12}>
-          <Header />
-          <img className={classes.Image_Header} src={HeaderImage} alt="CMS" width="1920px" height="1080px" />
-          <p className={classes.Title_CMS}> CLOUD MEDICAL SYSTEM (CMS) </p>
-          <p className={classes.Title_CMS2}> MEDICAL RECORD IN YOUR HAND </p>
-        </Grid>
-      </Grid> */}
       <div className="Content">
         <Container style={{ textAlign: 'center' }}>
           <img src={Logo} className={classes.Logo} alt="CMS" />
@@ -50,11 +42,7 @@ function Product() {
         <div className="Problem">
           <Paper className={classes.Container_Problem}>
             <p className={classes.Title_Problem}>Problem</p>
-            <Grid
-              container
-              direction="row"
-              style={{ verticalAlign: 'center', textAlign: 'center', paddingTop: '50px' }}
-            >
+            <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }}>
               <Grid lg={4} item container direction="column">
                 <Grid item>
                   <img src={Paperclip} className={classes.Icon_Image} alt="Paper" />

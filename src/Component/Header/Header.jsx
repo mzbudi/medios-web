@@ -1,15 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Link as MLink, Button, AppBar, Toolbar, IconButton, Menu, MenuItem } from '@material-ui/core';
+import {
+  Link as MLink,
+  Button,
+  AppBar,
+  Toolbar,
+  IconButton,
+  Menu,
+  MenuItem,
+  Popper,
+  Grow,
+  Paper,
+  ClickAwayListener,
+  MenuList,
+  Collapse,
+  List,
+  ListItem,
+} from '@material-ui/core';
+import { ExpandLess, ExpandMore } from '@material-ui/icons';
 import DehazeIcon from '@material-ui/icons/Dehaze';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { logoMedios, flagId, flagUk } from '../../Assets/Icon';
+
 import useStyles from './HeaderStyle.js';
 
 function Header() {
   const classes = useStyles();
-
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
+  const [open, setOpen] = React.useState(false);
+  const [openMobile, setOpenMobile] = React.useState(false);
+  const anchorRef = React.useRef(null);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleMobileMenuClose = () => {
@@ -18,6 +38,10 @@ function Header() {
 
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const handleClick = () => {
+    setOpenMobile(!openMobile);
   };
 
   const mobileMenuId = 'menu-mobile-trigger';
@@ -37,25 +61,61 @@ function Header() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem component={Link} to="/about">
+      <ListItem component={Link} to="/about">
         <Button className={classes.Header_BtnResponsive}>About Medios</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/product">
-        <Button className={classes.Header_BtnResponsive}>Product</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/service">
+      </ListItem>
+      <ListItem onClick={handleClick}>
+        <Button component={Link} to="/product" className={classes.Header_BtnResponsive}>
+          Product
+        </Button>
+        {openMobile ? <ExpandLess /> : <ExpandMore />}
+      </ListItem>
+      <Collapse in={openMobile} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItem button className={classes.Header_Nested}>
+            CMS
+          </ListItem>
+          <ListItem button className={classes.Header_Nested}>
+            DSS-CoividNet
+          </ListItem>
+          <ListItem button className={classes.Header_Nested}>
+            EHR-HIS
+          </ListItem>
+        </List>
+      </Collapse>
+      <ListItem component={Link} to="/service">
         <Button className={classes.Header_BtnResponsive}>Service</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/project">
+      </ListItem>
+      <ListItem component={Link} to="/project">
         <Button className={classes.Header_BtnResponsive}>Project</Button>
-      </MenuItem>
-      <MenuItem component={Link} to="/contact">
+      </ListItem>
+      <ListItem component={Link} to="/contact">
         <Button variant="contained" className={classes.Header_ContactBtn}>
           Contact
         </Button>
-      </MenuItem>
+      </ListItem>
     </Menu>
   );
+
+  const handleToggle = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
+  const handleClose = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  function handleListKeyDown(event) {
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      setOpen(false);
+    }
+  }
+
   return (
     <div className={classes.Header_Root}>
       <AppBar position="absolute" className={classes.Header_Menubar}>
@@ -65,16 +125,46 @@ function Header() {
           </MLink>
           <div className={classes.Header_Grow} />
           <div className={classes.Header_Menulist}>
-            <Button component={Link} to="/about" className={classes.Header_MenuBtn}>
+            <Button component={Link} to="/about" className={classes.Header_MenuBtn} disableRipple>
               About Medios
             </Button>
-            <Button component={Link} to="/product" className={classes.Header_MenuBtn}>
+            <Button
+              component={Link}
+              to="/product"
+              className={classes.Header_MenuBtn}
+              onMouseEnter={handleToggle}
+              ref={anchorRef}
+              disableRipple
+              // onMouseLeave={handleToggle}
+            >
               Product
+              <ExpandMoreIcon />
             </Button>
-            <Button component={Link} to="/service" className={classes.Header_MenuBtn}>
+            <Popper open={open} anchorEl={anchorRef.current} transition disablePortal>
+              {({ TransitionProps, placement }) => (
+                <Grow
+                  {...TransitionProps}
+                  style={{
+                    transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom',
+                  }}
+                >
+                  <Paper className={classes.Header_ProductPoP}>
+                    <ClickAwayListener onClickAway={handleClose}>
+                      <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                        <MenuItem onClick={handleClose}>Cloud Medical System</MenuItem>
+                        <MenuItem onClick={handleClose}>DSS-CoividNet</MenuItem>
+                        <MenuItem onClick={handleClose}>EHR-HIS</MenuItem>
+                      </MenuList>
+                    </ClickAwayListener>
+                  </Paper>
+                </Grow>
+              )}
+            </Popper>
+
+            <Button component={Link} to="/service" className={classes.Header_MenuBtn} disableRipple>
               Service
             </Button>
-            <Button component={Link} to="/project" className={classes.Header_MenuBtn}>
+            <Button component={Link} to="/project" className={classes.Header_MenuBtn} disableRipple>
               Project
             </Button>
             <Button className={classes.Header_FlagID}>

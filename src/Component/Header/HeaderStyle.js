@@ -29,19 +29,26 @@ const useStyles = makeStyles({
     font: 'bold 20px/24px Montserrat',
   },
   Header_MenuBtn: {
-    background: 'inherit',
+    background: 'transparent',
     borderRadius: 3,
     border: 0,
     color: 'black',
     '&:hover': {
-      background: 'inherit',
+      color: 'green',
+      backgroundColor: 'transparent',
     },
     marginRight: theme.spacing(2),
     font: '20px/24px Montserrat',
   },
   Header_Logo: {
-    height: '112px',
-    width: '134px',
+    [theme.breakpoints.down('sm')]: {
+      height: '70px',
+      width: '92px',
+    },
+    [theme.breakpoints.up('sm')]: {
+      height: '112px',
+      width: '134px',
+    },
   },
   Header_Flag: {
     height: '25px',
@@ -68,6 +75,14 @@ const useStyles = makeStyles({
   },
   Header_BtnResponsive: {
     '&:hover': { backgroundColor: 'transparent' },
+  },
+  Header_ProductPoP: {
+    background: '#29AE6D',
+    color: 'white',
+  },
+  Header_Nested: {
+    font: '14px Montserrat',
+    marginLeft: '20px',
   },
 });
 

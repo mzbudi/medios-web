@@ -32,7 +32,7 @@ function Desktop() {
           </Card>
         </Grid>
         <Grid item xs={12} lg={6} md={6} className={classes.Grid_Margin}>
-          <h1 className={classes.Title}>Feature</h1>
+          <h1 className={classes.Title}>Features</h1>
           <table>
             <tr>
               <td>
@@ -64,7 +64,7 @@ function Desktop() {
             </tr>
           </table>
           <h1 className={classes.Title}>Description</h1>
-          <p className={classes.Card_Title}>
+          <p className={classes.Card_Title_Description}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat. .
