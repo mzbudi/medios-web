@@ -2,8 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   Container: {
+    marginTop: '5rem',
     backgroundColor: '#F2FFF9',
-    margin: '0px',
     justifyContent: 'space-between',
   },
   Container_Load: {
