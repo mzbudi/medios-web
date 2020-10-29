@@ -1,6 +1,7 @@
 import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import BounceLoader from 'react-spinners/BounceLoader';
+import './mainStyles.css';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 
@@ -21,12 +22,18 @@ function ScrollToTop() {
   return null;
 }
 
+const Loading = () => (
+  <div className="loading">
+    <BounceLoader size={150} loading color="#29AE6D" />
+  </div>
+);
+
 function MainRouter() {
   return (
     <Router>
       <ScrollToTop />
       <Header />
-      <Suspense fallback={<BounceLoader />}>
+      <Suspense fallback={<Loading />}>
         <Switch>
           <Route exact path="/" component={Main} />
           <Route path="/contact" component={Contact} />
@@ -40,7 +47,6 @@ function MainRouter() {
     </Router>
   );
 }
-
 // function ServiceRouter() {
 //   const { id } = useParams();
 //

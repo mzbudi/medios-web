@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from '@material-ui/core/styles';
-import { theme } from './MainStyle';
+import { theme } from './MainTheme';
 import MainRouter from './MainRouter';
 import * as serviceWorker from './serviceWorker';
 
