@@ -2,18 +2,6 @@
   "name": "medios-web",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "axios": "^0.21.0",
-    "qs": "^6.9.4",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^3.11.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
-    "react-spinners": "^0.9.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,6 +24,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "axios": "^0.21.0",
+    "qs": "^6.9.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-spinners": "^0.9.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
