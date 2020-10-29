@@ -1,22 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Card, CardContent, Button, Container, Typography } from '@material-ui/core';
-import { ReactComponent as Responsive } from '../../Assets/Images SVG/Responsive.svg';
-import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
-import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
-import { ReactComponent as Ai } from '../../Assets/Images SVG/AI.svg';
-import { ReactComponent as Analyst } from '../../Assets/Images SVG/Analist.svg';
-import Header from '../Header';
-import Footer from '../Footer';
-import './service.css';
-import useStyles from './ServiceStyle';
+import { ReactComponent as Responsive } from '../../../Assets/Images SVG/Responsive.svg';
+import { ReactComponent as Mobile } from '../../../Assets/Images SVG/Mobile.svg';
+import { ReactComponent as Drone } from '../../../Assets/Images SVG/Drone.svg';
+import { ReactComponent as Ai } from '../../../Assets/Images SVG/AI.svg';
+import { ReactComponent as Analyst } from '../../../Assets/Images SVG/Analist.svg';
+import './mainStyle.css';
+import useStyles from './mainStyle';
 
-function Service() {
+function Main() {
   const classes = useStyles();
   return (
     <>
       <div className={classes.HeaderImage}>
-        <Header />
         <Typography align="center" className={classes.Main_TextService}>
           Service
         </Typography>
@@ -168,11 +165,8 @@ function Service() {
           </Grid>
         </Grid>
       </Container>
-      <div className={classes.Footer}>
-        <Footer />
-      </div>
     </>
   );
 }
 
-export default Service;
+export default Main;

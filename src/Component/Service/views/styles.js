@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { green, yellow, purple } from '@material-ui/core/colors';
-import HeaderImage from '../../Assets/Images/ImageService.png';
+import HeaderImage from '../../../Assets/Images/ImageService.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {

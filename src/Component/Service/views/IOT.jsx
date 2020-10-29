@@ -1,11 +1,9 @@
 import React from 'react';
 import { Typography, Card, Grid, CardContent } from '@material-ui/core/';
-import { ReactComponent as Drone } from '../../Assets/Images SVG/Drone.svg';
-import ellipse from '../../Assets/Icon/Ellipse.svg';
-import Header from '../Header';
-import Footer from '../Footer';
-import './services.css';
-import useStyles from './ServicesStyle';
+import { ReactComponent as Drone } from '../../../Assets/Images SVG/Drone.svg';
+import ellipse from '../../../Assets/Icon/Ellipse.svg';
+import './styles.css';
+import useStyles from './styles';
 
 function IOT() {
   const classes = useStyles();
@@ -14,7 +12,6 @@ function IOT() {
       <Grid container>
         <Grid item xs={12} lg={12} md={12}>
           <div className={classes.HeaderImage}>
-            <Header />
             <Typography align="center" className={classes.Main_Text}>
               Internet of Things
             </Typography>
@@ -70,9 +67,6 @@ function IOT() {
           </p>
         </Grid>
       </Grid>
-      <div className={classes.Footer}>
-        <Footer />
-      </div>
     </>
   );
 }

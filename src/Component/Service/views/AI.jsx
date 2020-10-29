@@ -1,22 +1,22 @@
 import React from 'react';
 import { Typography, Card, Grid, CardContent } from '@material-ui/core/';
-import { ReactComponent as Mobile } from '../../Assets/Images SVG/Mobile.svg';
-import ellipse from '../../Assets/Icon/Ellipse.svg';
-import Header from '../Header';
-import Footer from '../Footer';
-import './services.css';
-import useStyles from './ServicesStyle';
+import { ReactComponent as Analist } from '../../../Assets/Images SVG/Analist.svg';
+import ellipse from '../../../Assets/Icon/Ellipse.svg';
+import './styles.css';
+import useStyles from './styles';
 
-function Desktop() {
+function AI() {
   const classes = useStyles();
   return (
     <>
       <Grid container>
         <Grid item xs={12} lg={12} md={12}>
           <div className={classes.HeaderImage}>
-            <Header />
             <Typography align="center" className={classes.Main_Text}>
-              Desktop Software
+              Artificial Intelligence &
+            </Typography>
+            <Typography align="center" className={classes.Main_Text}>
+              Machine Learning
             </Typography>
           </div>
         </Grid>
@@ -24,10 +24,11 @@ function Desktop() {
           <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
-                <Mobile className={classes.Main_ImageSection} />
+                <Analist className={classes.Main_ImageSection} />
               </div>
-              <p className={classes.Title_Card}>Desktop </p>
-              <p className={classes.Title_Extra}>Software</p>
+              <p className={classes.Title_Card}>AI & </p>
+              <p className={classes.Title_Extra}>Machine</p>
+              <p className={classes.Title_Extra}>Learning</p>
             </CardContent>
           </Card>
         </Grid>
@@ -71,11 +72,8 @@ function Desktop() {
           </p>
         </Grid>
       </Grid>
-      <div className={classes.Footer}>
-        <Footer />
-      </div>
     </>
   );
 }
 
-export default Desktop;
+export default AI;

@@ -1,25 +1,19 @@
 import React from 'react';
 import { Typography, Card, Grid, CardContent } from '@material-ui/core/';
-import { ReactComponent as AI } from '../../Assets/Images SVG/AI.svg';
-import ellipse from '../../Assets/Icon/Ellipse.svg';
-import Header from '../Header';
-import Footer from '../Footer';
-import './services.css';
-import useStyles from './ServicesStyle';
+import { ReactComponent as Responsive } from '../../../Assets/Images SVG/Responsive.svg';
+import ellipse from '../../../Assets/Icon/Ellipse.svg';
+import './styles.css';
+import useStyles from './styles';
 
-function Analysis() {
+function Web() {
   const classes = useStyles();
   return (
     <>
       <Grid container>
         <Grid item xs={12} lg={12} md={12}>
           <div className={classes.HeaderImage}>
-            <Header />
             <Typography align="center" className={classes.Main_Text}>
-              Analysis, Processing
-            </Typography>
-            <Typography align="center" className={classes.Main_Text}>
-              Classification Data
+              Web and Mobile Apps
             </Typography>
           </div>
         </Grid>
@@ -27,12 +21,10 @@ function Analysis() {
           <Card className={classes.Card_Style}>
             <CardContent>
               <div className={classes.Cirlce}>
-                <AI className={classes.Main_ImageSection} />
+                <Responsive className={classes.Main_ImageSection} />
               </div>
-              <p className={classes.Title_Card}>Analysis, </p>
-              <p className={classes.Title_Extra}>Processing, </p>
-              <p className={classes.Title_Extra}>Classification </p>
-              <p className={classes.Title_Extra}>Data</p>
+              <p className={classes.Title_Card}>Web and </p>
+              <p className={classes.Title_Extra}>Mobile Apps</p>
             </CardContent>
           </Card>
         </Grid>
@@ -76,11 +68,8 @@ function Analysis() {
           </p>
         </Grid>
       </Grid>
-      <div className={classes.Footer}>
-        <Footer />
-      </div>
     </>
   );
 }
 
-export default Analysis;
+export default Web;
