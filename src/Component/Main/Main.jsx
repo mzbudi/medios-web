@@ -16,8 +16,6 @@ import {
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import useStyles from './MainStyle';
-import Header from '../Header';
-import Footer from '../Footer';
 import { ai, analist, drone, mobile, responsive } from '../../Assets/Images SVG';
 import { logoMedios, affordable, fast, goodQuality, ontime } from '../../Assets/Icon';
 import { partner1, partner2, partner3, partner4, partner5, cms, blank, quote } from '../../Assets/Images';
@@ -397,7 +395,6 @@ function Main() {
 
   return (
     <>
-      <Header />
       <Container>
         <OpeningText />
         <ImageSection />
@@ -409,7 +406,6 @@ function Main() {
         <PersuasiveText />
         <ReachUs />
       </Container>
-      <Footer />
     </>
   );
 }

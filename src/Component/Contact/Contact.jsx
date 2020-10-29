@@ -2,8 +2,6 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { FormHelperText, TextField, Button, Typography } from '@material-ui/core/';
 import contact from '../../Assets/Images/ImageContact.png';
-import Header from '../Header';
-import Footer from '../Footer';
 import useStyles from './ContactStyle.js';
 
 function Contact() {
@@ -12,7 +10,6 @@ function Contact() {
   return (
     <>
       <div className={classes.Image_Header}>
-        <Header />
         <Typography align="center" className={classes.Main_TextService}>
           Contact
         </Typography>
@@ -81,10 +78,6 @@ function Contact() {
             </div>
           </Grid>
         </Grid>
-      </div>
-
-      <div className={classes.Footer}>
-        <Footer />
       </div>
     </>
   );

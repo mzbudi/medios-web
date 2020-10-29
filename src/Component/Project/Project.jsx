@@ -1,7 +1,5 @@
 import React from 'react';
 import { Grid, Container, Typography } from '@material-ui/core';
-import Header from '../Header';
-import Footer from '../Footer';
 import image from '../../Assets/Images/Blank.png';
 import useStyles from './ProjectStyle';
 
@@ -10,7 +8,6 @@ function Service() {
   return (
     <>
       <div className={classes.HeaderImage}>
-        <Header />
         <Typography align="center" className={classes.Main_TextService}>
           Project
         </Typography>
@@ -76,10 +73,6 @@ function Service() {
         <Typography>{'md to lg: purple'}</Typography>
         <Typography>{'lg up: green'}</Typography>
       </div> */}
-
-      <div className={classes.Footer}>
-        <Footer />
-      </div>
     </>
   );
 }

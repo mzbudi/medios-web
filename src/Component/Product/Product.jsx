@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Paper, Grid, Typography } from '@material-ui/core/';
-import Header from '../Header';
 import Footer from '../Footer';
 import Logo from '../../Assets/Images/Logo.png';
 import Paperclip from '../../Assets/Icon/paperclip.svg';
@@ -19,7 +18,6 @@ function Product() {
   return (
     <>
       <div className={classes.Image_Header}>
-        <Header />
         <Typography align="center" className={classes.Main_TextService1}>
           Cloud Medical System (CMS)
         </Typography>
