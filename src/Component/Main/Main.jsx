@@ -3,7 +3,6 @@ import {
   Container,
   Grid,
   Card,
-  CardActionArea,
   CardContent,
   CardMedia,
   Typography,
@@ -144,18 +143,16 @@ function Main() {
         </Grid>
         <Grid item container direction="column" lg={4}>
           <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia image={cms} title="Cms" component="img" />
-              <CardContent style={{ padding: '10%' }}>
-                <Typography gutterBottom className={classes.Main_CardTitle}>
-                  Medios CMS
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p" align="left">
-                  Web application to help doctors to work in many hospitals and clinics easily, and also connecting and
-                  controls patient remotely
-                </Typography>
-              </CardContent>
-            </CardActionArea>
+            <CardMedia image={cms} title="Cms" component="img" />
+            <CardContent style={{ padding: '10%' }}>
+              <Typography gutterBottom className={classes.Main_CardTitle}>
+                Medios CMS
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p" align="left">
+                Web application to help doctors to work in many hospitals and clinics easily, and also connecting and
+                controls patient remotely
+              </Typography>
+            </CardContent>
             <CardActions>
               <Grid container justify="flex-end" alignItems="flex-end">
                 <div className={classes.Main_CardBtnFlexer}>
@@ -169,19 +166,17 @@ function Main() {
         </Grid>
         <Grid item container direction="column" lg={4}>
           <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia image={blank} title="Blank" component="img" />
-              <CardContent style={{ padding: '10%' }}>
-                <Typography gutterBottom className={classes.Main_CardTitle}>
-                  Medios DSS-CovidNet
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p" align="left">
-                  We joined collaborative research between several hospitals in Indonesia and department of Physics,
-                  Universitas Indonesia to solve that problem by develop Deep Learning model and web apps to detect
-                  Covid-19 Based on Chest X-Ray Image.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
+            <CardMedia image={blank} title="Blank" component="img" />
+            <CardContent style={{ padding: '10%' }}>
+              <Typography gutterBottom className={classes.Main_CardTitle}>
+                Medios DSS-CovidNet
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p" align="left">
+                We joined collaborative research between several hospitals in Indonesia and department of Physics,
+                Universitas Indonesia to solve that problem by develop Deep Learning model and web apps to detect
+                Covid-19 Based on Chest X-Ray Image.
+              </Typography>
+            </CardContent>
             <CardActions>
               <Grid container justify="flex-end" alignItems="flex-end">
                 <div className={classes.Main_CardBtnFlexer}>
