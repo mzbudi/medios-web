@@ -1,27 +1,23 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
-import BounceLoader from 'react-spinners/BounceLoader';
-import Header from '../Header';
-import Footer from '../Footer';
+import { Typography, Container, Box } from '@material-ui/core';
 import useStyles from './AboutStyle';
-import './about.css';
+import { underConstruction } from '../../Assets/Images SVG';
 
 function Service() {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.HeaderImage}>
-        <Header />
-        <Typography align="center" className={classes.Main_TextService}>
-          About
+      <Container>
+        <Box display="flex" alignItems="center" justifyContent="center" marginTop={15} marginBottom={5}>
+          <img src={underConstruction} alt="under-construction" className={classes.About_UnderConstructionImage} />
+        </Box>
+        <Typography variant="h3" align="center" style={{ fontWeight: 600 }}>
+          PAGE UNDER CONSTRUCTION
         </Typography>
-      </div>
-      <div id="Spinner">
-        <BounceLoader size={150} loading color="#29AE6D" />
-      </div>
-      <div className={classes.Footer}>
-        <Footer />
-      </div>
+        <Typography variant="h6" align="center" style={{ fontWeight: 600 }}>
+          PLEASE COMEBACK LATER
+        </Typography>
+      </Container>
     </>
   );
 }

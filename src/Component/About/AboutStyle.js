@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import HeaderImage from '../../Assets/Images/ImageService.png';
 
 const useStyles = makeStyles({
   Main_ImageSection: {
@@ -7,7 +6,6 @@ const useStyles = makeStyles({
     height: 304.39,
   },
   HeaderImage: {
-    backgroundImage: `url(${HeaderImage})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -19,6 +17,10 @@ const useStyles = makeStyles({
   Main_TextService: {
     font: 'normal normal 600 60px/73px Montserrat',
     color: '#29AE6D',
+  },
+  About_UnderConstructionImage: {
+    width: '70%',
+    height: '70%',
   },
 });
 

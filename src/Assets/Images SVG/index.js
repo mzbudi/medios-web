@@ -4,5 +4,6 @@ import analist from './Analist.svg';
 import mobile from './Mobile.svg';
 import responsive from './Responsive.svg';
 import responsive1 from './Responsive1.svg';
+import underConstruction from './UnderConstruction.svg';
 
-export { ai, drone, analist, mobile, responsive, responsive1 };
+export { ai, drone, analist, mobile, responsive, responsive1, underConstruction };
