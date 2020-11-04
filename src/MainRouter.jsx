@@ -36,38 +36,16 @@ function MainRouter() {
       <Suspense fallback={<Loading />}>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/product" component={Product} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/product" component={Product} />
           <Route path="/service" component={ServiceRouter} />
-          <Route path="/project" component={Project} />
-          <Route path="/about" component={About} />
+          <Route exact path="/project" component={Project} />
+          <Route exact path="/about" component={About} />
         </Switch>
       </Suspense>
       <Footer />
     </Router>
   );
 }
-// function ServiceRouter() {
-//   const { id } = useParams();
-//
-//   const idSelector = () => {
-//     switch (id) {
-//       case 'web':
-//         return <Web />;
-//       case 'desktop':
-//         return <Desktop />;
-//       case 'ai':
-//         return <AI />;
-//       case 'iot':
-//         return <IOT />;
-//       case 'analysis':
-//         return <Analysis />;
-//       default:
-//         return <Service />;
-//     }
-//   };
-//
-//   return idSelector();
-// }
 
 export default MainRouter;
