@@ -14,67 +14,61 @@ function Contact() {
           Contact
         </Typography>
       </div>
-
-      {/* <div className={classes.root}>
-        <Typography>{'xs down: red'}</Typography>
-        <Typography>{'xs to sm: blue'}</Typography>
-        <Typography>{'sm to md: yellow'}</Typography>
-        <Typography>{'md to lg: purple'}</Typography>
-        <Typography>{'lg up: green'}</Typography>
-      </div> */}
-
-      <div className="Content">
-        <Grid container>
-          <Grid item xs={12}>
-            <div className={classes.ReachUs_Title}>Reach Us</div>
+      <div className={classes.Content}>
+        <Grid container justify="center" alignItems="center">
+          <div className={classes.ReachUs_Title}>Reach Us</div>
+        </Grid>
+        <Grid container direction="row" alignItems="center" justify="center">
+          <Grid item xs={7} sm={5} md={5} lg={4}>
+            <img src={contact} alt="Contact" className={classes.Contact_Image} />
           </Grid>
-          <Grid item xs={6} lg={6}>
-            <div className={classes.Image_Contact}>
-              <img src={contact} className={classes.Contact_Image} alt="Contact" />
-            </div>
-          </Grid>
-          <Grid item xs={6} lg={6}>
-            <div className={classes.Form_Contact}>
-              <FormHelperText className={classes.Form_Label}> Your name or company (required) </FormHelperText>
-              <TextField
-                id="outlined-textarea"
-                variant="outlined"
-                InputProps={{
-                  classes: {
-                    input: classes.resize,
-                  },
-                }}
-                className={classes.Text_Field}
-              />
-              <FormHelperText className={classes.Form_Label}> Your email (required) </FormHelperText>
-              <TextField
-                id="outlined-textarea"
-                variant="outlined"
-                InputProps={{
-                  classes: {
-                    input: classes.resize,
-                  },
-                }}
-                className={classes.Text_Field}
-                color="secondary"
-              />
-              <FormHelperText className={classes.Form_Label}> Your message </FormHelperText>
-              <TextField
-                id="outlined-textarea"
-                multiline
-                variant="outlined"
-                InputProps={{
-                  classes: {
-                    input: classes.resize,
-                  },
-                }}
-                className={classes.Text_Field}
-                color="secondary"
-              />
-              <br />
-              <Button variant="contained" type="submit" className={classes.Btn_Flyit}>
-                Fly it
-              </Button>
+          <Grid item xs={8} sm={5} md={6} lg={5}>
+            <div>
+              <div className={classes.Form_Components}>
+                <FormHelperText className={classes.Form_Label}> Your name or company (required) </FormHelperText>
+                <TextField
+                  id="outlined-textarea"
+                  variant="outlined"
+                  InputProps={{
+                    classes: {
+                      input: classes.resize,
+                    },
+                  }}
+                  className={classes.Text_Field}
+                />
+              </div>
+              <div className={classes.Form_Components}>
+                <FormHelperText className={classes.Form_Label}> Your email (required) </FormHelperText>
+                <TextField
+                  id="outlined-textarea"
+                  variant="outlined"
+                  InputProps={{
+                    classes: {
+                      input: classes.resize,
+                    },
+                  }}
+                  className={classes.Text_Field}
+                />
+              </div>
+              <div className={classes.Form_Components}>
+                <FormHelperText className={classes.Form_Label}> Your message (required) </FormHelperText>
+                <TextField
+                  id="outlined-textarea"
+                  multiline
+                  variant="outlined"
+                  InputProps={{
+                    classes: {
+                      input: classes.resize,
+                    },
+                  }}
+                  className={classes.Text_Field}
+                />
+              </div>
+              <div className={classes.Form_Components}>
+                <Button variant="contained" type="submit" className={classes.Btn_Flyit}>
+                  Fly it
+                </Button>
+              </div>
             </div>
           </Grid>
         </Grid>
