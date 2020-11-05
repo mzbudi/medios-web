@@ -62,14 +62,12 @@ function Header() {
         <Button className={classes.Header_BtnResponsive}>About Medios</Button>
       </ListItem>
       <ListItem onClick={handleClick}>
-        <Button component={Link} to="/product" className={classes.Header_BtnResponsive}>
-          Product
-        </Button>
+        <Button className={classes.Header_BtnResponsive}>Product</Button>
         {openMobile ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={openMobile} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItem button className={classes.Header_Nested}>
+          <ListItem component={Link} to="/product" button className={classes.Header_Nested}>
             CMS
           </ListItem>
           <ListItem button className={classes.Header_Nested}>
@@ -126,8 +124,6 @@ function Header() {
               About Medios
             </Button>
             <Button
-              component={Link}
-              to="/product"
               className={classes.Header_MenuBtn}
               onMouseEnter={handleToggle}
               ref={anchorRef}
