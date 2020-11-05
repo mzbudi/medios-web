@@ -1,80 +1,62 @@
 import React from 'react';
-import { Grid, Container, Typography } from '@material-ui/core';
-import image from '../../Assets/Images/Blank.png';
+import { Grid, Typography, Card, CardActionArea, CardContent, CardMedia } from '@material-ui/core';
+import _blank from '../../Assets/Images/Blank.png';
 import useStyles from './ProjectStyle';
 
-function Service() {
+function Project() {
   const classes = useStyles();
+  const loremIps = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+  labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation`;
+  const project = [
+    { title: 'NAMA PROJECT', subtitle: 'BIDANG SERVICENYA', img: _blank, content: loremIps },
+    { title: 'NAMA PROJECT', subtitle: 'BIDANG SERVICENYA', img: _blank, content: loremIps },
+    { title: 'NAMA PROJECT', subtitle: 'BIDANG SERVICENYA', img: _blank, content: loremIps },
+  ];
+
   return (
     <>
       <div className={classes.HeaderImage}>
-        <Typography align="center" className={classes.Main_TextService}>
+        <Typography align="center" className={classes.PageTitle}>
           Project
         </Typography>
       </div>
-
-      <Container>
-        <Grid container>
-          <Grid item xs={12} lg={12} md={12}>
-            <div id="title">Our Ongoing Project</div>
-          </Grid>
-          <Grid item xs={12} lg={4} md={4}>
-            <div className={classes.Container_Content}>
-              <img className={classes.Image_Border} src={image} alt="logo" />
-              <div className={classes.Text_Block1}>
-                <h4 className={classes.TextBlock_Title}>BIDANG SERVICE</h4>
-              </div>
-              <div className={classes.Text_Block2}>
-                <h4 className={classes.TextBlock_Content1}>NAMA PROJECT</h4>
-                <p className={classes.TextBlock_Content2}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  .....labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={12} lg={4} md={4}>
-            <div className={classes.Container_Content}>
-              <img className={classes.Image_Border} src={image} alt="logo" />
-              <div className={classes.Text_Block1}>
-                <h4 className={classes.TextBlock_Title}>BIDANG SERVICE</h4>
-              </div>
-              <div className={classes.Text_Block2}>
-                <h4 className={classes.TextBlock_Content1}>NAMA PROJECT</h4>
-                <p className={classes.TextBlock_Content2}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={12} lg={4} md={4}>
-            <div className={classes.Container_Content}>
-              <img className={classes.Image_Border} src={image} alt="logo" />
-              <div className={classes.Text_Block1}>
-                <h4 className={classes.TextBlock_Title}>BIDANG SERVICE</h4>
-              </div>
-              <div className={classes.Text_Block2}>
-                <h4 className={classes.TextBlock_Content1}>NAMA PROJECT</h4>
-                <p className={classes.TextBlock_Content2}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-              </div>
-            </div>
+      <Grid container alignContent="center" justify="center" className={classes.Content}>
+        <Grid item xs={12}>
+          <Typography align="center" className={classes.OngoingTitle} component="p">
+            Our Ongoing Project
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container justify="center">
+            {project.map((value, index) => (
+              <Grid key={index} item>
+                <Card className={classes.Card}>
+                  <CardMedia image={value.img} className={classes.CardMedia} title={value.title} />
+                  <CardContent>
+                    <Grid container direction="row" justify="center" alignContent="center">
+                      <Grid item xs lg>
+                        <Typography gutterBottom className={classes.CardContentTitle} component="p">
+                          {value.title}
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={6} lg={5}>
+                        <Typography gutterBottom className={classes.CardContentSubtitle} component="p">
+                          {value.subtitle}
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                    <Typography component="p" className={classes.CardContentBody}>
+                      {value.content}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
-      </Container>
-
-      {/* <div className={classes.root}>
-        <Typography>{'xs down: red'}</Typography>
-        <Typography>{'xs to sm: blue'}</Typography>
-        <Typography>{'sm to md: yellow'}</Typography>
-        <Typography>{'md to lg: purple'}</Typography>
-        <Typography>{'lg up: green'}</Typography>
-      </div> */}
+      </Grid>
     </>
   );
 }
 
-export default Service;
+export default Project;
