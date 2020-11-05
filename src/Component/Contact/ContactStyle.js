@@ -31,17 +31,18 @@ const useStyles = makeStyles((theme) => ({
   },
   ReachUs_Title: {
     [theme.breakpoints.down('sm')]: {
-      font: 'normal normal 600 36px Montserrat',
+      fontSize: 36,
     },
     [theme.breakpoints.between('sm', 'md')]: {
-      font: 'normal normal 600 48px Montserrat',
+      fontSize: 48,
     },
     [theme.breakpoints.up('lg')]: {
-      font: 'normal normal 600 60px/73px Montserrat',
+      fontSize: 60,
     },
-    color: '#29AE6D',
-    marginTop: '6%',
-    marginBottom: '2%',
+    fontFamily: 'Montserrat',
+    fontWeight: 500,
+    marginTop: '5%',
+    marginBottom: '5%',
   },
   Grid_Image: {
     display: 'flex',

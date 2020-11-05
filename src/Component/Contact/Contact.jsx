@@ -55,6 +55,7 @@ function Contact() {
                 <TextField
                   id="outlined-textarea"
                   multiline
+                  rows={5}
                   variant="outlined"
                   InputProps={{
                     classes: {
