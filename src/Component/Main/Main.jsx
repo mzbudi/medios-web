@@ -127,19 +127,26 @@ function Main() {
   );
 
   const OurProduct = () => (
-    <Grid container spacing={4} className={classes.Main_MarginOurProduct}>
+    <Grid
+      container
+      spacing={3}
+      className={classes.Main_MarginOurProduct}
+      alignItems="center"
+      justify="center"
+      alignContent="center"
+    >
       <Grid item lg={12}>
         <Typography align="center" className={classes.Main_TextOurProduct}>
           Our Product
         </Typography>
       </Grid>
-      <Grid item container spacing={6}>
-        <Grid item container lg={2} xs={3} md={3} sm={3} direction="column" alignItems="center" justify="center">
+      <Grid item container justify="space-between">
+        <Grid item container lg={1} xs={3} md={3} sm={3} direction="column" alignItems="center" justify="center">
           <IconButton aria-label="Left">
             <ChevronLeftIcon className={classes.Main_IconSize} />
           </IconButton>
         </Grid>
-        <Grid item container direction="column" lg={4}>
+        <Grid item container direction="column" lg={4} md={10} sm={10} xs={10}>
           <Card className={classes.root}>
             <CardMedia image={cms} title="Cms" component="img" />
             <CardContent style={{ padding: '10%' }}>
@@ -186,7 +193,7 @@ function Main() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item container lg={2} direction="column" alignItems="center" justify="center">
+        <Grid item container lg={1} direction="column" alignItems="center" justify="center">
           <IconButton aria-label="Right">
             <ChevronRightIcon className={classes.Main_IconSize} />
           </IconButton>
@@ -398,8 +405,8 @@ function Main() {
       <Container>
         <OpeningText />
         <ImageSection />
-        <OurProduct />
       </Container>
+      <OurProduct />
       <WhyChooseUs />
       <Container>
         <Partner />

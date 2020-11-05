@@ -269,6 +269,7 @@ const useStyles = makeStyles((theme) => ({
       font: 'normal normal 600 40px/49px Montserrat',
       letterSpacing: 0,
       color: '#383838',
+      marginBottom: 40,
       opacity: 1,
     },
   },
