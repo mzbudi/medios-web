@@ -4,8 +4,6 @@ import { Grid, Card, CardContent, Button, Container, Typography } from '@materia
 import { ReactComponent as Responsive } from '../../../Assets/Images SVG/Responsive.svg';
 import { ReactComponent as Mobile } from '../../../Assets/Images SVG/Mobile.svg';
 import { ReactComponent as Drone } from '../../../Assets/Images SVG/Drone.svg';
-import { ReactComponent as Ai } from '../../../Assets/Images SVG/AI.svg';
-import { ReactComponent as Analyst } from '../../../Assets/Images SVG/Analist.svg';
 import './mainStyle.css';
 import useStyles from './mainStyle';
 
@@ -102,58 +100,6 @@ function Main() {
                 <Button
                   component={Link}
                   to="/service/iot"
-                  className={classes.Button_Text}
-                  size="small"
-                  variant="outlined"
-                >
-                  Show More
-                </Button>
-              </div>
-            </Card>
-          </Grid>
-          <Grid item xs={12} lg={6} md={6} className={classes.Margin_Card}>
-            <Card className={classes.Card_Style}>
-              <CardContent className={classes.Card_Content}>
-                <div className={classes.Cirlce}>
-                  <Ai className={classes.Main_ImageSection} />
-                </div>
-                <p className={classes.Card_Title}>Analysis, Processing, Classification Data </p>{' '}
-              </CardContent>
-              <CardContent>
-                <p className={classes.Card_Text}>
-                  We develop software that have great UI/UX design that can run on a variety of your desktop OS.
-                </p>
-              </CardContent>
-              <div className={classes.Button_Midle}>
-                <Button
-                  component={Link}
-                  to="/service/analysis"
-                  className={classes.Button_Text}
-                  size="small"
-                  variant="outlined"
-                >
-                  Show More
-                </Button>
-              </div>
-            </Card>
-          </Grid>
-          <Grid item xs={12} lg={6} md={6} className={classes.Margin_Card}>
-            <Card className={classes.Card_Style}>
-              <CardContent className={classes.Card_Content}>
-                <div className={classes.Cirlce}>
-                  <Analyst className={classes.Main_ImageSection} />
-                </div>
-                <p className={classes.Card_Title}>Artificial Intelligence & Machine Learning</p>
-              </CardContent>
-              <CardContent>
-                <p className={classes.Card_Text}>
-                  We develop responsive websites and Smartphone Applications along with good UI/UX designs.
-                </p>
-              </CardContent>
-              <div className={classes.Button_Midle}>
-                <Button
-                  component={Link}
-                  to="/service/ai"
                   className={classes.Button_Text}
                   size="small"
                   variant="outlined"
