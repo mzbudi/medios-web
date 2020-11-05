@@ -282,7 +282,7 @@ function Main() {
             </Typography>
           </Grid>
         </Grid>
-        <Grid item xs={0} md={0} style={{ textAlign: '-webkit-right' }}>
+        <Grid item xs={false} md={false} style={{ textAlign: '-webkit-right' }}>
           <img src={quote} alt="quote" style={{ width: 400 }} className={classes.Main_QuoteImg} />
         </Grid>
       </Grid>
