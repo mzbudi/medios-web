@@ -141,8 +141,12 @@ function Header() {
                       <MenuItem onClick={handleClose} component={Link} to="/product/cms">
                         Cloud Medical System
                       </MenuItem>
-                      <MenuItem onClick={handleClose}>DSS-CoividNet</MenuItem>
-                      <MenuItem onClick={handleClose}>EHR-HIS</MenuItem>
+                      <MenuItem onClick={handleClose} component={Link} to="/product/dss">
+                        DSS-CoividNet
+                      </MenuItem>
+                      <MenuItem onClick={handleClose} component={Link} to="/product/ehr">
+                        EHR-HIS
+                      </MenuItem>
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>
