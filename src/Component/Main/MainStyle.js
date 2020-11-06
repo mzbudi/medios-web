@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: green[500],
     },
   },
-  root: {
+  Product_Card: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -193,14 +193,16 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 10% 0 10%',
   },
 
-  Main_Btn_Flyit: {
+  Main_Btn_FlyIt: {
     background: 'transparent linear-gradient(112deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
     boxShadow: '5px 15px 30px #3939391A',
-    borderRadius: 20,
+    width: '11.25rem',
+    height: '3.75rem',
+    borderRadius: '3.125rem',
     opacity: 1,
     letterSpacing: 0,
     color: '#FFFFFF',
-    fontWeight: 'bold',
+    font: 'bold 1.25rem/1.6875rem Montserrat',
     padding: '10px 40px',
   },
 
@@ -302,8 +304,11 @@ const useStyles = makeStyles((theme) => ({
   Main_BtnShowMore: {
     background: 'transparent linear-gradient(107deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
     boxShadow: '5px 15px 30px #3939391A',
+    width: '11.25rem',
+    height: '3.75rem',
+    borderRadius: '0.625rem',
     opacity: 1,
-    fontWeight: 'bold',
+    font: 'bold 1.25rem/1.6875rem Montserrat',
     letterSpacing: 0,
     color: '#FFFFFF',
   },
@@ -323,9 +328,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  Main_CardBtnFlexer: {
+  Main_CardBtn: {
     marginBottom: '5%',
     marginRight: '5%',
+  },
+
+  Main_CardAction: {
+    justifyContent: 'flex-end',
   },
 
   Main_ContactSection: {
@@ -340,13 +349,6 @@ const useStyles = makeStyles((theme) => ({
 
   Main_MarginContact: {
     marginBottom: '5%',
-  },
-
-  Main_TextFlyIt: {
-    font: 'normal normal bold 20px/24px Montserrat',
-    letterSpacing: 0,
-    color: '#FFFFFF',
-    opacity: 1,
   },
 }));
 

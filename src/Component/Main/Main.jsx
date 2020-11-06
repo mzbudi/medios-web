@@ -114,7 +114,7 @@ function Main() {
           </IconButton>
         </Grid>
         <Grid item container direction="column" lg={4} md={10} sm={10} xs={10}>
-          <Card className={classes.root}>
+          <Card className={classes.Product_Card}>
             <CardMedia image={cms} title="Cms" component="img" />
             <CardContent style={{ padding: '10%' }}>
               <Typography gutterBottom className={classes.Main_CardTitle}>
@@ -125,19 +125,17 @@ function Main() {
                 controls patient remotely
               </Typography>
             </CardContent>
-            <CardActions>
-              <Grid container justify="flex-end" alignItems="flex-end">
-                <div className={classes.Main_CardBtnFlexer}>
-                  <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
-                    Show more
-                  </Button>
-                </div>
-              </Grid>
+            <CardActions className={classes.Main_CardAction}>
+              <div className={classes.Main_CardBtn}>
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                  Show more
+                </Button>
+              </div>
             </CardActions>
           </Card>
         </Grid>
         <Grid item container direction="column" lg={4}>
-          <Card className={classes.root}>
+          <Card className={classes.Product_Card}>
             <CardMedia image={blank} title="Blank" component="img" />
             <CardContent style={{ padding: '10%' }}>
               <Typography gutterBottom className={classes.Main_CardTitle}>
@@ -149,14 +147,12 @@ function Main() {
                 Covid-19 Based on Chest X-Ray Image.
               </Typography>
             </CardContent>
-            <CardActions>
-              <Grid container justify="flex-end" alignItems="flex-end">
-                <div className={classes.Main_CardBtnFlexer}>
-                  <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
-                    Show more
-                  </Button>
-                </div>
-              </Grid>
+            <CardActions className={classes.Main_CardAction}>
+              <div className={classes.Main_CardBtn}>
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                  Show more
+                </Button>
+              </div>
             </CardActions>
           </Card>
         </Grid>
@@ -350,8 +346,8 @@ function Main() {
           </Grid>
           <Grid container>
             <Grid item lg={12} xs={12} className={classes.Main_MarginFlyIt}>
-              <Button variant="contained" type="submit" className={classes.Main_Btn_Flyit}>
-                <Typography className={classes.Main_TextFlyIt}>Fly it</Typography>
+              <Button variant="contained" type="submit" className={classes.Main_Btn_FlyIt}>
+                Fly it
               </Button>
             </Grid>
             <Grid item lg={12} xs={12} className={classes.Main_MarginContact}>
