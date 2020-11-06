@@ -30,21 +30,23 @@ const Loading = () => (
 
 function MainRouter() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Header />
-      <Suspense fallback={<Loading />}>
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/product/cms" component={ProductCMS} />
-          <Route path="/service" component={ServiceRouter} />
-          <Route exact path="/project" component={Project} />
-          <Route component={UnderConstruction} />
-        </Switch>
-      </Suspense>
-      <Footer />
-    </Router>
+    <div className="root">
+      <Router>
+        <ScrollToTop />
+        <Header />
+        <Suspense fallback={<Loading />}>
+          <Switch>
+            <Route exact path="/" component={Main} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/product/cms" component={ProductCMS} />
+            <Route path="/service" component={ServiceRouter} />
+            <Route exact path="/project" component={Project} />
+            <Route component={UnderConstruction} />
+          </Switch>
+        </Suspense>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

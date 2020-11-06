@@ -5,3 +5,8 @@
   align-items: center;
   margin-top: 7rem;
 }
+
+.root {
+  width: 100%;
+  overflow: auto;
+}
