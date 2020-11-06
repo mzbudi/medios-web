@@ -190,7 +190,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   Main_FormContact: {
-    padding: '0 10% 0 10%',
+    margin: 'auto',
+    width: '68vw',
   },
 
   Main_Btn_FlyIt: {
@@ -368,17 +369,33 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '3rem',
   },
 
-  Main_Text_FromLabel: {
+  Main_Text_FormLabel: {
     font: 'normal normal normal 1.375rem/1.875rem Montserrat',
     letterSpacing: 0,
     color: '#8C8C8C',
     opacity: 1,
   },
 
+  Main_Text_FormLabel_Focused: {
+    color: '#29ae6d !important',
+  },
+
   Main_Input_Form: {
     font: 'normal normal 400 1.375rem/1.875rem Montserrat',
     paddingTop: '0.5rem',
-    paddingBottom: '0.25rem',
+  },
+
+  Main_Input_Form_Underline: {
+    borderBottom: '1px solid #29ae6d',
+    '&:after': {
+      borderBottom: '2px solid #29ae6d',
+    },
+  },
+
+  Main_Input_Form_Message: {
+    height: '11.4375rem',
+    marginTop: '0.5rem',
+    marginBottom: '0.25rem',
   },
 }));
 
