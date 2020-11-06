@@ -352,6 +352,34 @@ const useStyles = makeStyles((theme) => ({
   Main_MarginContact: {
     marginBottom: '5%',
   },
+
+  Main_TextFlyIt: {
+    font: 'normal normal bold 20px/24px Montserrat',
+    letterSpacing: 0,
+    color: '#FFFFFF',
+    opacity: 1,
+  },
+
+  Main_Text_ReachUs: {
+    font: 'normal normal bold 3.125rem/4.1875rem Montserrat',
+    letterSpacing: 0,
+    color: '#383838',
+    opacity: 1,
+    marginBottom: '3rem',
+  },
+
+  Main_Text_FromLabel: {
+    font: 'normal normal normal 1.375rem/1.875rem Montserrat',
+    letterSpacing: 0,
+    color: '#8C8C8C',
+    opacity: 1,
+  },
+
+  Main_Input_Form: {
+    font: 'normal normal 400 1.375rem/1.875rem Montserrat',
+    paddingTop: '0.5rem',
+    paddingBottom: '0.25rem',
+  },
 }));
 
 export default useStyles;

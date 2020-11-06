@@ -283,9 +283,7 @@ function Main() {
   const ReachUs = () => {
     const handleSend = (event) => {
       event.preventDefault();
-      console.log(event.target.elements.name.value);
-      console.log(event.target.elements.email.value);
-      console.log(event.target.elements.msg.value);
+      // TODO: handle send contacts
     };
 
     return (
@@ -297,20 +295,19 @@ function Main() {
             handleSend(e);
           }}
         >
-          <Grid container spacing={3} style={{ marginBottom: 30 }}>
-            <Grid item lg={12} xs={12} md={12} xl={12} sm={12}>
-              <Typography align="left" variant="h5" style={{ fontWeight: 'bold' }}>
-                Reach Us
-              </Typography>
-            </Grid>
-          </Grid>
+          <Typography align="left" variant="h5" className={classes.Main_Text_ReachUs}>
+            Reach Us
+          </Typography>
           <Grid container spacing={10} justify="center">
             <Grid item lg={6} xs={12} sm={12} md={6} xl={6}>
               <FormControl fullWidth>
-                <InputLabel htmlFor="name">Your Name or Company</InputLabel>
+                <InputLabel htmlFor="name" className={classes.Main_Text_FromLabel}>
+                  Your Name or Company
+                </InputLabel>
                 <Input
                   id="name"
                   name="name"
+                  className={classes.Main_Input_Form}
                   aria-describedby="my-helper-text"
                   placeholder="Enter your name or company"
                 />
@@ -318,10 +315,13 @@ function Main() {
             </Grid>
             <Grid item lg={6} xs={12} sm={12} md={6} xl={6}>
               <FormControl fullWidth>
-                <InputLabel htmlFor="email">Your Email</InputLabel>
+                <InputLabel htmlFor="email" className={classes.Main_Text_FromLabel}>
+                  Your Email
+                </InputLabel>
                 <Input
                   id="email"
                   name="email"
+                  className={classes.Main_Input_Form}
                   aria-describedby="my-helper-text"
                   placeholder="Enter your email address"
                   type="email"
@@ -332,11 +332,14 @@ function Main() {
           <Grid container spacing={10}>
             <Grid item lg={12} xs={12} sm={12} md={12} xl={12}>
               <FormControl fullWidth>
-                <InputLabel htmlFor="msg">Message</InputLabel>
+                <InputLabel htmlFor="msg" className={classes.Main_Text_FromLabel}>
+                  Message
+                </InputLabel>
                 <Input
                   multiline
                   id="msg"
                   name="msg"
+                  className={classes.Main_Input_Form}
                   aria-describedby="my-helper-text"
                   placeholder="Your message here ..."
                   rows="4"
