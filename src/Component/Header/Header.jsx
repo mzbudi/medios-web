@@ -9,7 +9,6 @@ import {
   Menu,
   MenuItem,
   Popper,
-  Grow,
   Paper,
   ClickAwayListener,
   MenuList,
@@ -17,9 +16,7 @@ import {
   List,
   ListItem,
 } from '@material-ui/core';
-import { ExpandLess, ExpandMore } from '@material-ui/icons';
-import DehazeIcon from '@material-ui/icons/Dehaze';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { ExpandLess, ExpandMore, Dehaze } from '@material-ui/icons';
 import { logoMedios, flagId, flagUk } from '../../Assets/Icon';
 
 import useStyles from './HeaderStyle.js';
@@ -138,26 +135,19 @@ function Header() {
               // onMouseLeave={handleToggle}
             >
               Product
-              <ExpandMoreIcon />
+              <ExpandMore />
             </Button>
             <Popper open={open} anchorEl={anchorRef.current} transition disablePortal>
-              {({ TransitionProps, placement }) => (
-                <Grow
-                  {...TransitionProps}
-                  style={{
-                    transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom',
-                  }}
-                >
-                  <Paper className={classes.Header_ProductPoP}>
-                    <ClickAwayListener onClickAway={handleClose}>
-                      <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                        <MenuItem onClick={handleClose}>Cloud Medical System</MenuItem>
-                        <MenuItem onClick={handleClose}>DSS-CoividNet</MenuItem>
-                        <MenuItem onClick={handleClose}>EHR-HIS</MenuItem>
-                      </MenuList>
-                    </ClickAwayListener>
-                  </Paper>
-                </Grow>
+              {({ transitionProps }) => (
+                <Paper {...transitionProps} className={classes.Header_ProductPoP}>
+                  <ClickAwayListener onClickAway={handleClose}>
+                    <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                      <MenuItem onClick={handleClose}>Cloud Medical System</MenuItem>
+                      <MenuItem onClick={handleClose}>DSS-CoividNet</MenuItem>
+                      <MenuItem onClick={handleClose}>EHR-HIS</MenuItem>
+                    </MenuList>
+                  </ClickAwayListener>
+                </Paper>
               )}
             </Popper>
 
@@ -184,7 +174,7 @@ function Header() {
               aria-haspopup="true"
               onClick={handleMobileMenuOpen}
             >
-              <DehazeIcon />
+              <Dehaze />
             </IconButton>
           </div>
           {renderMobileMenu}
