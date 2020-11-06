@@ -16,7 +16,8 @@ import {
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import useStyles from './MainStyle';
-import { ai, analist, drone, mobile, responsive } from '../../Assets/Images SVG';
+// import { ai, analist, drone, mobile, responsive } from '../../Assets/Images SVG';
+import { drone, mobile, responsive } from '../../Assets/Images SVG';
 import { logoMedios, affordable, fast, goodQuality, ontime } from '../../Assets/Icon';
 import { partner1, partner2, partner3, partner4, partner5, cms, blank, quote } from '../../Assets/Images';
 
@@ -96,7 +97,6 @@ function Main() {
   const OurProduct = () => (
     <Grid
       container
-      spacing={3}
       className={classes.Main_MarginOurProduct}
       alignItems="center"
       justify="center"

@@ -257,6 +257,7 @@ const useStyles = makeStyles((theme) => ({
       font: 'normal normal 600 20px/29px Montserrat',
       letterSpacing: 0,
       color: '#383838',
+      marginBottom: 20,
       opacity: 1,
     },
     [theme.breakpoints.between('md', 'lg')]: {
@@ -264,6 +265,7 @@ const useStyles = makeStyles((theme) => ({
       font: 'normal normal 600 30px/39px Montserrat',
       letterSpacing: 0,
       color: '#383838',
+      marginBottom: 30,
       opacity: 1,
     },
     [theme.breakpoints.up('lg')]: {
