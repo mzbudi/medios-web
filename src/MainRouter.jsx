@@ -10,7 +10,7 @@ const Contact = lazy(() => import('./Component/Contact'));
 const ProductCMS = lazy(() => import('./Component/Product/ProductCMS'));
 const ServiceRouter = lazy(() => import('./Component/Service'));
 const Project = lazy(() => import('./Component/Project'));
-const About = lazy(() => import('./Component/About'));
+const UnderConstruction = lazy(() => import('./Component/Misc/UnderConstruction'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,7 +40,7 @@ function MainRouter() {
           <Route exact path="/product/cms" component={ProductCMS} />
           <Route path="/service" component={ServiceRouter} />
           <Route exact path="/project" component={Project} />
-          <Route exact path="/about" component={About} />
+          <Route component={UnderConstruction} />
         </Switch>
       </Suspense>
       <Footer />
