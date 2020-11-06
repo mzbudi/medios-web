@@ -127,7 +127,7 @@ function Main() {
             </CardContent>
             <CardActions className={classes.Main_CardAction}>
               <div className={classes.Main_CardBtn}>
-                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore} href="/product/cms">
                   Show more
                 </Button>
               </div>
@@ -149,7 +149,7 @@ function Main() {
             </CardContent>
             <CardActions className={classes.Main_CardAction}>
               <div className={classes.Main_CardBtn}>
-                <Button variant="contained" size="small" className={classes.Main_BtnShowMore}>
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore} href="/product/dss">
                   Show more
                 </Button>
               </div>
