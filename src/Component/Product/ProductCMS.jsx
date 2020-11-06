@@ -13,7 +13,7 @@ import Lock from '../../Assets/Icon/lock.svg';
 import ImageCMS from '../../Assets/Images/CMS.png';
 import useStyles from './ProductStyle.js';
 
-function Product() {
+function ProductCMS() {
   const classes = useStyles();
   return (
     <>
@@ -129,4 +129,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default ProductCMS;
