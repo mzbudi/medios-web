@@ -21,15 +21,15 @@ function Main() {
           <Grid item xs={12} lg={12} md={12}>
             <div id="title">Medios Service</div>
           </Grid>
-          <div id="title-extra">
-            <Grid item xs={6}>
-              <p className={classes.Opening_Service}>
+          <Grid container item xs={12} lg={12} md={12} justify="center">
+            <Grid item xs={10}>
+              <Typography className={classes.Opening_Service} style={{ lineHeight: '200%' }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. .
-              </p>
+                ex ea commodo consequat.
+              </Typography>
             </Grid>
-          </div>
+          </Grid>
           <Grid item xs={12} lg={4} md={4}>
             <Card className={classes.Card_Style}>
               <CardContent className={classes.Card_Content}>

@@ -68,16 +68,19 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       font: 'normal normal normal 10px/14px Montserrat',
       color: '#707070',
+      marginBottom: 30,
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',
       font: 'normal normal normal 15px/19px Montserrat',
       color: '#707070',
+      marginBottom: 40,
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
       font: 'normal normal normal 18px/22px Montserrat',
       color: '#707070',
+      marginBottom: 50,
     },
   },
   HeaderImage: {
