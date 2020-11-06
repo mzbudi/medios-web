@@ -382,24 +382,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   Container_Benefit: {
-    [theme.breakpoints.down('md')]: {
-      backgroundColor: '#F2FFF9',
-      marginLeft: '25%',
-      width: '50%',
-      height: '100%',
-    },
-    [theme.breakpoints.between('md', 'lg')]: {
-      backgroundColor: '#F2FFF9',
-      marginLeft: '25%',
-      width: '50%',
-      height: '100%',
-    },
+    backgroundColor: '#F2FFF9',
+    margin: 'auto',
+    width: '50%',
+    height: '100%',
     [theme.breakpoints.up('lg')]: {
-      backgroundColor: '#F2FFF9',
-      marginTop: '3%',
-      marginLeft: '20%',
       width: '65%',
-      height: '100%',
       maxHeight: '251px',
     },
   },
