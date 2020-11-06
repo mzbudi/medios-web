@@ -7,8 +7,8 @@ import useStyles from './FooterStyle.js';
 function Footer() {
   const classes = useStyles();
   return (
-    <>
-      <div className={classes.Container}>
+    <div className={classes.Container}>
+      <div className={classes.Footer_Banner}>
         <Container>
           <Grid container spacing={4}>
             <Grid item container direction="column" xs={12} md={4} sm={12} lg={5} xl={4} spacing={3}>
@@ -85,12 +85,10 @@ function Footer() {
           <Divider variant="middle" className={classes.Footer_Divider} />
         </Container>
       </div>
-      <Container>
-        <Typography className={classes.Footer_Text_Extra}>
-          © 2020 MEDIOS. Hak Cipta Dilindungi oleh Undang-Undang.
-        </Typography>
-      </Container>
-    </>
+      <Typography className={classes.Footer_Text_Copyright}>
+        © 2020 MEDIOS. Hak Cipta Dilindungi oleh Undang-Undang.
+      </Typography>
+    </div>
   );
 }
 

@@ -2,9 +2,13 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   Container: {
+    width: '100%',
+  },
+  Footer_Banner: {
     marginTop: '5rem',
     backgroundColor: '#F2FFF9',
     justifyContent: 'space-between',
+    width: '100%',
   },
   Container_Load: {
     margin: '10px',
@@ -113,30 +117,19 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     marginLeft: '40px',
   },
-  Footer_Text_Extra: {
+  Footer_Text_Copyright: {
+    letterSpacing: '0px',
+    color: '#8C8C8C',
+    opacity: '1',
+    textAlign: 'left',
     [theme.breakpoints.down('sm')]: {
-      textAlign: 'left',
       font: 'normal normal normal 10px/13px Montserrat;',
-      letterSpacing: '0px',
-      color: '#8C8C8C',
-      opacity: '1',
-      padding: 10,
     },
     [theme.breakpoints.between('sm', 'md')]: {
-      textAlign: 'left',
       font: 'normal normal normal 13px/17px Montserrat;',
-      letterSpacing: '0px',
-      color: '#8C8C8C',
-      opacity: '1',
-      padding: 10,
     },
     [theme.breakpoints.up('md')]: {
-      textAlign: 'left',
       font: 'normal normal normal 17px/20px Montserrat;',
-      letterSpacing: '0px',
-      color: '#8C8C8C',
-      opacity: '1',
-      padding: 10,
     },
   },
   Contact_Logo: {
