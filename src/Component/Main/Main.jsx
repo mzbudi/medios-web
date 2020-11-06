@@ -89,40 +89,7 @@ function Main() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }} spacing={3}>
-        <Grid container item direction="column" lg={2} />
-        <Grid container item direction="column" lg={4}>
-          <Grid item>
-            <img src={ai} alt="AI" className={classes.Main_ImageSection} />
-          </Grid>
-          <Grid item>
-            <p className={classes.Main_TextImageSection}>
-              <b>Analysis, processing, classification data</b>
-            </p>
-          </Grid>
-          <Grid item>
-            <Typography>
-              We develop software that have great UI/UX design that can run on a variety of your desktop OS.
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid container item direction="column" lg={4}>
-          <Grid item>
-            <img src={analist} alt="analist" className={classes.Main_ImageSection} />
-          </Grid>
-          <Grid item>
-            <p className={classes.Main_TextImageSection}>
-              <b>Artificial intelligence & Machine Learning</b>
-            </p>
-          </Grid>
-          <Grid item>
-            <Typography>
-              We develop software that have great UI/UX design that can run on a variety of your desktop OS.
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid container item direction="column" lg={2} />
-      </Grid>
+      <Grid container item direction="column" lg={2} />
     </>
   );
 
@@ -262,7 +229,6 @@ function Main() {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container item direction="column" lg={2} />
         </Grid>
       </Grid>
     </div>
