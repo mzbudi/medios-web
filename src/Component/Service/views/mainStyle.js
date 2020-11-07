@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '200px',
     paddingBottom: '200px',
     width: '100%',
-    height: '100%',
+    height: 'auto',
   },
   textStyle: {
     width: '100%',

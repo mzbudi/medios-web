@@ -2,6 +2,7 @@ import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import BounceLoader from 'react-spinners/BounceLoader';
 import './mainStyles.css';
+import { Grid } from '@material-ui/core';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 
@@ -33,18 +34,26 @@ function MainRouter() {
     <div className="root">
       <Router>
         <ScrollToTop />
-        <Header />
-        <Suspense fallback={<Loading />}>
-          <Switch>
-            <Route exact path="/" component={Main} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/product/cms" component={ProductCMS} />
-            <Route path="/service" component={ServiceRouter} />
-            <Route exact path="/project" component={Project} />
-            <Route component={UnderConstruction} />
-          </Switch>
-        </Suspense>
-        <Footer />
+        <Grid container direction="row" justify="center" className="root">
+          <Grid item md={12}>
+            <Header />
+          </Grid>
+          <Grid item md={12}>
+            <Suspense fallback={<Loading />}>
+              <Switch>
+                <Route exact path="/" component={Main} />
+                <Route exact path="/contact" component={Contact} />
+                <Route exact path="/product/cms" component={ProductCMS} />
+                <Route path="/service" component={ServiceRouter} />
+                <Route exact path="/project" component={Project} />
+                <Route component={UnderConstruction} />
+              </Switch>
+            </Suspense>
+          </Grid>
+          <Grid item md={12}>
+            <Footer />
+          </Grid>
+        </Grid>
       </Router>
     </div>
   );

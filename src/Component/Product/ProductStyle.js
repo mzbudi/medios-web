@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    height: '90vh',
+    height: '100vh',
   },
   CMSBanner: {
     backgroundImage: `url(${HeaderImage})`,
@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
     color: '#383838',
   },
   LogoCMS: {
-    height: '35vh',
+    height: '40vh',
     width: 'auto',
     marginBottom: '1rem',
   },
@@ -37,6 +37,7 @@ const useStyles = makeStyles(() => ({
     fontSize: '2.5rem',
     fontWeight: 600,
     paddingTop: '1.875rem',
+    color: '#383838',
   },
   ProblemContainer: {
     height: 'fit-content',
@@ -51,7 +52,9 @@ const useStyles = makeStyles(() => ({
   ProblemDesc: {
     fontFamily: 'Montserrat',
     fontSize: '1rem',
+    paddingTop: '1rem',
     paddingBottom: '1.875rem',
+    color: '#383838',
   },
   SolutionContainer: {
     height: '100vh',
@@ -63,6 +66,7 @@ const useStyles = makeStyles(() => ({
     fontFamily: 'Montserrat',
     fontWeight: 600,
     fontSize: '1.5625rem',
+    color: '#383838',
   },
   BannerCMS: {
     display: 'flex',
@@ -76,6 +80,7 @@ const useStyles = makeStyles(() => ({
     fontSize: '1.25rem',
     lineHeight: '1.875rem',
     width: '80%',
+    color: '#383838',
   },
   CardCMS: {
     width: 'auto',
@@ -102,7 +107,8 @@ const useStyles = makeStyles(() => ({
     fontSize: 12,
     fontWeight: 500,
     fontFamily: 'Montserrat',
-    marginTop: '10%',
+    marginTop: '1rem',
+    color: '#383838',
   },
 }));
 
