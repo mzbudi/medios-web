@@ -1,5 +1,5 @@
 import React, { useEffect, Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
+import { HashRouter, Route, Switch, useLocation } from 'react-router-dom';
 import BounceLoader from 'react-spinners/BounceLoader';
 import './mainStyles.css';
 import { Grid } from '@material-ui/core';
@@ -32,7 +32,7 @@ const Loading = () => (
 function MainRouter() {
   return (
     <div className="root">
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <Grid container direction="row" justify="center" className="root">
           <Grid item md={12}>
@@ -54,7 +54,7 @@ function MainRouter() {
             <Footer />
           </Grid>
         </Grid>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
