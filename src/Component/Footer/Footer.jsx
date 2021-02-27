@@ -68,7 +68,7 @@ function Footer() {
                   <img src={phone} alt="logo" className={classes.Contact_Logo} />
                 </Grid>
                 <Grid item lg={10} xs={9} sm={9}>
-                  <Typography className={classes.Footer_Text}>+62 xxx-xxxx-xxxx</Typography>
+                  <Typography className={classes.Footer_Text}>+62 838-1193-8207</Typography>
                 </Grid>
               </Grid>
               <Grid item container direction="row">
@@ -76,7 +76,7 @@ function Footer() {
                   <img src={mail} alt="logo" className={classes.Contact_Logo} />
                 </Grid>
                 <Grid item lg={10} xs={9} sm={9}>
-                  <Typography className={classes.Footer_Text}>contactmedios.com</Typography>
+                  <Typography className={classes.Footer_Text}>contact@noobtech.id</Typography>
                   <Typography className={classes.Footer_Text}>24 X 7 online support</Typography>
                 </Grid>
               </Grid>

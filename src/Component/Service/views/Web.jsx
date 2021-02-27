@@ -28,7 +28,7 @@ function Web() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} lg={6} md={6} className={classes.Grid_Margin}>
+        <Grid item xs={12} lg={7} md={7} className={classes.Grid_Margin}>
           <h1 className={classes.Title}>Features</h1>
           <table>
             <tr>
@@ -36,13 +36,13 @@ function Web() {
                 <img src={ellipse} alt="logo" className={classes.Dot_Left} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>Authentication</p>
               </td>
               <td>
                 <img src={ellipse} alt="logo" className={classes.Dot} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>Payment Gateway</p>
               </td>
             </tr>
             <tr>
@@ -50,21 +50,20 @@ function Web() {
                 <img src={ellipse} alt="logo" className={classes.Dot_Left} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>SEO</p>
               </td>
               <td>
                 <img src={ellipse} alt="logo" className={classes.Dot} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>Responsive Web Application</p>
               </td>
             </tr>
           </table>
           <h1 className={classes.Title}>Description</h1>
           <p className={classes.Card_Title_Description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. .
+            Provides website developing service that can be used for many application such portfolio, company profile,
+            E-Commerce, Education Platform, Dashboard, etc.
           </p>
         </Grid>
       </Grid>

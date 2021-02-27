@@ -1,16 +1,15 @@
 import React from 'react';
-import { Grid, Typography, Card, CardActionArea, CardContent, CardMedia } from '@material-ui/core';
+import { Grid, Typography, Card, CardContent, CardMedia } from '@material-ui/core';
 import _blank from '../../Assets/Images/Blank.png';
 import useStyles from './ProjectStyle';
 
 function Project() {
   const classes = useStyles();
-  const loremIps = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-  labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation`;
+  const loremIps = `Project Brief`;
   const project = [
-    { title: 'NAMA PROJECT', subtitle: 'BIDANG SERVICENYA', img: _blank, content: loremIps },
-    { title: 'NAMA PROJECT', subtitle: 'BIDANG SERVICENYA', img: _blank, content: loremIps },
-    { title: 'NAMA PROJECT', subtitle: 'BIDANG SERVICENYA', img: _blank, content: loremIps },
+    { title: 'Project Name', subtitle: 'Service Field', img: _blank, content: loremIps },
+    { title: 'Project Name', subtitle: 'Service Field', img: _blank, content: loremIps },
+    { title: 'Project Name', subtitle: 'Service Field', img: _blank, content: loremIps },
   ];
 
   return (

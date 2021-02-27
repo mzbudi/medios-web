@@ -47,8 +47,7 @@ function ProductCMS() {
         <Grid item md={12} className={classes.CMSHeader}>
           <img src={Logo} className={classes.LogoCMS} alt="CMS" />
           <Typography component="p" align="center" className={classes.CMSDesc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget ipsum vulputate, molestie lorem
-            eget, elementum eros. Morbi ut nisi eget augue porttitor tempor vel non turpis.
+            An Universal Medical Record aimed to help doctors diagnose their patients better
           </Typography>
         </Grid>
         <Grid
@@ -94,10 +93,8 @@ function ProductCMS() {
             </Typography>
             <br />
             <Typography component="p" className={classes.CMSDesc}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget ipsum vulputate, molestie lorem
-              eget, elementum eros. Morbi ut nisi eget augue porttitor tempor vel non turpis. Nulla ex risus, fringilla
-              fringilla quam nec, iaculis iaculis quam. Nunc auctor auctor quam ac dapibus. Nam ac diam mollis, faucibus
-              nulla id, lobortis elit. Etiam interdum nisi felis.
+              CMS facilitates patients to store medical record on their hands and help doctors to diagnose them based on
+              patients owned medical record
             </Typography>
           </Grid>
           <Grid item md={5}>

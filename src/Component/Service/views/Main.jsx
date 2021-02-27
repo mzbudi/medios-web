@@ -24,9 +24,7 @@ function Main() {
           <Grid container item xs={12} lg={12} md={12} justify="center">
             <Grid item xs={10}>
               <Typography className={classes.Opening_Service} style={{ lineHeight: '200%' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                What we provides...
               </Typography>
             </Grid>
           </Grid>
@@ -34,7 +32,7 @@ function Main() {
             <Card className={classes.Card_Style}>
               <CardContent className={classes.Card_Content}>
                 <div className={classes.Cirlce}>
-                  <Responsive className={classes.Main_ImageSection} />
+                  <Mobile className={classes.Main_ImageSection} />
                 </div>
                 <p className={classes.Card_Title}>Web and Mobile Apps</p>
               </CardContent>
@@ -60,7 +58,7 @@ function Main() {
             <Card className={classes.Card_Style}>
               <CardContent className={classes.Card_Content}>
                 <div className={classes.Cirlce}>
-                  <Mobile className={classes.Main_ImageSection} />
+                  <Responsive className={classes.Main_ImageSection} />
                 </div>
                 <p className={classes.Card_Title}>Desktop Software</p>
               </CardContent>

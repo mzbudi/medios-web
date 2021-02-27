@@ -28,7 +28,7 @@ function Desktop() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} lg={6} md={6} className={classes.Grid_Margin}>
+        <Grid item xs={12} lg={7} md={7} className={classes.Grid_Margin}>
           <h1 className={classes.Title}>Features</h1>
           <table>
             <tr>
@@ -36,13 +36,13 @@ function Desktop() {
                 <img src={ellipse} alt="logo" className={classes.Dot_Left} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>Authentication</p>
               </td>
               <td>
                 <img src={ellipse} alt="logo" className={classes.Dot} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>Cross Platform</p>
               </td>
             </tr>
             <tr>
@@ -50,21 +50,19 @@ function Desktop() {
                 <img src={ellipse} alt="logo" className={classes.Dot_Left} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>Light & Fast</p>
               </td>
               <td>
                 <img src={ellipse} alt="logo" className={classes.Dot} />
               </td>
               <td>
-                <p className={classes.Card_Title}>Lorem Ipsum</p>
+                <p className={classes.Card_Title}>Versatile</p>
               </td>
             </tr>
           </table>
           <h1 className={classes.Title}>Description</h1>
           <p className={classes.Card_Title_Description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. .
+            Provides desktop software that can be running on many desktop and variety of Operating System (OS).
           </p>
         </Grid>
       </Grid>

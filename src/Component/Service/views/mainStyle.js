@@ -66,19 +66,19 @@ const useStyles = makeStyles((theme) => ({
   Opening_Service: {
     [theme.breakpoints.down('md')]: {
       textAlign: 'center',
-      font: 'normal normal normal 10px/14px Montserrat',
+      font: 'normal normal normal 1rem/1.2rem Montserrat',
       color: '#707070',
       marginBottom: 30,
     },
     [theme.breakpoints.between('md', 'lg')]: {
       textAlign: 'center',
-      font: 'normal normal normal 15px/19px Montserrat',
+      font: 'normal normal normal 1rem/1.2rem Montserrat',
       color: '#707070',
       marginBottom: 40,
     },
     [theme.breakpoints.up('lg')]: {
       textAlign: 'center',
-      font: 'normal normal normal 18px/22px Montserrat',
+      font: 'normal normal normal 1.8rem/2rem Montserrat',
       color: '#707070',
       marginBottom: 50,
     },
@@ -175,36 +175,31 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   Button_Text: {
+    width: 'fit-content',
+    height: 'fit-content',
+    padding: '0.75rem',
+    color: '#29AE6D',
+    borderColor: '#29AE6D',
     [theme.breakpoints.down('md')]: {
-      borderColor: '#29AE6D',
       font: 'normal normal bold 10px/14px Montserrat',
-      color: '#29AE6D',
-      width: '60px',
-      height: '30px',
       borderRadius: '10px',
+      padding: '0.4rem',
       '&:hover': {
         background: 'linear-gradient(114deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
         color: 'white',
       },
     },
     [theme.breakpoints.between('md', 'lg')]: {
-      borderColor: '#29AE6D',
       font: 'normal normal bold 15px/19px Montserrat',
-      color: '#29AE6D',
-      width: '100px',
-      height: '40px',
       borderRadius: '10px',
+      padding: '0.55rem',
       '&:hover': {
         background: 'linear-gradient(114deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',
         color: 'white',
       },
     },
     [theme.breakpoints.up('lg')]: {
-      borderColor: '#29AE6D',
       font: 'normal normal bold 20px/24px Montserrat',
-      color: '#29AE6D',
-      width: '183px',
-      height: '60px',
       borderRadius: '10px',
       '&:hover': {
         background: 'linear-gradient(114deg, #29AE6D 0%, #009744 100%) 0% 0% no-repeat padding-box',

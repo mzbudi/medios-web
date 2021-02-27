@@ -48,7 +48,7 @@ function Main() {
       <Grid container direction="row" style={{ verticalAlign: 'center', textAlign: 'center' }} spacing={3}>
         <Grid lg={4} item container direction="column">
           <Grid item>
-            <img src={responsive} alt="App" className={classes.Main_ImageSection} />
+            <img src={mobile} alt="mobile" className={classes.Main_ImageSection} />
           </Grid>
           <Grid item>
             <p className={classes.Main_TextImageSection}>
@@ -63,7 +63,7 @@ function Main() {
         </Grid>
         <Grid lg={4} item container direction="column">
           <Grid item>
-            <img src={mobile} alt="mobile" className={classes.Main_ImageSection} />
+            <img src={responsive} alt="App" className={classes.Main_ImageSection} />
           </Grid>
           <Grid item>
             <p className={classes.Main_TextImageSection}>
@@ -102,18 +102,18 @@ function Main() {
       justify="center"
       alignContent="center"
     >
-      <Grid item lg={12}>
+      <Grid item xs={12}>
         <Typography align="center" className={classes.Main_TextOurProduct}>
           Our Product
         </Typography>
       </Grid>
-      <Grid item container justify="space-between">
-        <Grid item container lg={1} xs={3} md={3} sm={3} direction="column" alignItems="center" justify="center">
+      <Grid item container justify="space-between" alignItems="stretch" xs={12} spacing={4}>
+        <Grid item container xs={1} md={1} lg={1} alignItems="center" justify="center">
           <IconButton aria-label="Left">
             <ChevronLeftIcon className={classes.Main_IconSize} />
           </IconButton>
         </Grid>
-        <Grid item container direction="column" lg={4} md={10} sm={10} xs={10}>
+        <Grid item direction="column" xs={12} md={5} lg={5}>
           <Card className={classes.Product_Card}>
             <CardMedia image={cms} title="Cms" component="img" />
             <CardContent style={{ padding: '10%' }}>
@@ -127,14 +127,14 @@ function Main() {
             </CardContent>
             <CardActions className={classes.Main_CardAction}>
               <div className={classes.Main_CardBtn}>
-                <Button variant="contained" size="small" className={classes.Main_BtnShowMore} href="/product/cms">
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore} href="#/product/cms">
                   Show more
                 </Button>
               </div>
             </CardActions>
           </Card>
         </Grid>
-        <Grid item container direction="column" lg={4}>
+        <Grid item direction="column" xs={12} md={5} lg={5}>
           <Card className={classes.Product_Card}>
             <CardMedia image={blank} title="Blank" component="img" />
             <CardContent style={{ padding: '10%' }}>
@@ -149,14 +149,14 @@ function Main() {
             </CardContent>
             <CardActions className={classes.Main_CardAction}>
               <div className={classes.Main_CardBtn}>
-                <Button variant="contained" size="small" className={classes.Main_BtnShowMore} href="/product/dss">
+                <Button variant="contained" size="small" className={classes.Main_BtnShowMore} href="#/product/dss">
                   Show more
                 </Button>
               </div>
             </CardActions>
           </Card>
         </Grid>
-        <Grid item container lg={1} direction="column" alignItems="center" justify="center">
+        <Grid item container xs={1} md={1} lg={1} direction="column" alignItems="center" justify="center">
           <IconButton aria-label="Right">
             <ChevronRightIcon className={classes.Main_IconSize} />
           </IconButton>
@@ -375,7 +375,7 @@ function Main() {
             <Grid item lg={12} xs={12} className={classes.Main_MarginContact}>
               <Typography variant="body1" className={classes.Main_ContactSection}>
                 For any question contact our 24/7 call center :{' '}
-                <span className={classes.Main_PhoneTextColor}>+62 xxxx xxxx</span>
+                <span className={classes.Main_PhoneTextColor}>+62 838-1193-8207</span>
               </Typography>
             </Grid>
           </Grid>

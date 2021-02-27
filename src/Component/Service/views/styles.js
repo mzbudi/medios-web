@@ -212,8 +212,8 @@ const useStyles = makeStyles((theme) => ({
   },
   Dot_Left: {
     [theme.breakpoints.down('sm')]: {
-      marginLeft: '25px',
-      marginRight: '25px',
+      marginLeft: '15px',
+      marginRight: '15px',
       width: '12px',
       height: '12px',
     },
@@ -236,13 +236,13 @@ const useStyles = makeStyles((theme) => ({
       height: '12px',
     },
     [theme.breakpoints.between('sm', 'lg')]: {
-      marginLeft: '100px',
+      marginLeft: '50px',
       marginRight: '50px',
       width: '24px',
       height: '24px',
     },
     [theme.breakpoints.up('lg')]: {
-      marginLeft: '100px',
+      marginLeft: '60px',
       marginRight: '50px',
       width: '24px',
       height: '24px',
