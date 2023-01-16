@@ -137,7 +137,13 @@ function Header() {
               {({ transitionProps }) => (
                 <Paper {...transitionProps} className={classes.Header_ProductPoP}>
                   <ClickAwayListener onClickAway={handleClose}>
-                    <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                    <MenuList
+                      autoFocusItem={open}
+                      id="menu-list-grow"
+                      onKeyDown={() => {
+                        handleListKeyDown();
+                      }}
+                    >
                       <MenuItem onClick={handleClose} component={Link} to="/product/cms">
                         Cloud Medical System
                       </MenuItem>
